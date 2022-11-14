@@ -1,0 +1,35 @@
+* {
+  margin: 0.1vw;
+  padding: 0.1vw;
+}
+
+#convo {
+  display: flex;
+  flex-direction: column;
+}
+
+#convo form {
+  align-self: center;
+  margin: 3vw;
+}
+
+.talker {
+  align-self: flex-end;
+  margin: 0.5vw 30vw 0.5vw 0vw;
+  width: 30vw;
+  padding: 1vw;
+  color: rgb(255, 236, 246);
+  background-color: rgb(237, 41, 90);
+  border-radius: 2vw;
+}
+
+.talkee {
+  align-self: flex-start;
+  margin: 0.5vw 0vw 0.5vw 30vw;
+  min-width: 30vw;
+  width: 30vw;
+  padding: 1vw;
+  color: #222;
+  background-color: rgb(224, 224, 224);
+  border-radius: 2vw;
+}

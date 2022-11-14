@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{! Axios scripts, only link if we use axios }}
+    {{! <script src="https://unpkg.com/axios/dist/axios.min.js"></script> }}
+    {{! <script type="text/javascript" src="/scripts/APIHandler.js"></script> }}
+
+    {{! general script that applies to all pages }}
+    <script type="text/javascript" src="/scripts/index.js"></script>
+
+    {{! page-specific script, to link in routes }}
+    {{#if scriptName}}
+      <script type="text/javascript" src="/scripts/{{scriptName}}.js"></script>
+    {{/if}}
+
+    {{! general css file }}
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+
+    {{! page-specific css, to link in routes }}
+    {{#if styleName}}
+      <link rel="stylesheet" type="text/css" href="/styles/{{styleName}}.css" />
+    {{/if}}
+
+    {{! page-specific title name, to link in routes }}
+    {{#if titleName}}
+      <title>{{titleName}}</title>
+    {{else}}
+      <title>Partnerz</title>
+    {{/if}}
+
+  </head>
+
+  <body>
+
+    {{! isLoggedIn variable initiated in middleware function explorUserToView}}
+    {{#if isLoggedIn}}
+
+      {{! currentUser variable initiated in middleware function explorUserToView}}
+      {{#if currentUser}}
+        <p>Hey, {{{currentUser.name}}}</p>
+      {{/if}}
+
+      <p><a href="/">Home</a></p>
+      <p><a href="/auth/logout">Log out</a></p>
+      <p><a href="/auth/getuser">Get user</a></p>
+      <p><a href="/discussions">Discussions</a></p>
+
+    {{else}}
+
+      <p><a href="/auth/signup">Sign up</a></p>
+      <p><a href="/auth/login">Log in</a></p>
+
+    {{/if}}
+
+    {{{body}}}
+
+  </body>
+</html>

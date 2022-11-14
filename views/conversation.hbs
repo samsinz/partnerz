@@ -1,0 +1,18 @@
+<h2>Welcome to your conversation {{id}}!</h2>
+<div id="current-user" style="display:none">{{currentUser.username}}</div>
+
+<div id="convo">
+  {{#each messages}}
+
+    <p><span>{{this.sender}}</span>: {{this.content}}</p>
+
+  {{/each}}
+
+  <form action="/discussions/{{id}}" id="new-message" method="post">
+
+    <label for="new-message-value"></label>
+    <input type="text" name="new-message-value" />
+    <button>Send</button>
+
+  </form>
+</div>
