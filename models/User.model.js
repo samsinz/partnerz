@@ -1,11 +1,6 @@
 const { Schema, model } = require("mongoose");
 
 const UserSchema = {
-  username: {
-    type: String,
-    required: true,
-    unique: true,
-  },
   name: {
     type: String,
     required: true,
@@ -14,6 +9,65 @@ const UserSchema = {
     type: String,
     required: true,
   },
+  email: {
+    type: String,
+    required: [true, "Email is required."],
+    match: [/^\S+@\S+\.\S+$/, "Please use a valid email address."],
+    unique: true,
+    lowercase: true,
+    trim: true,
+  },
+  birthday: {
+    type: Date,
+    required: true,
+  },
+
+  bio: String,
+  profilePicture: String,
+
+  tags: {
+    type: [String],
+    enum: [
+      "Museum",
+      "Indoors",
+      "Outdoors",
+      "Bar",
+      "Fancy",
+      "Adventure",
+      "Culture",
+      "Art",
+      "Show",
+      "Romantic",
+      "Landscape",
+      "Secret Place",
+      "Free",
+      "Cheap",
+      "Cocktails",
+      "Music",
+      "Cosy",
+      "Ambiance",
+      "Exotic",
+      "Original",
+      "Chill",
+      "Sports",
+      "Creative",
+      "Touristic",
+      "Food",
+      "Walks",
+      "Drinks",
+      "Open Minded",
+      "Craft",
+      "Clubbing",
+    ],
+  },
+
+  matchedActivities: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Activity",
+    },
+  ],
+
   discussions: [
     {
       discussion: {
