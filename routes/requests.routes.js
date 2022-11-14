@@ -11,3 +11,5 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   res.render("requests/single-request");
 });
+
+module.exports = router;

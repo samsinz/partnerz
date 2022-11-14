@@ -6,19 +6,40 @@ const salt = 11;
 router.get("/signup", (req, res) => res.render("auth/signup"));
 
 router.post("/signup", async (req, res) => {
-  const { username, name, password } = req.body;
+  const { name, birthday, email, password, picture } = req.body;
+  const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
   try {
     // check if all sign up fields are filled and if username exists
-    if (!username || !name || !password) {
-      return res.render("auth/signup", { errorMessage: "All fields are required." });
+    if (!name || !birthday || !email || !password || !picture) {
+      return res.render("auth/signup", {
+        errorMessage: "All fields are required.",
+      });
     }
-    if (await User.findOne({ username })) {
-      return res.render("auth/signup", { errorMessage: "Username already exists." });
+    if (!regex.test(password)) {
+      res.status(500).render("auth/signup", {
+        errorMessage:
+          "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
+      });
+    }
+
+    if (await User.findOne({ email })) {
+      return res.render("auth/signup", {
+        errorMessage: "Email already exists.",
+      });
     }
 
     // hash password and add user to database
-    const hashedPassword = await bcrypt.hash(password, await bcrypt.genSalt(salt));
-    await User.create({ username, name, password: hashedPassword });
+    const hashedPassword = await bcrypt.hash(
+      password,
+      await bcrypt.genSalt(salt)
+    );
+    await User.create({
+      name,
+      birthday,
+      email,
+      password: hashedPassword,
+      picture,
+    });
 
     // redirect to home page
     res.redirect("/");
@@ -30,17 +51,21 @@ router.post("/signup", async (req, res) => {
 router.get("/login", (req, res) => res.render("auth/login"));
 
 router.post("/login", async (req, res) => {
-  const { username, password } = req.body;
+  const { email, password } = req.body;
   try {
     // check if all log in fields are filled
-    if (!username || !password) {
-      return res.render("auth/login", { errorMessage: "All fields are required." });
+    if (!email || !password) {
+      return res.render("auth/login", {
+        errorMessage: "All fields are required.",
+      });
     }
 
     // save target user according to username and return error if doesn't exist
-    const targetUser = await User.findOne({ username });
+    const targetUser = await User.findOne({ email });
     if (!targetUser) {
-      return res.render("auth/login", { errorMessage: "Username doesn't exist." });
+      return res.render("auth/login", {
+        errorMessage: "Email doesn't exist.",
+      });
     }
 
     // hash password and compare with user's
