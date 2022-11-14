@@ -1,3 +1,4 @@
+const fileUploader = require("../config/cloudinary.config");
 const router = require("express").Router();
 const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
@@ -5,48 +6,52 @@ const salt = 11;
 
 router.get("/signup", (req, res) => res.render("auth/signup"));
 
-router.post("/signup", async (req, res) => {
-  const { name, birthday, email, password } = req.body;
-  const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-  try {
-    // check if all sign up fields are filled and if username exists
-    console.log(name, birthday, email, password);
-    if (!name || !birthday || !email || !password) {
-      return res.render("auth/signup", {
-        errorMessage: "All fields are required.",
-      });
-    }
-    if (!regex.test(password)) {
-      res.status(500).render("auth/signup", {
-        errorMessage:
-          "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
-      });
-    }
+router.post(
+  "/signup",
+  fileUploader.single("profilePicture"),
+  async (req, res) => {
+    const { name, birthday, email, password } = req.body;
 
-    if (await User.findOne({ email })) {
-      return res.render("auth/signup", {
-        errorMessage: "Email already exists.",
+    const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+    try {
+      if (!name || !birthday || !email || !password || !req.file) {
+        return res.render("auth/signup", {
+          errorMessage: "All fields are required.",
+        });
+      }
+      if (!regex.test(password)) {
+        return res.status(500).render("auth/signup", {
+          errorMessage:
+            "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
+        });
+      }
+
+      if (await User.findOne({ email })) {
+        return res.render("auth/signup", {
+          errorMessage: "Email already exists.",
+        });
+      }
+
+      // hash password and add user to database
+      const hashedPassword = await bcrypt.hash(
+        password,
+        await bcrypt.genSalt(salt)
+      );
+      await User.create({
+        name,
+        birthday,
+        email,
+        password: hashedPassword,
+        profilePicture: req.file.path,
       });
+
+      // redirect to home page
+      res.redirect("/");
+    } catch (error) {
+      console.log(error);
     }
-
-    // hash password and add user to database
-    const hashedPassword = await bcrypt.hash(
-      password,
-      await bcrypt.genSalt(salt)
-    );
-    await User.create({
-      name,
-      birthday,
-      email,
-      password: hashedPassword,
-    });
-
-    // redirect to home page
-    res.redirect("/");
-  } catch (error) {
-    console.log(error);
   }
-});
+);
 
 router.get("/login", (req, res) => res.render("auth/login"));
 
