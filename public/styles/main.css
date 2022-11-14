@@ -1,6 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --customprimary: #ff005c;
+  --customblack: #1a1a1a;
+}
+
 * {
-  margin: 0.1vw;
-  padding: 0.1vw;
+  margin: 0vw;
+  padding: 0vw;
+  background-color: white;
+  font-family: Inter;
+}
+
+header {
+  height: 6rem;
+  /* background-color: wheat; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#logo-nav {
+  height: 2rem;
+  width: 2rem;
+  background: center / contain no-repeat url("/images/home/logo-nav.png");
+  margin: 3rem;
+}
+
+#hamburger {
+  height: 2rem;
+  width: 2rem;
+  background: center / contain no-repeat url("/images/home/hamburger.png");
+  margin: 3rem;
 }
 
 #convo {
