@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 //HOME
-router.get("/", (req, res) => res.render("home"));
+router.get("/", (req, res) => res.render("home", { styleName: "home", scriptName: "home" }));
 
 // INTERESTS
 router.get("/interests", (req, res) => res.render("interests"));
