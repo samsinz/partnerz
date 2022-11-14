@@ -6,11 +6,12 @@ const salt = 11;
 router.get("/signup", (req, res) => res.render("auth/signup"));
 
 router.post("/signup", async (req, res) => {
-  const { name, birthday, email, password, picture } = req.body;
+  const { name, birthday, email, password } = req.body;
   const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
   try {
     // check if all sign up fields are filled and if username exists
-    if (!name || !birthday || !email || !password || !picture) {
+    console.log(name, birthday, email, password);
+    if (!name || !birthday || !email || !password) {
       return res.render("auth/signup", {
         errorMessage: "All fields are required.",
       });
@@ -38,7 +39,6 @@ router.post("/signup", async (req, res) => {
       birthday,
       email,
       password: hashedPassword,
-      picture,
     });
 
     // redirect to home page
