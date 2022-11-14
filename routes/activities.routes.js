@@ -29,3 +29,5 @@ router.get("/:activityId/partners/:partnerId", async (req, res) => {
 router.get("/:activityId/partners/:partnerId/request", async (req, res) => {
   res.render("activities/send-request");
 });
+
+module.exports = router;

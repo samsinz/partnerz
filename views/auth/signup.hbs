@@ -1,10 +1,20 @@
 <form action="/auth/signup" method="post">
-  <label for="username">Username</label>
-  <input type="text" name="username" />
-  <label for="username">Name</label>
+
+  <label for="name">Name:</label>
   <input type="text" name="name" />
-  <label for="username">Password</label>
+
+  <label for="birthday">Date of birth:</label>
+  <input type="date" name="birthday" />
+
+  <label for="email">Email:</label>
+  <input type="email" name="email" />
+
+  <label for="password">Password:</label>
   <input type="password" name="password" />
+
+  <label for="profilePicture">Profile picture</label>
+  <input type="file" name="profilePicture" id="profilePicture" />
+
   <button>Sign up</button>
 </form>
 <p>{{errorMessage}}</p>
