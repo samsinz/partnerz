@@ -23,7 +23,10 @@ const UserSchema = {
   },
 
   bio: String,
-  profilePicture: String,
+  profilePicture: {
+    name: String,
+    URL: String,
+  },
 
   tags: {
     type: [String],

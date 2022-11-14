@@ -3,7 +3,10 @@ const { Schema, model } = require("mongoose");
 const ActivitySchema = {
   name: String,
   location: String,
-  image: String,
+  image: {
+    name:String,
+    URL : String,}
+
   description: String,
   url: String,
   tags: {
