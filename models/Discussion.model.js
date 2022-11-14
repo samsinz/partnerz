@@ -1,8 +1,12 @@
 const { Schema, model } = require("mongoose");
 
 const DiscussionSchema = {
-  user1: String,
-  user2: String,
+  users: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    },
+  ],
   messages: [
     {
       type: Schema.Types.ObjectId,
