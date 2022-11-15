@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon -e hbs,js app.js",
-    "seed": "node seeds/users.seed.js"
+    "seed": "node seeds/activities.seed.js"
   },
   "keywords": [],
   "author": "",

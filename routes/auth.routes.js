@@ -4,54 +4,48 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const salt = 11;
 
+const { exposeUserToView } = require("../middlewares/middlewares");
+
 router.get("/signup", (req, res) => res.render("auth/signup"));
 
-router.post(
-  "/signup",
-  fileUploader.single("profilePicture"),
-  async (req, res) => {
-    const { name, birthday, email, password } = req.body;
+router.post("/signup", fileUploader.single("profilePicture"), async (req, res) => {
+  const { name, birthday, email, password } = req.body;
 
-    const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
-    try {
-      if (!name || !birthday || !email || !password || !req.file) {
-        return res.render("auth/signup", {
-          errorMessage: "All fields are required.",
-        });
-      }
-      if (!regex.test(password)) {
-        return res.status(500).render("auth/signup", {
-          errorMessage:
-            "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
-        });
-      }
-
-      if (await User.findOne({ email })) {
-        return res.render("auth/signup", {
-          errorMessage: "Email already exists.",
-        });
-      }
-
-      // hash password and add user to database
-      const hashedPassword = await bcrypt.hash(
-        password,
-        await bcrypt.genSalt(salt)
-      );
-      await User.create({
-        name,
-        birthday,
-        email,
-        password: hashedPassword,
-        profilePicture: req.file.path,
+  const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+  try {
+    if (!name || !birthday || !email || !password || !req.file) {
+      return res.render("auth/signup", {
+        errorMessage: "All fields are required.",
       });
-
-      // redirect to home page
-      res.redirect("/");
-    } catch (error) {
-      console.log(error);
     }
+    if (!regex.test(password)) {
+      return res.status(500).render("auth/signup", {
+        errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
+      });
+    }
+
+    if (await User.findOne({ email })) {
+      return res.render("auth/signup", {
+        errorMessage: "Email already exists.",
+      });
+    }
+
+    // hash password and add user to database
+    const hashedPassword = await bcrypt.hash(password, await bcrypt.genSalt(salt));
+    await User.create({
+      name,
+      birthday,
+      email,
+      password: hashedPassword,
+      profilePicture: req.file.path,
+    });
+
+    // redirect to home page
+    res.redirect("/");
+  } catch (error) {
+    console.log(error);
   }
-);
+});
 
 router.get("/login", (req, res) => res.render("auth/login"));
 
@@ -87,6 +81,7 @@ router.post("/login", async (req, res) => {
 
 router.get("/logout", async (req, res) => {
   await req.session.destroy();
+  res.locals.isLoggedIn = false;
   res.redirect("/");
 });
 

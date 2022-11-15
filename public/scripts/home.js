@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#get-started").addEventListener("click", () => {
-    window.location = "/auth/signup";
+    window.location = "/interests";
   });
 });

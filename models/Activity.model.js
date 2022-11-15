@@ -39,6 +39,7 @@ const ActivitySchema = {
       "Open Minded",
       "Craft",
       "Clubbing",
+      "Intellectual"
     ],
   },
   price: String,

@@ -1,9 +1,11 @@
 const router = require("express").Router();
+const Activity = require("../models/Activity.model");
 
 // ACTIVITIES
 
 router.get("/", async (req, res) => {
-  res.render("activities/activities");
+  listOfActivities = await Activity.find();
+  res.render("activities/activities", { scriptName: "activities", styleName: "activities", activities: listOfActivities });
 });
 
 // ACITIVITIES DETAILS
