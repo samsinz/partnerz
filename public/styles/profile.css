@@ -1,0 +1,71 @@
+img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+.profilePicture {
+  text-align: center;
+}
+.profile {
+  margin-top: 12vh;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.name {
+  margin-top: 3%;
+  font-weight: 600;
+  margin-left: 5%;
+  font-size: 25px;
+}
+
+#bio {
+  height: 10rem;
+  width: 22rem;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 2%;
+}
+
+input {
+  border-style: none;
+  padding: 2%;
+}
+
+input[name="bio"] {
+  justify-content: start;
+}
+
+button {
+  border-radius: 100%;
+  width: 2.8rem;
+  height: 2.8rem;
+  border: none;
+  background-color: var(--customprimary);
+}
+#button {
+  display: flex;
+  justify-content: right;
+}
+
+.tags {
+  margin-top: 2%;
+  background-color: burlywood;
+  height: 5rem;
+}
+.update {
+  margin-left: 20rem;
+}
+
+.updateImage {
+  position: absolute;
+  top: 13.2rem;
+  left: 14rem;
+}
+
+.bottom {
+  margin-left: 5%;
+}
+
+.buttonDeleate {
+  position: absolute;
+}
