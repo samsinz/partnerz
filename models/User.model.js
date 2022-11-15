@@ -3,11 +3,9 @@ const { Schema, model } = require("mongoose");
 const UserSchema = {
   name: {
     type: String,
-    required: true,
   },
   password: {
     type: String,
-    required: true,
   },
   email: {
     type: String,
@@ -19,7 +17,6 @@ const UserSchema = {
   },
   birthday: {
     type: Date,
-    required: true,
   },
 
   bio: String,
