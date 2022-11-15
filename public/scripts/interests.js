@@ -51,10 +51,14 @@ document.addEventListener("DOMContentLoaded", function () {
     tagUnique.addEventListener("click", () => {
       tagUnique.classList.toggle("tag-selected");
 
-      if (tagUnique.classList.contains("tag-selected")) {
+      if (
+        tagUnique.classList.contains("tag-selected") &&
+        userInterestsArr.length < 5
+      ) {
         userInterestsArr.push(tagUnique.textContent);
         console.log(userInterestsArr);
       } else {
+        tagUnique.classList.remove("tag-selected");
         userInterestsArr = userInterestsArr.filter(
           (x) => x != tagUnique.textContent
         );
