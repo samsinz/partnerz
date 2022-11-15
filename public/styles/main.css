@@ -3,6 +3,7 @@
 :root {
   --customprimary: #ff005c;
   --customblack: #1a1a1a;
+  --customgrey: #d9d9d986;
 }
 
 * {
