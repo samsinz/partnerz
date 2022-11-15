@@ -8,9 +8,11 @@
 * {
   margin: 0vw;
   padding: 0vw;
-  background-color: white;
+  /* background-color: white; */
   font-family: Inter;
 }
+
+/* NAV BAR */
 
 header {
   height: 6rem;
@@ -18,6 +20,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
 
 #logo-nav {
@@ -28,10 +34,9 @@ header {
 }
 
 #burger {
+  margin-left: 8rem;
   width: 23px;
   height: 15px;
-
-  margin: 3rem;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -46,7 +51,7 @@ header {
 #burger span {
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: var(--customprimary);
   border-radius: 9px;
@@ -118,6 +123,43 @@ header {
   align-self: center;
   margin: 3vw;
 }
+
+header ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+header li > a {
+  text-decoration: none;
+  color: black;
+}
+
+.right ul {
+  position: absolute;
+  transform: scaleY(0);
+  transform-origin: center top;
+  transition: all 0.3s ease;
+  top: 3.8rem;
+  right: 1.4rem;
+}
+
+.right ul.open {
+  transform: scaleY(1);
+}
+
+.margin {
+  margin-top: 10rem;
+}
+
+.list-unstyled {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  border-radius: 12px;
+  box-shadow: 0px 0px 8px rgba(105, 104, 104, 0.25);
+}
+
+/* MESSAGES */
 
 .talker {
   align-self: flex-end;

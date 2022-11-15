@@ -45,29 +45,36 @@
         <span></span>
       </div>
 
-    </header>
+      {{! isLoggedIn variable initiated in middleware function explorUserToView}}
+      {{#if isLoggedIn}}
 
-    {{! isLoggedIn variable initiated in middleware function explorUserToView}}
-    {{#if isLoggedIn}}
-
-      {{! currentUser variable initiated in middleware function explorUserToView}}
-      {{#if currentUser}}
-        <p>Hey, {{{currentUser.name}}}</p>
+        <div class="right">
+          <ul class="list-unstyled">
+            <li><a href="/requests/requests-received">Hang out requests</a></li>
+            <li> <a href="/discussions/discussions">Messages</a></li>
+            <hr />
+            <li><a href="/profile">My account</a></li>
+            <hr />
+            <li><a href="/auth/logout"><b>Log out</b></a></li>
+          </ul>
+        </div>
+      {{else}}
+        <div class="right">
+          <ul class="list-unstyled">
+            <li> <a href="/auth/signup">Sign up</a></li>
+            <li><a href="/auth/login">Log in</a></li>
+          </ul>
+        </div>
       {{/if}}
 
-      <p><a href="/">Home</a></p>
-      <p><a href="/auth/logout">Log out</a></p>
-      <p><a href="/auth/getuser">Get user</a></p>
-      <p><a href="/discussions">Discussions</a></p>
-
-    {{else}}
-
-      <p><a href="/auth/signup">Sign up</a></p>
-      <p><a href="/auth/login">Log in</a></p>
-
-    {{/if}}
+    </header>
 
     {{{body}}}
+
+    {{! currentUser variable initiated in middleware function explorUserToView}}
+    {{!-- {{#if currentUser}}
+          <p>Hey, {{{currentUser.name}}}</p>
+        {{/if}} --}}
 
   </body>
 </html>
