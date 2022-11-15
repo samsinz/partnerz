@@ -15,6 +15,13 @@ router.get("/interests", (req, res) =>
   res.render("interests", { styleName: "interests", scriptName: "interests" })
 );
 
+router.post('/interests', async (req, res) => {
+  const {tags} = req.body;
+  const temporaryUser = User.create({tags})
+  req.locals.temporaryUser = temporaryUser;
+  res.redirect('/activities')
+})
+
 // PROFILE
 router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
