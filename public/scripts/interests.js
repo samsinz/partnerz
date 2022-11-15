@@ -19,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "Cosy",
     "Ambiance",
     "Exotic",
-    "Clubbing",
     "Original",
     "Chill",
     "Sports",
@@ -28,9 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "Food",
     "Walks",
     "Drinks",
-    "Craft",
     "Open Minded",
-    "Intellectual",
+    "Craft",
+    "Clubbing",
   ];
 
   let userInterestsArr = [];
@@ -60,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         let button = document.querySelector("button");
         button.addEventListener("click", () => {
-          window.location = "/activities/activities";
+          window.location = "/activities";
         });
       } else {
         tagUnique.classList.remove("tag-selected");
@@ -69,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
         );
         console.log(userInterestsArr);
       }
+      document.querySelector("#input-tags").value = userInterestsArr;
     });
   });
 });

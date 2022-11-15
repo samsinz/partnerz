@@ -4,7 +4,9 @@ const { isExperiencedUser } = require("../middlewares/middlewares");
 
 //HOME
 
-router.get("/", isExperiencedUser, (req, res) => res.render("home", { styleName: "home", scriptName: "home" }));
+router.get("/", isExperiencedUser, (req, res) =>
+  res.render("home", { styleName: "home", scriptName: "home" })
+);
 
 // INTERESTS
 router.get("/interests", (req, res) =>
