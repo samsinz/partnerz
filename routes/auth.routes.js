@@ -32,7 +32,7 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
 
     // hash password and add user to database
     const hashedPassword = await bcrypt.hash(password, await bcrypt.genSalt(salt));
-    await User.findByIdAndUpdate(req.locals.temporaryUser._id, {
+    await User.findByIdAndUpdate(req.session.temporaryUser._id, {
       name,
       birthday,
       email,
