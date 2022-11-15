@@ -2,16 +2,16 @@
   {
     "name": "59 Rivoli",
     "location": "59 rue de Rivoli, 75001 Paris",
-    "image": "/images/59-rivoli.jpg",
+    "image": "/images/activities/59-rivoli.jpg",
     "description": "Art gallery in Paris, France. Formerly an artist squat that had occupied the space since 1999, it was legalized by the city from 2006 onwards.[1] The venue became known for its parties, exhibitions, and performances. exhibitions, and performances.",
     "url": "http://www.59rivoli.org/accueil/",
-    "tags": ["Museum", "Culture", "Art", "Free", "Original", "Walking", "Indoors"],
+    "tags": ["Museum", "Culture", "Art", "Free", "Original", "Walks", "Indoors"],
     "price": 0
   },
   {
     "name": "La Mezcaleria",
     "location": "13 boulevard du Temple, 75003 Paris",
-    "image": "/images/bar_mazcaleria.jpg",
+    "image": "/images/activities/bar_mazcaleria.jpg",
     "description": "Meet at the Mezcaleria, the clandestine bar of the famous 1K hotel, hidden behind the kitchens. On the program: Latin music and old school R'n'B, tailor-made creations with Mexican eau-de-vie and multicolored decoration that will warm your heart.",
     "url": "https://www.instagram.com/lamezcaleriaparis/",
     "tags": ["Exotic", "Bar", "Secret Place", "Cocktails", "Music", "Ambiance", "Drinks"],
@@ -20,7 +20,7 @@
   {
     "name": "Mobster Bar",
     "location": "8 rue de Crussol, 75011 Paris",
-    "image": "/images/bar_mobster.jpg",
+    "image": "/images/activities/bar_mobster.jpg",
     "description": "In a breathtaking decor and a jazzy atmosphere, Mobster bar takes you back to the era of prohibition. On the program for your evening? Cocktails inspired by the great classics of the 20th century.",
     "url": "https://mobsterbar.com",
     "tags": ["Romantic", "Bar", "Secret Place", "Cocktails", "Music", "Ambiance", "Drinks"],
@@ -29,7 +29,7 @@
   {
     "name": "L'Atelier Geneviève",
     "location": "42 rue Raymond Losserand, 75014 Paris",
-    "image": "/images/brunch-geneve.jpg",
+    "image": "/images/activities/brunch-geneve.jpg",
     "description": "On Sunday we get out of the duvet to have enjoy the highlight of the week! The Atelier Geneviève awaits you at the Ceramicafé. Come and personalize a ceramic object with the advice of your team.",
     "url": "https://lateliergenevieve.fr/products/ceramic-brunch-ceramicafe-11",
     "tags": ["Fancy", "Art", "Cosy", "Chill", "Food", "Craft"],
@@ -38,7 +38,7 @@
   {
     "name": "Vertical'Art",
     "location": "181 rue de Chevaleret, 75013 Paris",
-    "image": "/images/verticalart.jpg",
+    "image": "/images/activities/verticalart.jpg",
     "description": "For urban sports enthusiasts looking for a new landmark: Vertical'Art sets up its 9th climbing gym in Paris in the 13th arrondissement!",
     "url": "https://lateliergenevieve.fr/products/ceramic-brunch-ceramicafe-11",
     "tags": ["Indoors", "Adventure", "Sports"],
@@ -47,7 +47,7 @@
   {
     "name": "Yves St Laurent Museum",
     "location": "5 av. Marceau, 75116 Paris",
-    "image": "/images/museeysl.jpg",
+    "image": "/images/activities/museeysl.jpg",
     "description": "The Yves Saint Laurent Museum in Paris exhibits the designer's work through a retrospective and thematic temporary exhibitions.",
     "url": "https://museeyslparis.com/",
     "tags": ["Museum", "Indoors", "Fancy", "Culture", "Cheap"],
@@ -56,7 +56,7 @@
   {
     "name": "Louis Vuitton Foundation",
     "location": "8 av. du Mahatma Gandhi, 75016 Paris",
-    "image": "/images/fondationlouisvuitton.jpg",
+    "image": "/images/activities/fondationlouisvuitton.jpg",
     "description": "The Louis-Vuitton Corporate Foundation, formerly the Louis-Vuitton Corporate Foundation for Creation, launched in October 2005, was created by the LVMH group and its companies. Its objective is to perpetuate the philanthropic actions undertaken by the group since 1990.",
     "url": "https://www.fondationlouisvuitton.fr/",
     "tags": ["Museum", "Indoors", "Fancy", "Culture", "Cheap"],
@@ -65,7 +65,7 @@
   {
     "name": "Great Gallery of Evolution",
     "location": "36 rue Geoffroy-Saint-Hilaire, 75005 Paris",
-    "image": "/images/grandegaleriedelevolution.jpg",
+    "image": "/images/activities/grandegaleriedelevolution.jpg",
     "description": "The Great Gallery of Evolution is one of the galleries of the National Museum of Natural History. The galleries of the Museum are buildings that are museums in themselves and each one specializes in a specific field of natural history.",
     "url": "https://www.jardindesplantesdeparis.fr/fr/programme/galeries-jardins-zoo-bibliotheques/grande-galerie-levolution-2763",
     "tags": ["Museum", "Indoors", "Exotic", "Culture", "Cheap", "Touristic"],
@@ -74,7 +74,7 @@
   {
     "name": "The Louvre",
     "location": "Rue de Rivoli, 75001 Paris",
-    "image": "/images/louvre.jpg",
+    "image": "/images/activities/louvre.jpg",
     "description": "The Louvre covers an extensive chronology and geographical area, from antiquity to 1848 and from Western Europe to Iran, via Greece, Egypt, and the Near East. It comprises eight departments which, including deposits in other museums (28,530 works), comprised 554,731 works at the end of 2016.",
     "url": "https://www.louvre.fr/",
     "tags": ["Museum", "Culture", "Art", "Touristic", "Cheap"],
@@ -83,7 +83,7 @@
   {
     "name": "L’atelier des Lumières",
     "location": "38 rue Saint-Maur, 75011 Paris",
-    "image": "/images/atelierdeslumieres.jpg",
+    "image": "/images/activities/atelierdeslumieres.jpg",
     "description": "The Atelier des Lumières offers so-called immersive exhibitions: visitors are invited to wander through the space where they can discover thousands of digitized images of works of art to the sound of a musical composition. This gives the impression of being immersed in the paintings.",
     "url": "https://www.atelier-lumieres.com",
     "tags": ["Museum", "Culture", "Indoors"],
@@ -92,7 +92,7 @@
   {
     "name": "Jardin des Tuileries",
     "location": "Pl. de la Concorde, 75001 Paris",
-    "image": "/images/tuileries.jpg",
+    "image": "/images/activities/tuileries.jpg",
     "description": "The Tuileries Garden is a public garden located between the Louvre and the Place de la Concorde in the 1st arrondissement of Paris, France. Created by Catherine de' Medici as the garden of the Tuileries Palace in 1564, it became a public park after the French Revolution.",
     "url": "https://en.parisinfo.com/paris-museum-monument/71304/Jardin-des-Tuileries",
     "tags": ["Culture", "Outdoors", "Walks", "Chill", "Romantic", "Free", "Touristic", "Landscape"],
@@ -101,7 +101,7 @@
   {
     "name": "La Coulée Verte",
     "location": "1 Coulée Verte René-Dumont, 75012 Paris",
-    "image": "/images/coulee-verte.jpg",
+    "image": "/images/activities/coulee-verte.jpg",
     "description": "The Coulée verte René-Dumont or Promenade plantée René-Dumont is a 4.7 km elevated linear park built on top of obsolete railway infrastructure in the 12th arrondissement of Paris, France. It was inaugurated in 1993.",
     "url": "https://www.paris.fr/pages/de-bastille-a-vincennes-par-la-coulee-verte-4932",
     "tags": ["Outdoors", "Walks", "Chill", "Romantic", "Free"],
@@ -110,7 +110,7 @@
   {
     "name": "La Gare / Le Gore",
     "location": "1 Av. Corentin Cariou, 75019 Paris",
-    "image": "/images/lagarelegore.jpg",
+    "image": "/images/activities/lagarelegore.jpg",
     "description": "Offbeat gathering place with graffiti decor & live bands, plus drinks, pub eats & outdoor tables.",
     "url": "https://www.instagram.com/la_gare_le_gore/?hl=en",
     "tags": ["Clubbing", "Open Minded", "Drinks", "Ambiance", "Music", "Secret Place"],
@@ -119,7 +119,7 @@
   {
     "name": "Badaboum",
     "location": "2 bis Rue des Taillandiers, 75011 Paris",
-    "image": "/images/badaboum.jpg",
+    "image": "/images/activities/badaboum.jpg",
     "description": "Upbeat destination with a club & concert hall for parties, DJ sets & live music.",
     "url": "https://www.instagram.com/badaboum.paris/?hl=en",
     "tags": ["Clubbing", "Open Minded", "Drinks", "Ambiance", "Music", "Secret Place"],
@@ -128,7 +128,7 @@
   {
     "name": "Opéra Garnier",
     "location": "Pl. de l'Opéra, 75009 Paris",
-    "image": "/images/garnier.jpg",
+    "image": "/images/activities/garnier.jpg",
     "description": "The Palais Garnier, also known as Opéra Garnier, is a 1,979-seat opera house at the Place de l'Opéra in the 9th arrondissement of Paris, France. It was built for the Paris Opera from 1861 to 1875 at the behest of Emperor Napoleon III.",
     "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
     "tags": ["Touristic", "Music", "Show", "Culture", "Art", "Indoors"],
@@ -137,7 +137,7 @@
   {
     "name": "Tour Eiffel",
     "location": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
-    "image": "/images/toureiffel.jpg",
+    "image": "/images/activities/toureiffel.jpg",
     "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel. Locally nicknamed La dame de fer, it was constructed  as the centerpiece of the World's Fair.",
     "url": "https://www.toureiffel.paris/en",
     "tags": ["Touristic", "Fancy", "Culture", "Romantic", "Outdoors"],

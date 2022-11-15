@@ -2,23 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 18vh;
 }
 
 #home img {
-  width: 70vw;
+  width: 65vw;
 }
 
 #home h1 {
   text-align: center;
   font-size: 2rem;
-  margin: 1.5rem;
+  margin: 3vh;
   color: var(--customblack);
 }
 
 #home p {
   /* text-align: justify; */
   font-size: 1rem;
-  margin: 1rem 2rem;
+  margin: 2.2vh 2rem;
   color: var(--customblack);
 }
 
@@ -29,9 +30,10 @@
 
 #get-started {
   background-color: var(--customprimary);
-  padding: 1.2rem 2.5rem;
+  padding: 1.1rem 2.5rem;
   border-radius: 2rem;
   color: white;
-  font-size: 1.2rem;
-  margin: 2.5rem 0 0 0;
+  font-size: 1.1rem;
+  margin: 4vh 0 0 0;
+  cursor: pointer;
 }

@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
+const { isExperiencedUser } = require("../middlewares/middlewares");
 
 //HOME
-router.get("/", (req, res) =>
-  res.render("home", { styleName: "home", scriptName: "home" })
-);
+
+router.get("/", isExperiencedUser, (req, res) => res.render("home", { styleName: "home", scriptName: "home" }));
 
 // INTERESTS
 router.get("/interests", (req, res) =>
