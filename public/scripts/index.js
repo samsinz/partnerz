@@ -6,4 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     burgerAnim.classList.toggle("open");
     menu.classList.toggle("open");
   });
+
+  document.querySelector("#logo-nav").addEventListener("click", (event) => {
+    window.location = "/";
+  });
 });
