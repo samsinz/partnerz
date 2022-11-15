@@ -10,10 +10,20 @@ router.get("/", isExperiencedUser, (req, res) =>
   res.render("home", { styleName: "home", scriptName: "home" })
 );
 
+
 // INTERESTS
 router.get("/interests", (req, res) =>
   res.render("interests", { styleName: "interests", scriptName: "interests" })
 );
+
+router.post('/interests', async (req, res) => {
+  const {tags} = req.body
+  let arrayTags = tags.split(",")
+  const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
+  const temporaryUser = await User.create({tags: arrayTags, email})
+  res.locals.temporaryUser = temporaryUser;
+  res.redirect('/activities')
+})
 
 // PROFILE
 router.get("/profile", (req, res) => {
