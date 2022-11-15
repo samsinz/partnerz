@@ -1,0 +1,24 @@
+<div id="activities">
+  <h2>Based on your profile, here are 3 activities you could like.</h2>
+
+  {{#each activities}}
+  <div class="activity-card">
+
+    <div id="image">
+      <img src="{{this.image}}" alt="{{this.name}} image" />
+      <img src="/images/activities/info-btn.svg" alt="">
+    </div>
+
+    <p>{{this.name}}</p>
+    <p>{{this.location}}</p>
+
+    <div id="tags">
+      <span>{{this.tags.[0]}}</span>
+      <span>{{this.tags.[1]}}</span>
+      <span>{{this.tags.[2]}}</span>
+    </div>
+
+  </div>
+  {{/each}}
+
+</div>
