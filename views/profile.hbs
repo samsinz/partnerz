@@ -1,4 +1,142 @@
 <div class="profile">
+  <img class="image" src="{{picture}}" />
+  <form action="/profile" method="post" enctype="multipart/form-data">
+
+    <svg
+      class="updateImage"
+      width="31"
+      height="31"
+      viewBox="0 0 31 31"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="15.5"
+        cy="15.5"
+        r="14"
+        fill="#FF005C"
+        stroke="white"
+        stroke-width="3"
+      ></circle>
+      <path
+        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+    <p class="name">{{currentUser.name}}, {{age}}</p>
+
+    <input type="file" name="profilePicture" id="profilePicture" />
+
+    <textarea
+      type="text"
+      id="bio"
+      name="bio"
+      placeholder="You can write more about you to find your partnerz!"
+      minlength="4"
+      maxlength="250"
+      size="11"
+      cols="3"
+      rows="5"
+      value="{{currentUser.bio}}"
+    >{{currentUser.bio}}
+    </textarea>
+
+    <div class="tags">
+      tags
+    </div>
+
+
+    
+
+  
+      <button>Update profile→</button>
+    </div>
+
+  </form>
+
+  <hr />
+  <div class="deleate">
+    <svg
+      class="buttonDeleate"
+      width="60"
+      height="60"
+      viewBox="0 0 60 60"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g filter="url(#filter0_d_70_1152)">
+        <circle cx="30" cy="30" r="20" fill="#FF005C"></circle>
+      </g>
+      <line
+        x1="35.8377"
+        y1="35.4763"
+        x2="24.524"
+        y2="24.1626"
+        stroke="white"
+        stroke-width="3"
+        stroke-linecap="round"
+      ></line>
+      <line
+        x1="24.5239"
+        y1="34.8374"
+        x2="35.8376"
+        y2="23.5237"
+        stroke="white"
+        stroke-width="3"
+        stroke-linecap="round"
+      ></line>
+      <defs>
+        <filter
+          id="filter0_d_70_1152"
+          x="0"
+          y="0"
+          width="60"
+          height="60"
+          filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB"
+        >
+          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          ></feColorMatrix>
+          <feOffset></feOffset>
+          <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+          <feComposite in2="hardAlpha" operator="out"></feComposite>
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+          ></feColorMatrix>
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_70_1152"
+          ></feBlend>
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="effect1_dropShadow_70_1152"
+            result="shape"
+          ></feBlend>
+        </filter>
+      </defs>
+    </svg>
+    <div class="bottom">
+      <p id="deleate">Delete my account</p>
+      <p id="action">Be careful, this action is irreversible</p>
+
+    </div>
+
+  </div>
+
+</div>
+
+{{!-- <div class="profile">
 
   <div class="profilePicture">
 
@@ -30,13 +168,13 @@
     </svg>
   </div>
 
-  <p class="name">{{currentUser.name}}, {{age}}</p>
+  
 
   <div class="bio">
 
     <form action="/profile" method="post">
 
-      <input
+      <textarea
         type="text"
         id="bio"
         name="bio"
@@ -47,7 +185,8 @@
         cols="3"
         rows="5"
         value="{{currentUser.bio}}"
-      />
+      >{{currentUser.bio}}
+      </textarea>
       <div id="button">
         <button><svg
             width="24"
@@ -165,12 +304,12 @@
         </filter>
       </defs>
     </svg>
-    <div clas="bottom">
-      <p>Delete my account</p>
-      <p>Be careful, this action is irreversible</p>
+    <div class="bottom">
+      <p id="deleate">Delete my account</p>
+      <p id="action">Be careful, this action is irreversible</p>
 
     </div>
 
   </div>
 
-</div>
+</div> --}}

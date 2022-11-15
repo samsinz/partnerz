@@ -9,11 +9,11 @@
     {{! <script type="text/javascript" src="/scripts/APIHandler.js"></script> }}
 
     {{! general script that applies to all pages }}
-    <script type="text/javascript" src="/scripts/index.js"></script>
+    <script type="module" src="/scripts/index.js"></script>
 
     {{! page-specific script, to link in routes }}
     {{#if scriptName}}
-      <script type="text/javascript" src="/scripts/{{scriptName}}.js"></script>
+      <script type="module" src="/scripts/{{scriptName}}.js"></script>
     {{/if}}
 
     {{! general css file }}

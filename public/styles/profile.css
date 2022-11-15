@@ -1,15 +1,15 @@
 img {
-  width: 10rem;
-  height: 10rem;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
+  margin-left: 5rem;
 }
-.profilePicture {
-  text-align: center;
-}
+
 .profile {
-  margin-top: 12vh;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-top: 16vh;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .name {
   margin-top: 3%;
@@ -19,29 +19,23 @@ img {
 }
 
 #bio {
-  height: 10rem;
-  width: 22rem;
-  margin-left: 2%;
-  margin-right: 2%;
+  height: 9rem;
+  width: 100%;
   margin-top: 2%;
 }
 
-input {
+textarea {
   border-style: none;
-  padding: 2%;
+  padding-left: 2%;
+  background-color: var(--customgrey);
+  border-radius: 1rem;
+  overflow: hidden;
 }
 
-input[name="bio"] {
-  justify-content: start;
+textare[name="bio"] {
+  padding-top: 2%;
 }
 
-button {
-  border-radius: 100%;
-  width: 2.8rem;
-  height: 2.8rem;
-  border: none;
-  background-color: var(--customprimary);
-}
 #button {
   display: flex;
   justify-content: right;
@@ -49,7 +43,7 @@ button {
 
 .tags {
   margin-top: 2%;
-  background-color: burlywood;
+
   height: 5rem;
 }
 .update {
@@ -63,9 +57,44 @@ button {
 }
 
 .bottom {
-  margin-left: 5%;
+  padding-top: 5%;
+  margin-left: 6rem;
+  text-align: start;
 }
 
 .buttonDeleate {
   position: absolute;
+}
+
+.buttonDeleate svg {
+  width: 70%;
+}
+
+#deleate {
+  color: #ff005c;
+}
+
+#action {
+  color: grey;
+  font-size: smaller;
+  font-style: oblique;
+}
+
+#profilePicture {
+  display: none;
+}
+
+button {
+  background-color: var(--customprimary);
+  padding: 1.1rem 2.5rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.1rem;
+  margin-left: 3rem;
+  cursor: pointer;
+  width: 70%;
+}
+
+hr {
+  margin-top: 2%;
 }

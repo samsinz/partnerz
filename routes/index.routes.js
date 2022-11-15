@@ -2,6 +2,7 @@ const express = require("express");
 const User = require("../models/User.model");
 const router = express.Router();
 const { isExperiencedUser } = require("../middlewares/middlewares");
+const Uploader = require("./../config/cloudinary.config");
 
 //HOME
 
@@ -27,7 +28,6 @@ router.post('/interests', async (req, res) => {
 // PROFILE
 router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
-
   // POUR AVOIR AGE DES USERS
   let birthday = req.session.currentUser.birthday;
   let date = new Date(birthday);
@@ -40,15 +40,33 @@ router.get("/profile", (req, res) => {
 
   let picture = req.session.currentUser.profilePicture;
 
-  res.render("profile", { age, picture, bio, styleName: "profile" });
+  res.render("profile", {
+    age,
+    picture,
+    bio,
+    styleName: "profile",
+    scriptName: "profile",
+  });
 });
 
-router.post("/profile", async (req, res) => {
+router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
   const { bio } = req.body;
+  let profilePicture;
+  console.log(req.file);
+  if (req.file) {
+    profilePicture = req.file.path;
+  }
   const id = req.session.currentUser._id;
+  const updatedUser = await User.findByIdAndUpdate(
+    id,
+    { profilePicture, bio },
+    { new: true }
+  );
+  console.log(updatedUser);
+  //const updatedUser = await User.findByIdAndUpdate(id, { bio }, { new: true });
 
-  const updatedUser = await User.findByIdAndUpdate(id, { bio }, { new: true });
   req.session.currentUser = updatedUser;
+
   res.redirect("/profile");
 });
 
