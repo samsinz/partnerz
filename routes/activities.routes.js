@@ -16,7 +16,7 @@ function compare(a, b) {
 
 router.get("/", async (req, res) => {
 
-  console.log(req.session)
+
 
   let userTags;
 
