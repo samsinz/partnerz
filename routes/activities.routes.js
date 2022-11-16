@@ -16,7 +16,15 @@ function compare (a,b){
 
 router.get("/", async (req, res) => {
   console.log(req.session)
-  const userTags = req.session.temporaryUser?.tags
+
+  let userTags;
+
+  if (req.session.currentUser){
+    userTags = req.session.currentUser.tags
+  } else {
+    userTags = req.session.temporaryTags
+  }
+
   console.log(userTags)
 
   // listOfActivities = await Activity.find({tags: userTags[0]});
@@ -46,8 +54,8 @@ router.get("/", async (req, res) => {
     listOfActivities[i].matchPercentage = listOfActivitiesObject[i].num
   }
 
-  await User.findByIdAndUpdate(req.session.temporaryUser._id, {matchedActivities: listOfActivities})
-
+  // await User.findByIdAndUpdate(req.session.temporaryUser._id, {matchedActivities: listOfActivities})
+  req.session.temporaryMatchedActivities = listOfActivities;
 
 
 

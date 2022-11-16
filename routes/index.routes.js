@@ -21,14 +21,15 @@ router.post('/interests', async (req, res) => {
 
   console.log(tags);
   let arrayTags = tags.split(",")
-  const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
+  // const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
 
   req.session.temporaryTags = arrayTags
-  User.create({tags: arrayTags, email}).then(temporaryUser => {
-    req.session.temporaryUser = temporaryUser;
-    console.log(temporaryUser)
-    res.redirect('/activities')
-  }).catch(e => console.log(e))
+  // User.create({tags: arrayTags, email}).then(temporaryUser => {
+  //   req.session.temporaryUser = temporaryUser;
+  //   console.log(temporaryUser)
+  //   res.redirect('/activities')
+  // }).catch(e => console.log(e))
+  res.redirect('/activities')
 
 })
 
