@@ -38,6 +38,8 @@ router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
   const tags = req.session.currentUser.tags;
   console.log(tags)
+
+  
   // POUR AVOIR AGE DES USERS
   let birthday = req.session.currentUser.birthday;
   let date = new Date(birthday);
@@ -81,6 +83,14 @@ router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
 
   res.redirect("/profile");
 });
+
+
+router.get('/profile/delete/:id', async (req, res) => {
+  console.log(req.params.id)
+ await User.findByIdAndRemove(req.params.id)
+ req.session.destroy();
+ res.redirect('/')
+})
 
 // ACTIVITIES
 router.use("/activities", require("./activities.routes"));

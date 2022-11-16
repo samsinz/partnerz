@@ -1,0 +1,80 @@
+.image {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.image img {
+  flex-shrink: 0;
+  max-height: 45vh;
+}
+
+.content {
+  width: 85vw;
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.name {
+  margin-bottom: 1rem;
+}
+
+.name h2 {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--customblack);
+}
+
+.name p {
+  color: var(--customblack);
+}
+
+.name a {
+  color: var(--customprimary);
+}
+
+.description {
+  color: #717171;
+}
+
+.tags {
+  margin: 1rem 0;
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-shrink: inherit;
+}
+
+.tags span {
+  flex: 3 3 auto;
+  font-size: 0.8rem;
+  text-align: center;
+  margin: 0.3rem 0.3rem 0 0;
+  color: var(--customprimary);
+  font-weight: 500;
+  padding: 0.3rem 1rem;
+  border: 0.15rem solid var(--customprimary);
+  border-radius: 0.3rem;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.button button {
+  border: none;
+  border-radius: 10rem;
+  font-size: 1rem;
+  width: fit-content;
+  color: white;
+  background-color: var(--customprimary);
+  padding: 1rem 2rem;
+  margin-bottom:1rem;
+}

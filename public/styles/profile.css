@@ -1,114 +1,116 @@
-img {
-  width: 9rem;
-  height: 9rem;
-  border-radius: 50%;
-  margin-left: 5rem;
+.profile {
+  width:85vw;
+  margin: 0 auto;
 }
 
-.profile {
-  margin-top: 16vh;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
+h2 {
+  text-transform:capitalize;
+  margin-bottom:2rem;
 }
-.name {
-  margin-top: 3%;
-  font-weight: 600;
-  margin-left: 5%;
-  font-size: 25px;
+
+input {
+  display:none;
+}
+
+.profile-pic-area {
+  margin-top:6rem;
+  height:11rem;
+  display:flex;
+  justify-content: center;
+}
+
+.profile-pic-area img {
+    position:absolute;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+}
+
+.profile-pic-area svg {
+  position:relative;
+  top: 7rem;
+  left:3.5rem;
 }
 
 #bio {
-  height: 9rem;
+  height: 12rem;
   width: 100%;
-  margin-top: 2%;
 }
 
 textarea {
+  font-size:1rem;
+  color:grey;
   border-style: none;
   padding-left: 2%;
-  background-color: var(--customgrey);
+  background-color: #f4f4f4;
   border-radius: 1rem;
-  overflow: hidden;
   resize: none;
   padding-top: 4%;
   
 }
 
+.tags-area {
+margin:0.5rem 0 4rem;
 
-#button {
+}
+.tags-area .tags{
+
+  margin: 1.5vh 0 0 0;
   display: flex;
-  justify-content: right;
+  flex-wrap: wrap;
+  flex-shrink: inherit;
 }
 
-.tags {
-  margin-top: 2%;
+.tags-area .tags span {
+  flex: 3 3 auto;
+  font-size: 0.8rem;
+  margin: 5 0.3rem 0 0;
+  color: var(--customprimary);
+  font-weight: 500;
+  padding: 0.3rem 0.4rem;
+  border: 0.15rem solid var(--customprimary);
+  border-radius: 0.3rem;
 
-  height: 5rem;
-}
-.update {
-  margin-left: 20rem;
-}
-
-.updateImage {
-  position: absolute;
-  top: 13.2rem;
-  left: 14rem;
 }
 
-.bottom {
-  padding-top: 5%;
-  margin-left: 6rem;
-  text-align: start;
+.tags-area label {
+  position:relative;
+  top:3rem;
+  left:85%;
 }
 
-.buttonDeleate {
-  position: absolute;
+.button {
+  display:flex;
+  justify-content: center;
 }
-
-.buttonDeleate svg {
-  width: 70%;
-}
-
-#deleate {
-  color: #ff005c;
-}
-
-#action {
-  color: grey;
-  font-size: smaller;
-  font-style: oblique;
-}
-
-#profilePicture {
-  display: none;
-}
-
-button {
-  background-color: var(--customprimary);
-  padding: 1.1rem 2.5rem;
-  border-radius: 2rem;
-  color: white;
-  font-size: 1.1rem;
-  margin-left: 3rem;
-  cursor: pointer;
-  width: 70%;
+.button button {
+  font-size:1rem;
+  background-color:var(--customprimary);
+  color:white;
+  padding:0.8rem 2rem ;
+  border:none;
+  border-radius:5rem;
 }
 
 hr {
-  margin-top: 2%;
+  margin: 3rem 0 1rem;
 }
 
+.delete-area {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
 
-.tags{
-  background-color: #ff005c;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  
 }
 
-.tags p {
-  background-color: aliceblue;
-  width: 4rem;
+.delete-area #delete {
+  color : var(--customprimary);
+}
+
+.delete-area #warning {
+  color : grey;
+}
+
+#id{
+  display: none;
 }
