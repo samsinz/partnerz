@@ -1,6 +1,10 @@
 const router = require("express").Router();
 const Activity = require("../models/Activity.model");
 const User = require("../models/User.model");
+const Match = require("../models/Match.model");
+const Discussion = require("../models/Discussion.model");
+const Message = require("../models/Message.model");
+
 
 function compare(a, b) {
   if (a.num < b.num) {
@@ -152,13 +156,31 @@ const onePartner = await User.findById(req.params.partnerId);
       onePartner,
       age,
       styleName: "partner-details",
-      // scriptName:"user-details",
+      scriptName:"partner-details",
     });
   });
 // ACTIVITIES SEND REQUEST
 
 router.get("/:activityId/partners/:partnerId/request", async (req, res) => {
-  res.render("activities/send-request");
+  const partner = await User.findById(req.params.partnerId)
+  const activity = await Activity.findById(req.params.activityId)
+  res.render("activities/send-request", {currentUser: req.session.currentUser, partner, activity});
 });
+
+router.post("/:activityId/partners/:partnerId/request", async (req, res) => {
+  console.log('bonjour')
+  const messageContent = req.body.message;
+  const sender = req.session.currentUser._id
+  const messageObj = await Message.create({sender, content: messageContent})
+  const receiver = req.params.partnerId
+  const activity = req.params.activityId
+  const status = 'Pending'
+  const discussion = await Discussion.create({users: [sender, receiver]})
+  await Discussion.findByIdAndUpdate(discussion._id, {$push: {messages: messageObj}})
+  const match = await Match.create({sender, receiver, discussion, activity, status})
+  await User.findByIdAndUpdate(req.session.currentUser._id, {$push: {matches: match}})
+  await User.findByIdAndUpdate(req.params.partnerId, {$push: {matches: match}})
+  res.redirect('/activities')
+})
 
 module.exports = router;

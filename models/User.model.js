@@ -75,6 +75,13 @@ const UserSchema = {
       },
     },
   ],
+
+  matches : [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Match"
+    }
+  ]
 };
 
 module.exports = model("User", UserSchema);
