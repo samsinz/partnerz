@@ -169,7 +169,7 @@ const onePartner = await User.findById(req.params.partnerId);
 router.get("/:activityId/partners/:partnerId/request", async (req, res) => {
   const partner = await User.findById(req.params.partnerId)
   const activity = await Activity.findById(req.params.activityId)
-  res.render("activities/send-request", {currentUser: req.session.currentUser, partner, activity});
+  res.render("activities/send-request", {currentUser: req.session.currentUser, partner, activity , styleName : "send-request", scriptName : "send-request"});
 });
 
 router.post("/:activityId/partners/:partnerId/request", async (req, res) => {
