@@ -35,6 +35,8 @@ router.post('/interests', async (req, res) => {
 // PROFILE
 router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
+  const tags = req.session.currentUser.tags;
+  console.log(tags)
   // POUR AVOIR AGE DES USERS
   let birthday = req.session.currentUser.birthday;
   let date = new Date(birthday);
@@ -51,6 +53,7 @@ router.get("/profile", (req, res) => {
     age,
     picture,
     bio,
+    tags,
     styleName: "profile",
     scriptName: "profile",
   });
@@ -58,6 +61,7 @@ router.get("/profile", (req, res) => {
 
 router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
   const { bio } = req.body;
+  
   let profilePicture;
   console.log(req.file);
   if (req.file) {

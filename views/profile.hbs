@@ -45,7 +45,9 @@
     </textarea>
 
     <div class="tags">
-      tags
+      {{#each currentUser.tags}}
+      <p>{{this}}</p>
+      {{/each}}
     </div>
 
 
