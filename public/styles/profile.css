@@ -62,7 +62,6 @@ margin:0.5rem 0 4rem;
 }
 
 .tags-area .tags span {
-  flex: 3 3 auto;
   font-size: 0.8rem;
   margin: 5 0.3rem 0 0;
   color: var(--customprimary);
@@ -92,7 +91,7 @@ margin:0.5rem 0 4rem;
   border-radius:5rem;
 }
 
-hr {
+hr #separator {
   margin: 3rem 0 1rem;
 }
 
