@@ -1,0 +1,34 @@
+<div id="send-request">
+
+<div id="double-image">
+    <img src="{{currentUser.profilePicture}}" alt="current user profile">
+    <img src="{{partner.profilePicture}}" alt="partner profile">
+</div>
+
+<h2>Ask {{partner.name}} out</h2>
+
+<div id="activity-card">
+    <img src="{{activity.image}}" alt="activity image">
+    <div>
+        <h3>{{activity.name}}</h3>
+        <p>{{activity.description}}</p>
+    </div>
+</div>
+
+<h3>Your message</h3>
+
+<form action="request" method="post">
+
+    <textarea name="message" id="message" cols="30" rows="10">
+
+
+    </textarea>
+
+
+    <button id="button">submit</button>
+
+</form>
+
+<img id='next' src="/images/signup/next.svg" alt="">
+
+</div>
