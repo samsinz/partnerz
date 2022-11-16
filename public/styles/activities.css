@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 16vh;
+  margin-top: 14vh;
 }
 
 h2 {
@@ -67,3 +67,12 @@ h2 {
   border: 0.15rem solid var(--customprimary);
   border-radius: 0.3rem;
 }
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
