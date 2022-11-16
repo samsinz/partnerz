@@ -58,9 +58,6 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(userInterestsArr);
 
         let button = document.querySelector("button");
-        button.addEventListener("click", () => {
-          window.location = "/activities";
-        });
       } else {
         tagUnique.classList.remove("tag-selected");
         userInterestsArr = userInterestsArr.filter(

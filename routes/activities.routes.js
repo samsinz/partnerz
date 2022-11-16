@@ -15,12 +15,13 @@ function compare (a,b){
 // ACTIVITIES
 
 router.get("/", async (req, res) => {
-  const userTags = req.session.temporaryUser.tags
+  console.log(req.session)
+  const userTags = req.session.temporaryUser?.tags
   console.log(userTags)
 
   // listOfActivities = await Activity.find({tags: userTags[0]});
   let listOfActivitiesDuplicate = [];
-  for (let i = 0; i < userTags.length; i++){
+  for (let i = 0; i < userTags?.length; i++){
     listOfActivitiesDuplicate = listOfActivitiesDuplicate.concat(await Activity.find({tags: userTags[i]}))
   }
 
