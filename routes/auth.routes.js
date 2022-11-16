@@ -42,6 +42,9 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
       tags: req.session.temporaryTags
     });
 
+    const targetUser = await User.findOne({ email });
+    req.session.currentUser = targetUser;
+
     // redirect to home page
     res.redirect("/");
   } catch (error) {
