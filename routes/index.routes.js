@@ -18,10 +18,14 @@ router.get("/interests", (req, res) =>
 
 router.post('/interests', async (req, res) => {
   const {tags} = req.body
+  console.log('tags ' + tags)
   let arrayTags = tags.split(",")
   const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
   const temporaryUser = await User.create({tags: arrayTags, email})
+  console.log('temporaryUser '+temporaryUser)
   req.session.temporaryUser = temporaryUser;
+  console.log('req.session.temporaryUser '+req.session.temporaryUser)
+
   console.log(req.session.temporaryUser)
   res.redirect('/activities')
 })

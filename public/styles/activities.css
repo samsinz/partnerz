@@ -36,8 +36,8 @@ h2 {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  width: 10vw;
-  height: 10vw;
+  width: 7vw;
+  height: 7vw;
 }
 
 
@@ -76,3 +76,14 @@ h2 {
   display: none;
 }
 
+#button {
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+#match-percentage p{
+  font-size: 0.8rem;
+  margin: 1vh 0 0 3vw;
+  color: var(--customprimary);
+  font-weight: 500;
+}
