@@ -2,8 +2,14 @@
   
   <form action="/profile" method="post" enctype="multipart/form-data">
 
+    <div class = "profile-pic-area">
+
+      <img src="{{picture}}" />
+    <label>
+    <input type="file" name="profilePicture" id="profilePicture" accept="image/" />
+    
     <svg
-      class="updateImage"
+    class="updateImage"
       width="31"
       height="31"
       viewBox="0 0 31 31"
@@ -25,14 +31,15 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       ></path>
-    </svg>
-    
+  </svg>
+  </label>
 
-    <input type="file" name="profilePicture" id="profilePicture" accept="image/" />
-    <img id="image" src="{{picture}}" />
+  </div>
 
-<p class="name">{{currentUser.name}}, {{age}}</p>
-    <textarea
+
+<h2>{{currentUser.name}}, {{age}}</h2>
+   
+<textarea
       type="text"
       id="bio"
       name="bio"
@@ -46,15 +53,17 @@
     >{{currentUser.bio}}
     </textarea>
 
-    <div id="tags">
+    
+  <div class = "tags-area">
+    <div class="tags">
       {{#each currentUser.tags}}
       <span>{{this}}</span>
-      {{/each}}
-      
+      {{/each}}  
     </div>
 
+
+<label id="edit">
     <svg
-    id='edit'
       width="31"
       height="31"
       viewBox="0 0 31 31"
@@ -76,22 +85,26 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       ></path>
-    </svg>
-    
+  </svg>
+  </label>
 
-
-    
-
-  
-      <button>Update profile→</button>
+  </div>
+  <div class="button">
+      <button>Update profile &nbsp; &nbsp;
+        <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.25923 11.2102L6.23651 10.1989L9.78764 6.64773H0.867188V5.17045H9.78764L6.23651 1.625L7.25923 0.607954L12.5604 5.90909L7.25923 11.2102Z" fill="white"/>
+</svg></button>
     </div>
 
   </form>
 
-  <hr />
-  <div class="deleate">
+  <hr/>
+
+
+  <div class="delete-area">
+
     <svg
-      class="buttonDeleate"
+      class="delete"
       width="60"
       height="60"
       viewBox="0 0 60 60"
@@ -157,190 +170,14 @@
         </filter>
       </defs>
     </svg>
-    <div class="bottom">
-      <p id="deleate">Delete my account</p>
-      <p id="action">Be careful, this action is irreversible</p>
-
+    
+    
+    
+    <div class="delete-text">
+      <p id="delete">Delete my account</p>
+      <p id="warning">Be careful, this action is irreversible</p>
     </div>
 
   </div>
 
 </div>
-
-{{!-- <div class="profile">
-
-  <div class="profilePicture">
-
-    <img class="image" src="{{picture}}" />
-
-    <svg
-      class="updateImage"
-      width="31"
-      height="31"
-      viewBox="0 0 31 31"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        cx="15.5"
-        cy="15.5"
-        r="14"
-        fill="#FF005C"
-        stroke="white"
-        stroke-width="3"
-      ></circle>
-      <path
-        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-    </svg>
-  </div>
-
-  
-
-  <div class="bio">
-
-    <form action="/profile" method="post">
-
-      <textarea
-        type="text"
-        id="bio"
-        name="bio"
-        placeholder="You can write more about you to find your partnerz!"
-        minlength="4"
-        maxlength="250"
-        size="11"
-        cols="3"
-        rows="5"
-        value="{{currentUser.bio}}"
-      >{{currentUser.bio}}
-      </textarea>
-      <div id="button">
-        <button><svg
-            width="24"
-            height="23"
-            viewBox="0 0 24 23"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M2.44629 9.85376C1.61786 9.85376 0.946289 10.5253 0.946289 11.3538C0.946289 12.1822 1.61786 12.8538 2.44629 12.8538V9.85376ZM22.6277 12.4144C23.2135 11.8286 23.2135 10.8789 22.6277 10.2931L13.0818 0.747158C12.496 0.161372 11.5463 0.161372 10.9605 0.747158C10.3747 1.33294 10.3747 2.28269 10.9605 2.86848L19.4458 11.3538L10.9605 19.839C10.3747 20.4248 10.3747 21.3746 10.9605 21.9604C11.5463 22.5461 12.496 22.5461 13.0818 21.9604L22.6277 12.4144ZM2.44629 12.8538H21.5671V9.85376H2.44629V12.8538Z"
-              fill="white"
-            ></path>
-          </svg></button>
-      </div>
-
-    </form>
-  </div>
-
-  <div class="tags">
-    sss
-  </div>
-  <div class="update">
-    <svg
-      width="31"
-      height="31"
-      viewBox="0 0 31 31"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        cx="15.5"
-        cy="15.5"
-        r="14"
-        fill="#FF005C"
-        stroke="white"
-        stroke-width="3"
-      ></circle>
-      <path
-        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-    </svg>
-
-  </div>
-
-  <hr />
-  <div class="deleate">
-    <svg
-      class="buttonDeleate"
-      width="60"
-      height="60"
-      viewBox="0 0 60 60"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g filter="url(#filter0_d_70_1152)">
-        <circle cx="30" cy="30" r="20" fill="#FF005C"></circle>
-      </g>
-      <line
-        x1="35.8377"
-        y1="35.4763"
-        x2="24.524"
-        y2="24.1626"
-        stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-      ></line>
-      <line
-        x1="24.5239"
-        y1="34.8374"
-        x2="35.8376"
-        y2="23.5237"
-        stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-      ></line>
-      <defs>
-        <filter
-          id="filter0_d_70_1152"
-          x="0"
-          y="0"
-          width="60"
-          height="60"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset></feOffset>
-          <feGaussianBlur stdDeviation="5"></feGaussianBlur>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_70_1152"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_70_1152"
-            result="shape"
-          ></feBlend>
-        </filter>
-      </defs>
-    </svg>
-    <div class="bottom">
-      <p id="deleate">Delete my account</p>
-      <p id="action">Be careful, this action is irreversible</p>
-
-    </div>
-
-  </div>
-
-</div> --}}
