@@ -18,6 +18,8 @@
   margin-right: auto;
 }
 
+
+
 .name {
   margin-bottom: 1rem;
 }
@@ -31,6 +33,10 @@
 
 .name p {
   color: var(--customblack);
+}
+
+.name a {
+  color: var(--customprimary);
 }
 
 .description {
@@ -55,10 +61,6 @@
   padding: 0.3rem 1rem;
   border: 0.15rem solid var(--customprimary);
   border-radius: 0.3rem;
-}
-
-.link a {
-  color: var(--customprimary);
 }
 
 .button {
