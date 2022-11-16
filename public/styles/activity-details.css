@@ -8,7 +8,9 @@
 
 .image img {
   flex-shrink: 0;
-  max-height: 45vh;
+  width:100%;
+  height: 45vh;
+  object-fit:cover;
 }
 
 .content {
