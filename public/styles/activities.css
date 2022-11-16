@@ -87,3 +87,7 @@ h2 {
   color: var(--customprimary);
   font-weight: 500;
 }
+
+#card-id {
+  display:none;
+}
