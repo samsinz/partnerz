@@ -21,7 +21,16 @@ router.get("/", async (req, res) => {
   let userTags;
 
   if (req.session.currentUser){
-    userTags = req.session.currentUser.tags
+
+    if(req.session.temporaryTags){
+
+      const updatedUser =  await User.findByIdAndUpdate(req.session.currentUser._id, {tags: req.session.temporaryTags}, { new: true })
+      req.session.currentUser = updatedUser;
+
+    }
+      userTags = req.session.currentUser.tags
+  
+   
   } else {
     userTags = req.session.temporaryTags
   }

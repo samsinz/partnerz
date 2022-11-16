@@ -38,6 +38,8 @@ router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
   const tags = req.session.currentUser.tags;
   console.log(tags)
+
+  
   // POUR AVOIR AGE DES USERS
   let birthday = req.session.currentUser.birthday;
   let date = new Date(birthday);
