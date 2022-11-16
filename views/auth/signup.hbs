@@ -1,25 +1,44 @@
-<form
-  action="/auth/signup"
-  method="post"
-  class="margin"
-  enctype="multipart/form-data"
->
+<div id="signup">
 
-  <label for="name">Name:</label>
-  <input type="text" name="name" />
+  <h2>Create an account</h2>
+  <h3>Already have an account? <a href="/auth/login">Log in</a></h3>
 
-  <label for="birthday">Date of birth:</label>
-  <input type="date" name="birthday" />
+  <form action="/auth/signup" method="post" enctype="multipart/form-data">
 
-  <label for="email">Email:</label>
-  <input type="email" name="email" />
 
-  <label for="password">Password:</label>
-  <input type="password" name="password" />
+    <div id="name-dob">
+      <div id="name-subsection">
+      <p><label for="name">YOUR NAME</label></p>
+      <input type="text" name="name" />
+      </div>
+<div>
+      <p><label for="birthday">DATE OF BIRTH</label></p>
+      <input type="date" name="birthday" />
+      </div>
+    </div>
 
-  <label for="profilePicture">Profile picture</label>
-  <input type="file" name="profilePicture" id="profilePicture" />
+    <p><label for="email">EMAIL</label></p>
+    <input type="email" name="email" />
 
-  <button>Sign up</button>
-</form>
-<p>{{errorMessage}}</p>
+    <p><label for="password">PASSWORD</label></p>
+    <input type="password" name="password" id='password'/>
+
+    <p><label for="password2">CONFIRM PASSWORD</label></p>
+    <input type="password" name="password2" id='password2'/>
+
+    <p id="match-error">Passwords don't match.</p>
+
+    <input type="file" accept="image/*" name="profilePicture" id="profilePicture" />
+
+    <button id="validate-sign-up">Sign up</button>
+  </form>
+
+  <div id="image-handler">
+    <div id="profile-pic"></div>
+    <div id="upload-image">Upload a profile picture</div>
+  </div>
+  
+  <p id="any-error">{{errorMessage}}</p>
+
+  <img id='next' src="/images/signup/next.svg" alt="Next">
+</div>

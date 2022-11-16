@@ -1,10 +1,24 @@
-<form action="/auth/login" method="post" class="margin">
+<div id="login">
 
-  <label for="email">Email:</label>
-  <input type="email" name="email" placeholder="partnerz@partnerz.com" />
+   <h2>Log in</h2>
+  <h3>Don't have an account? <a href="/auth/signup">Sign up</a></h3>
 
-  <label for="password">Password:</label>
-  <input type="password" name="password" placeholder="********" />
-  <button>Log in</button>
+
+<form action="/auth/login" method="post">
+
+  <p><label for="email">EMAIL</label></p>
+  <input type="email" name="email"/>
+
+  <p><label for="password">PASSWORD</label></p>
+  <input type="password" name="password" />
+  
+  <button id="validate-log-in">Log in</button>
+
 </form>
-<p>{{errorMessage}}</p>
+
+
+  <p id="any-error">{{errorMessage}}</p>
+
+  <img id='next' src="/images/signup/next.svg" alt="Next">
+
+</div>

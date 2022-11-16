@@ -6,7 +6,7 @@ const salt = 11;
 
 const { exposeUserToView, hasTemporaryTags } = require("../middlewares/middlewares");
 
-router.get("/signup", hasTemporaryTags, (req, res) => res.render("auth/signup"));
+router.get("/signup", hasTemporaryTags, (req, res) => res.render("auth/signup", {styleName: 'signup', scriptName: 'signup'}));
 
 router.post("/signup", fileUploader.single("profilePicture"), async (req, res) => {
   const { name, birthday, email, password } = req.body;
@@ -15,18 +15,18 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
   try {
     if (!name || !birthday || !email || !password || !req.file) {
       return res.render("auth/signup", {
-        errorMessage: "All fields are required.",
+        errorMessage: "All fields are required.", styleName: 'signup', scriptName: 'signup'
       });
     }
     if (!regex.test(password)) {
       return res.status(500).render("auth/signup", {
-        errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
+        errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",styleName: 'signup', scriptName: 'signup'
       });
     }
 
     if (await User.findOne({ email })) {
       return res.render("auth/signup", {
-        errorMessage: "Email already exists.",
+        errorMessage: "Email already exists.",styleName: 'signup', scriptName: 'signup'
       });
     }
 
@@ -49,7 +49,7 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
   }
 });
 
-router.get("/login", (req, res) => res.render("auth/login"));
+router.get("/login", (req, res) => res.render("auth/login", {scriptName: 'login', styleName: 'login'}));
 
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
@@ -57,7 +57,7 @@ router.post("/login", async (req, res) => {
     // check if all log in fields are filled
     if (!email || !password) {
       return res.render("auth/login", {
-        errorMessage: "All fields are required.",
+        errorMessage: "All fields are required.",scriptName: 'login', styleName: 'login'
       });
     }
 
@@ -65,13 +65,13 @@ router.post("/login", async (req, res) => {
     const targetUser = await User.findOne({ email });
     if (!targetUser) {
       return res.render("auth/login", {
-        errorMessage: "Email doesn't exist.",
+        errorMessage: "Email doesn't exist.",scriptName: 'login', styleName: 'login'
       });
     }
 
     // hash password and compare with user's
     if (!bcrypt.compareSync(password, targetUser.password)) {
-      return res.render("auth/login", { errorMessage: "Wrong password." });
+      return res.render("auth/login", { errorMessage: "Wrong password.", scriptName: 'login', styleName: 'login'});
     }
 
     req.session.currentUser = targetUser;
