@@ -83,7 +83,9 @@ router.get("/", async (req, res) => {
   res.render("activities/activities", {
     scriptName: "activities",
     styleName: "activities",
+    titleName: `Partnerz's Activities`,
     activities: listOfActivities,
+    
   });
 });
 
@@ -96,6 +98,7 @@ router.get("/:activityId", async (req, res, next) => {
       oneActivity,
       styleName: "activity-details",
       scriptName:"activities-details",
+      titleName: `${oneActivity.name}`
     });
   } catch (error) {
     next(error);
@@ -129,7 +132,7 @@ router.get("/:activityId/partners", async (req, res) => {
 
   }
 
-  res.render("activities/partners", {allUsers, scriptName: 'partners', styleName:'partners'});
+  res.render("activities/partners", {allUsers, scriptName: 'partners', styleName:'partners', titleName: `Your Future Partnerz`});
 
 
 
@@ -157,6 +160,8 @@ const onePartner = await User.findById(req.params.partnerId);
       age,
       styleName: "partner-details",
       scriptName:"partner-details",
+      titleName: `${onePartner.name}, your Partnerz? `
+
     });
   });
 // ACTIVITIES SEND REQUEST
