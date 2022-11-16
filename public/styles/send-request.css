@@ -1,0 +1,91 @@
+#send-request {
+    
+    width:85vw;
+    margin: 7rem auto 0;
+}
+
+#profile-pictures {
+    height:8rem;
+}
+
+ #current-profile-pic , #partner-profile-pic{
+    height:5.5rem;
+    width:5.5rem;
+    border-radius:50%;
+    border:solid 4px white;
+}
+
+#current-profile-pic {
+    position:absolute;
+}
+
+#partner-profile-pic {
+    position:relative;
+    left:5rem;
+}
+
+#activity-card {
+    margin:2rem 0 3.5rem;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+#activity-card img {
+    height : 10rem;
+    width:10rem;
+    object-fit: cover;
+    border-radius:1rem;
+    margin-right:1rem;
+}
+
+#activity-info {
+    display:flex;
+    flex-direction:column;
+}
+
+h3 {
+    margin-bottom:0.5rem;
+}
+
+ p {
+    color:grey;
+}
+
+#message-area {
+    margin-top:2rem;
+}
+
+#message-area textarea {
+width:100%;
+height:12rem;
+    margin-top:0.5rem;
+  font-size:1rem;
+  color:grey;
+  border-style: none;
+  padding-left: 2%;
+  background-color: #f4f4f4;
+  border-radius: 1rem;
+  resize: none;
+  padding-top: 4%;
+}
+
+#message-area textarea:focus {
+    outline-color: var(--customprimary);
+}
+
+#button {
+    display:block;
+    margin-top:2rem;
+    width:3rem;
+    height:3rem;
+    border-radius:100%;
+    background-color:var(--customprimary);
+    border:none;
+    float:right;
+}
+
+
+
+
+
