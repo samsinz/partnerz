@@ -111,16 +111,50 @@ router.get("/:activityId/partners", async (req, res) => {
   // const matchedUser = await 
 
   const allUsers = await User.find({matchedActivities: activityId, _id: {$ne: req.session.currentUser._id}});
+
+  for (let i=0;i<allUsers.length;i++) {
+  let birthday = allUsers[i].birthday;
+  let date = new Date(birthday);
+  let today = new Date();
+  let age = today.getFullYear() - date.getFullYear();
+  let month = today.getMonth() - date.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < date.getMonth())) {
+    age--;
+  }
+  allUsers[i].age = age;
+
+  }
+
   res.render("activities/partners", {allUsers, scriptName: 'partners', styleName:'partners'});
-  
+
+
+
 });
 
 // ACTIVITIES PARTNERS DETAILS
 
-router.get("/:activityId/partners/:partnerId", async (req, res) => {
-  res.render("activities/partner-details");
-});
 
+
+router.get("/:activityId/partners/:partnerId", async (req, res) => {
+const onePartner = await User.findById(req.params.partnerId);
+
+  let birthday = onePartner.birthday;
+  let date = new Date(birthday);
+  let today = new Date();
+  let age = today.getFullYear() - date.getFullYear();
+  let month = today.getMonth() - date.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < date.getMonth())) {
+    age--;
+  }
+  
+  
+  res.render(("activities/partner-details") , {
+      onePartner,
+      age,
+      styleName: "partner-details",
+      // scriptName:"user-details",
+    });
+  });
 // ACTIVITIES SEND REQUEST
 
 router.get("/:activityId/partners/:partnerId/request", async (req, res) => {
