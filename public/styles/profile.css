@@ -30,11 +30,11 @@ textarea {
   background-color: var(--customgrey);
   border-radius: 1rem;
   overflow: hidden;
+  resize: none;
+  padding-top: 4%;
+  
 }
 
-textare[name="bio"] {
-  padding-top: 2%;
-}
 
 #button {
   display: flex;
@@ -97,4 +97,18 @@ button {
 
 hr {
   margin-top: 2%;
+}
+
+
+.tags{
+  background-color: #ff005c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+.tags p {
+  background-color: aliceblue;
+  width: 4rem;
 }
