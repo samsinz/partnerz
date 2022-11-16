@@ -1,6 +1,5 @@
 const updateImage = document.querySelector(".updateImage");
 const file = document.querySelector("#profilePicture");
-const deleate = document.querySelector(".deleate");
 const image = document.querySelector('#image');
 const edit = document.querySelector('#edit');
 updateImage.addEventListener("click", () => {

@@ -91,6 +91,7 @@ router.get("/:activityId", async (req, res, next) => {
     res.render("activities/activity-details", {
       oneActivity,
       styleName: "activity-details",
+      scriptName:"activities-details",
     });
   } catch (error) {
     next(error);
