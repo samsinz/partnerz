@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
         userInterestsArr.push(tagUnique.textContent);
         console.log(userInterestsArr);
 
-        let button = document.querySelector("button");
+        
       } else {
         tagUnique.classList.remove("tag-selected");
         userInterestsArr = userInterestsArr.filter(
@@ -66,6 +66,15 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log(userInterestsArr);
       }
       document.querySelector("#input-tags").value = userInterestsArr;
+
+      let button = document.querySelector("button");
+      if (userInterestsArr.length >= 2){
+
+        button.style.backgroundColor = "var(--customprimary)"
+      } else {
+        button.style.backgroundColor = "#bbbbbb"
+      }
+
     });
   });
 });
