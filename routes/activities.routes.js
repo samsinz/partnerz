@@ -2,19 +2,20 @@ const router = require("express").Router();
 const Activity = require("../models/Activity.model");
 const User = require("../models/User.model");
 
-function compare (a,b){
-  if (a.num < b.num){
-    return 1
+function compare(a, b) {
+  if (a.num < b.num) {
+    return 1;
   }
-  if (a.num > b.num){
+  if (a.num > b.num) {
     return -1;
   }
-  return 0
+  return 0;
 }
 
 // ACTIVITIES
 
 router.get("/", async (req, res) => {
+
   console.log(req.session)
 
   let userTags;
@@ -31,22 +32,29 @@ router.get("/", async (req, res) => {
   let listOfActivitiesDuplicate = [];
   for (let i = 0; i < userTags?.length; i++){
     listOfActivitiesDuplicate = listOfActivitiesDuplicate.concat(await Activity.find({tags: userTags[i]}))
+
   }
 
   const listOfActivitiesObject = [];
 
-  for (let i = 0; i < listOfActivitiesDuplicate.length; i++){
-    const x = listOfActivitiesObject.find(item => item.activity.name === listOfActivitiesDuplicate[i].name)
-    if (!x){
-      listOfActivitiesObject.push({num: 0, activity: listOfActivitiesDuplicate[i]})
+  for (let i = 0; i < listOfActivitiesDuplicate.length; i++) {
+    const x = listOfActivitiesObject.find(
+      (item) => item.activity.name === listOfActivitiesDuplicate[i].name
+    );
+    if (!x) {
+      listOfActivitiesObject.push({
+        num: 0,
+        activity: listOfActivitiesDuplicate[i],
+      });
     } else {
       listOfActivitiesObject[listOfActivitiesObject.indexOf(x)].num++;
     }
   }
 
-  listOfActivitiesObject.sort(compare)
+  listOfActivitiesObject.sort(compare);
 
   const listOfActivities = [];
+
 
 
   for (let i=0; i< listOfActivitiesObject.length; i++){
@@ -59,13 +67,25 @@ router.get("/", async (req, res) => {
 
 
 
-  res.render("activities/activities", { scriptName: "activities", styleName: "activities", activities: listOfActivities });
+  res.render("activities/activities", {
+    scriptName: "activities",
+    styleName: "activities",
+    activities: listOfActivities,
+  });
 });
 
 // ACITIVITIES DETAILS
 
-router.get("/:activityId", async (req, res) => {
-  res.render("activities/activity-details");
+router.get("/:activityId", async (req, res, next) => {
+  try {
+    const oneActivity = await Activity.findById(req.params.activityId);
+    res.render("activities/activity-details", {
+      oneActivity,
+      styleName: "activity-details",
+    });
+  } catch (error) {
+    next(error);
+  }
 });
 
 // ACITIVITIES PARTNERS
