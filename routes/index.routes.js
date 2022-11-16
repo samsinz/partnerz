@@ -18,17 +18,26 @@ router.get("/interests", (req, res) =>
 
 router.post('/interests', async (req, res) => {
   const {tags} = req.body
+
+  console.log(tags);
   let arrayTags = tags.split(",")
-  const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
-  const temporaryUser = await User.create({tags: arrayTags, email})
-  req.session.temporaryUser = temporaryUser;
-  console.log(req.session.temporaryUser)
+  // const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
+
+  req.session.temporaryTags = arrayTags
+  // User.create({tags: arrayTags, email}).then(temporaryUser => {
+  //   req.session.temporaryUser = temporaryUser;
+  //   console.log(temporaryUser)
+  //   res.redirect('/activities')
+  // }).catch(e => console.log(e))
   res.redirect('/activities')
+
 })
 
 // PROFILE
 router.get("/profile", (req, res) => {
   const bio = req.session.currentUser.bio;
+  const tags = req.session.currentUser.tags;
+  console.log(tags)
   // POUR AVOIR AGE DES USERS
   let birthday = req.session.currentUser.birthday;
   let date = new Date(birthday);
@@ -45,6 +54,7 @@ router.get("/profile", (req, res) => {
     age,
     picture,
     bio,
+    tags,
     styleName: "profile",
     scriptName: "profile",
   });
@@ -52,6 +62,7 @@ router.get("/profile", (req, res) => {
 
 router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
   const { bio } = req.body;
+  
   let profilePicture;
   console.log(req.file);
   if (req.file) {

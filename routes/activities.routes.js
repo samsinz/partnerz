@@ -15,15 +15,24 @@ function compare(a, b) {
 // ACTIVITIES
 
 router.get("/", async (req, res) => {
-  const userTags = req.session.temporaryUser.tags;
-  console.log(userTags);
+
+  console.log(req.session)
+
+  let userTags;
+
+  if (req.session.currentUser){
+    userTags = req.session.currentUser.tags
+  } else {
+    userTags = req.session.temporaryTags
+  }
+
+  console.log(userTags)
 
   // listOfActivities = await Activity.find({tags: userTags[0]});
   let listOfActivitiesDuplicate = [];
-  for (let i = 0; i < userTags.length; i++) {
-    listOfActivitiesDuplicate = listOfActivitiesDuplicate.concat(
-      await Activity.find({ tags: userTags[i] })
-    );
+  for (let i = 0; i < userTags?.length; i++){
+    listOfActivitiesDuplicate = listOfActivitiesDuplicate.concat(await Activity.find({tags: userTags[i]}))
+
   }
 
   const listOfActivitiesObject = [];
@@ -46,13 +55,17 @@ router.get("/", async (req, res) => {
 
   const listOfActivities = [];
 
-  for (let i = 0; i < listOfActivitiesObject.length; i++) {
-    listOfActivities.push(listOfActivitiesObject[i].activity);
+
+
+  for (let i=0; i< listOfActivitiesObject.length; i++){
+    listOfActivities.push(listOfActivitiesObject[i].activity)
+    listOfActivities[i].matchPercentage = listOfActivitiesObject[i].num
   }
 
-  await User.findByIdAndUpdate(req.session.temporaryUser._id, {
-    matchedActivities: listOfActivities,
-  });
+  // await User.findByIdAndUpdate(req.session.temporaryUser._id, {matchedActivities: listOfActivities})
+  req.session.temporaryMatchedActivities = listOfActivities;
+
+
 
   res.render("activities/activities", {
     scriptName: "activities",

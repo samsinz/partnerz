@@ -12,6 +12,8 @@ console.log(process.env.MONGO_URI);
 
 app.use(
   session({
+    saveUninitialized: false,
+    resave: false,
     secret: process.env.SESSION_SECRET,
     cookie: {
       maxAge: 1000 * 60 * 60,

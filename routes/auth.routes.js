@@ -4,9 +4,9 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const salt = 11;
 
-const { exposeUserToView } = require("../middlewares/middlewares");
+const { exposeUserToView, hasTemporaryTags } = require("../middlewares/middlewares");
 
-router.get("/signup", (req, res) => res.render("auth/signup"));
+router.get("/signup", hasTemporaryTags, (req, res) => res.render("auth/signup"));
 
 router.post("/signup", fileUploader.single("profilePicture"), async (req, res) => {
   const { name, birthday, email, password } = req.body;
@@ -32,12 +32,14 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
 
     // hash password and add user to database
     const hashedPassword = await bcrypt.hash(password, await bcrypt.genSalt(salt));
-    await User.findByIdAndUpdate(req.session.temporaryUser._id, {
+    await User.create({
       name,
       birthday,
       email,
       password: hashedPassword,
       profilePicture: req.file.path,
+      matchedActivities: req.session.temporaryMatchedActivities,
+      tags: req.session.temporaryTags
     });
 
     // redirect to home page

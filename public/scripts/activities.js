@@ -22,4 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
         refreshCards();
         window.scrollTo(0, 0)
     })
+
+    const matchPercentage = document.querySelectorAll('#match-percentage span')
+    for (let i =0; i < matchPercentage.length; i++){
+        matchPercentage[i].textContent = 78+(Number(matchPercentage[i].textContent)*4)
+    }
 })
