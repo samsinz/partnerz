@@ -1,5 +1,5 @@
 <div class="profile">
-  <img class="image" src="{{picture}}" />
+  
   <form action="/profile" method="post" enctype="multipart/form-data">
 
     <svg
@@ -26,10 +26,12 @@
         stroke-linejoin="round"
       ></path>
     </svg>
-    <p class="name">{{currentUser.name}}, {{age}}</p>
+    
 
-    <input type="file" name="profilePicture" id="profilePicture" />
+    <input type="file" name="profilePicture" id="profilePicture" accept="image/" />
+    <img id="image" src="{{picture}}" />
 
+<p class="name">{{currentUser.name}}, {{age}}</p>
     <textarea
       type="text"
       id="bio"
@@ -44,11 +46,38 @@
     >{{currentUser.bio}}
     </textarea>
 
-    <div class="tags">
+    <div id="tags">
       {{#each currentUser.tags}}
-      <p>{{this}}</p>
+      <span>{{this}}</span>
       {{/each}}
+      
     </div>
+
+    <svg
+    id='edit'
+      width="31"
+      height="31"
+      viewBox="0 0 31 31"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="15.5"
+        cy="15.5"
+        r="14"
+        fill="#FF005C"
+        stroke="white"
+        stroke-width="3"
+      ></circle>
+      <path
+        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
+        stroke="white"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      ></path>
+    </svg>
+    
 
 
     

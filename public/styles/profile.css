@@ -2,7 +2,7 @@ img {
   width: 9rem;
   height: 9rem;
   border-radius: 50%;
-  margin-left: 5rem;
+
 }
 
 .profile {
@@ -43,7 +43,6 @@ textarea {
 
 .tags {
   margin-top: 2%;
-
   height: 5rem;
 }
 .update {
@@ -86,11 +85,12 @@ textarea {
 
 button {
   background-color: var(--customprimary);
-  padding: 1.1rem 2.5rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 2rem;
   color: white;
   font-size: 1.1rem;
   margin-left: 3rem;
+  margin-top:1.5rem;
   cursor: pointer;
   width: 70%;
 }
@@ -100,15 +100,34 @@ hr {
 }
 
 
-.tags{
-  background-color: #ff005c;
+#tags {
+  margin: 1.5vh 0 0 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content:stretch;
+
   
 }
 
-.tags p {
-  background-color: aliceblue;
-  width: 4rem;
+#tags span {
+  font-size: 0.8rem;
+  margin: 5 0.3rem 0 0;
+  color: var(--customprimary);
+  font-weight: 500;
+  padding: 0.3rem 0.4rem;
+  border: 0.15rem solid var(--customprimary);
+  border-radius: 0.3rem;
+
+}
+
+#edit {
+  position: absolute;
+  right: 2rem;
+  bottom: 10rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
