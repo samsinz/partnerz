@@ -42,7 +42,7 @@ textarea {
   color:grey;
   border-style: none;
   padding-left: 2%;
-  background-color: var(--customgrey);
+  background-color: #f4f4f4;
   border-radius: 1rem;
   resize: none;
   padding-top: 4%;
@@ -54,8 +54,7 @@ margin:0.5rem 0 4rem;
 
 }
 
-.tags-area .tags {
-  position:absolute;
+
   margin: 1.5vh 0 0 0;
   display: flex;
   flex-wrap: wrap;
@@ -101,8 +100,7 @@ hr {
   display:flex;
   flex-direction:row;
   align-items: center;
-  margin-bottom:0;
-  padding-bottom:0;
+
 }
 
 .delete-area #delete {
@@ -112,3 +110,6 @@ hr {
 .delete-area #warning {
   color : grey;
 }
+
+#id{
+  display: none;
