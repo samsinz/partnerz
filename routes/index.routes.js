@@ -13,23 +13,30 @@ router.get("/", isExperiencedUser, (req, res) =>
 
 // INTERESTS
 router.get("/interests", (req, res) =>
+  
   res.render("interests", { styleName: "interests", scriptName: "interests" })
 );
 
 router.post('/interests', async (req, res) => {
   const {tags} = req.body
 
-  console.log(tags);
+  
   let arrayTags = tags.split(",")
   // const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
-
+  if(arrayTags.length >= 2){
+  
   req.session.temporaryTags = arrayTags
+
+ 
   // User.create({tags: arrayTags, email}).then(temporaryUser => {
   //   req.session.temporaryUser = temporaryUser;
   //   console.log(temporaryUser)
   //   res.redirect('/activities')
   // }).catch(e => console.log(e))
   res.redirect('/activities')
+  } else {
+    console.log('hello')
+  }
 
 })
 
