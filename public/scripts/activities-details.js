@@ -5,7 +5,7 @@ const partnersButton = document.querySelector("#partners");
 
 console.log(partnersButton)
 partnersButton.addEventListener('click', ()=>{
-    console.log('hello')
-    window.location = 'activities/partners'
+    const activityId = document.querySelector('#activity-id').textContent
+    window.location = `${activityId}/partners`
 })
 })
