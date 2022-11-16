@@ -44,7 +44,7 @@ button {
   width: 2.8rem;
   height: 2.8rem;
   border: none;
-  background-color: var(--customprimary);
+  background-color: #bbbbbb;
 }
 
 #button {
