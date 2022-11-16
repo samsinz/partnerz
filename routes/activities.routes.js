@@ -103,15 +103,16 @@ router.get("/:activityId", async (req, res, next) => {
 router.get("/:activityId/partners", async (req, res) => {
 
   if (!req.session.currentUser){
-    res.redirect('/auth/signup')
-  }
+    return res.redirect('/auth/signup')
+  } 
 
   const activityId = req.params.activityId
 
   // const matchedUser = await 
 
-  const allUsers = await User.find({matchedActivities: activityId});
+  const allUsers = await User.find({matchedActivities: activityId, _id: {$ne: req.session.currentUser._id}});
   res.render("activities/partners", {allUsers, scriptName: 'partners', styleName:'partners'});
+  
 });
 
 // ACTIVITIES PARTNERS DETAILS
