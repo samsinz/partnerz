@@ -1,0 +1,33 @@
+<div id="partners">
+
+    <h2>It seems like those users would love this place too 😊</h2>
+
+
+    {{#each allUsers}}
+
+    <div class="user-card">
+
+        <div id="image">
+            <img src="{{this.profilePicture}}" alt="{{this.name}} image" />
+            <img src="/images/activities/info-btn.svg" alt="" />
+        </div>
+
+        <p>{{this.name}}, {{this.age}}</p>
+        <p id="card-id">{{this._id}}</p>
+        <p id="bio">{{this.bio}}</p>
+
+        <div id="tags">
+            <span>{{this.tags.[0]}}</span>
+            <span>{{this.tags.[1]}}</span>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    {{/each}}
+
+</div>
