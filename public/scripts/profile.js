@@ -17,3 +17,15 @@ file.onchange = evt => {
 edit.addEventListener('click',()=>{
   window.location.assign('/interests')
 })
+
+
+const deleteButton = document.querySelector('.delete')
+const id = document.querySelector('#id').textContent;
+console.log(id)
+
+
+deleteButton.addEventListener('click', ()=> {
+  console.log(id)
+  window.location =`/profile/delete/${id}`
+})
+

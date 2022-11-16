@@ -27,7 +27,7 @@ img {
 textarea {
   border-style: none;
   padding-left: 2%;
-  background-color: var(--customgrey);
+  background-color: #f4f4f4;
   border-radius: 1rem;
   overflow: hidden;
   resize: none;
@@ -69,7 +69,7 @@ textarea {
   width: 70%;
 }
 
-#deleate {
+#delete {
   color: #ff005c;
 }
 
@@ -130,4 +130,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#id{
+  display: none;
 }
