@@ -18,6 +18,7 @@ router.get("/interests", (req, res) =>
 
 router.post('/interests', async (req, res) => {
   const {tags} = req.body
+
   console.log(tags);
   let arrayTags = tags.split(",")
   const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
@@ -28,6 +29,7 @@ router.post('/interests', async (req, res) => {
     console.log(temporaryUser)
     res.redirect('/activities')
   }).catch(e => console.log(e))
+
 })
 
 // PROFILE
