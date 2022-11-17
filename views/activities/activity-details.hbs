@@ -10,16 +10,19 @@
     
     <div class="price-range">
       <p id="price">{{oneActivity.price}}</p>
-      <span id="bold-span"></span>
-      <span id="light-span"></span>
+      <span id="bold-span"></span><span id="light-span"></span>
     </div>
     
-    <a href="{{oneActivity.url}}" target="_blank">Link to website</a></span>
   </div>
 
   <div class="description">
     <p>{{oneActivity.description}}</p>
   </div>
+
+  <div class="link">
+  <a href="{{oneActivity.url}}" target="_blank">Link to website</a>
+</div>
+  
 
   <div class="tags">
     {{#each oneActivity.tags}}

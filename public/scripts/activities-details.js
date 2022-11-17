@@ -7,7 +7,7 @@ const price = document.querySelector("#price").textContent
 
     console.log(price)
     if (price === "0") {
-        light.textContent = "€€€€"
+        light.textContent = "Free"
     } else if (price === "1") {
         bold.textContent = "€" 
         light.textContent = "€€€"       
