@@ -162,6 +162,7 @@
     "price": 1
   },
   {
+
     "name": "Musée Carnavalet",
     "location": "23 Rue de Sévigné, 75003 Paris",
     "image": "/images/activities/carnavalet.jpg",
@@ -331,5 +332,46 @@
     "url": "http://www.lrdparis.com/",
     "tags": ["Secret Place", "Drinks", "Original", "Cocktails"],
     "price": 3
+),
+{
+    "name": "Jardin du Luxembourg",
+    "location": "/images/activities/75006, Paris",
+    "image": "luxembourg.jpg",
+    "description": "A true Parisian institution, the Luxembourg garden is designated as the most beautiful garden in Europe and third most beautiful garden in the world.",
+    "url": "https://www.senat.fr/visite/jardin/index.html", 
+    "tags": [ "Outdoors", "Landscape", "Free", "Touristic", "Walks"],
+    "price": 0
+  },
+{
+    "name": "Buddha Bar",
+    "location": "8-12 Rue Boissy d'Anglas, 75008 Paris",
+    "image": "/images/activities/buddhabar.jpg",
+    "description": "The Buddha-Bar is a bar-restaurant with a lounge atmosphere serving Asian cuisine, also known for the quality of its playlists.",
+    "url": "https://www.buddhabar.com/",
+    "tags": ["Exotic" , "Cocktails" , "Ambiance", "Fancy" , "Music"],
+    "price": 4
+  },
+
+
+{
+    "name":  "Coya",
+    "location": "83-85 Rue du Bac, 75007 Paris",
+    "image": "/images/activities/coya.jpg",
+    "description": "More than just a restaurant, Coya Paris is an immersive experience inspired by the vibrant Latin American culture. Peruvian cuisine in a former church, dj sets on weekends: Coya is a very trendy address in Paris!",
+    "url": "https://coyarestaurant.com/restaurants/paris-fr/",
+    "tags": ["Exotic" , "Food" , "Ambiance", "Fancy" ],
+    "price": 4
+  },
+
+{
+    "name":  "Medellin",
+    "location": "6 av. Marceau, 75008 Paris",
+    "image": "/images/activities/medellin.jpg",
+    "description": "Hidden behind a refrigerator door, this unique private club in Paris with a speakeasy atmosphere is dedicated to South American culture.",
+    "url": "https://www.medellinparis.fr/public/fr",
+    "tags": ["Clubbing", "Drink", "Fancy", "Speakeasy", "Exotic"],
+    "price": 4
+
   }
+
 ]
