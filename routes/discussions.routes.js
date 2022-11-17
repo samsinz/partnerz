@@ -6,7 +6,7 @@ const Match = require("../models/Match.model");
 
 const { isLoggedInFunction } = require("../middlewares/middlewares");
 
-router.get("/", isLoggedInFunction, async (req, res) => {
+router.get("/", isLoggedInFunction, async (req, res, next) => {
   const allMatchesId = req.session.currentUser.matches;
   const currentUserConvo = await User.find({
     username: req.session.currentUser.username,
@@ -28,7 +28,7 @@ router.get("/", isLoggedInFunction, async (req, res) => {
   
 });
 
-router.get("/:id", async (req, res) => {
+router.get("/:id", async (req, res, next) => {
 
   const currentConversation = await Discussion.findById(req.params.id)
       .populate({path: 'messages', populate: {path: 'sender', model: 'User'}})
@@ -52,7 +52,7 @@ router.get("/:id", async (req, res) => {
   });
 });
 
-router.post("/:id", async (req, res) => {
+router.post("/:id", async (req, res, next) => {
   // console.log(req.body["new-message-value"]);
   const newMessage = await Message.create({
     sender: req.session.currentUser,

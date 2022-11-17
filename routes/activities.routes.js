@@ -18,7 +18,7 @@ function compare(a, b) {
 
 // ACTIVITIES
 
-router.get("/", async (req, res) => {
+router.get("/", async (req, res, next) => {
 
 
 
@@ -107,7 +107,7 @@ router.get("/:activityId", async (req, res, next) => {
 
 // ACITIVITIES PARTNERS
 
-router.get("/:activityId/partners", async (req, res) => {
+router.get("/:activityId/partners", async (req, res, next) => {
 
   if (!req.session.currentUser){
     return res.redirect('/auth/signup')
@@ -142,7 +142,7 @@ router.get("/:activityId/partners", async (req, res) => {
 
 
 
-router.get("/:activityId/partners/:partnerId", async (req, res) => {
+router.get("/:activityId/partners/:partnerId", async (req, res, next) => {
 const onePartner = await User.findById(req.params.partnerId);
 
   let birthday = onePartner.birthday;
@@ -166,13 +166,13 @@ const onePartner = await User.findById(req.params.partnerId);
   });
 // ACTIVITIES SEND REQUEST
 
-router.get("/:activityId/partners/:partnerId/request", async (req, res) => {
+router.get("/:activityId/partners/:partnerId/request", async (req, res, next) => {
   const partner = await User.findById(req.params.partnerId)
   const activity = await Activity.findById(req.params.activityId)
   res.render("activities/send-request", {currentUser: req.session.currentUser, partner, activity , styleName : "send-request", scriptName : "send-request"});
 });
 
-router.post("/:activityId/partners/:partnerId/request", async (req, res) => {
+router.post("/:activityId/partners/:partnerId/request", async (req, res, next) => {
   console.log('bonjour')
   const messageContent = req.body.message;
   const sender = req.session.currentUser._id

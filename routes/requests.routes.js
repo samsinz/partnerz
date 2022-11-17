@@ -5,7 +5,7 @@ const Message = require("../models/Message.model");
 
 // REQUESTS
 
-router.get("/requests-received", async (req, res) => {
+router.get("/requests-received", async (req, res, next) => {
   const allMatchesId = req.session.currentUser.matches;
   // const allMatches = await Match.find({_id: allMatchesId, receiver: req.session.currentUser._id, status: 'Pending'}).populate('sender activity discussion', )
   const allMatches = await Match.find({_id: allMatchesId, receiver: req.session.currentUser._id, status: 'Pending'})
@@ -21,7 +21,7 @@ router.get("/requests-received", async (req, res) => {
 
 // REQUESTS
 
-router.get("/requests-received/:id", async (req, res) => {
+router.get("/requests-received/:id", async (req, res, next) => {
   const singleRequest = await Match.findById(req.params.id)
     .populate({path: 'discussion', populate: {path: 'messages', model: 'Message'}})
     .populate('activity')
@@ -40,12 +40,12 @@ router.get("/requests-received/:id", async (req, res) => {
 });
 
 
-router.get("/requests-received/:id/decline", async (req, res) => {
+router.get("/requests-received/:id/decline", async (req, res, next) => {
   await Match.findByIdAndRemove(req.params.id)
   res.redirect('/requests/requests-received')
 })
 
-router.get("/requests-received/:id/approve", async (req, res) => {
+router.get("/requests-received/:id/approve", async (req, res, next) => {
   const currentMatch = await Match.findByIdAndUpdate(req.params.id, {status: 'Approved'})
   res.redirect(`/discussions/${currentMatch.discussion}`)
 })
