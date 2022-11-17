@@ -86,7 +86,7 @@
     margin: 0 0.3rem 0 0;
     color: var(--customprimary);
     font-weight: 500;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 0.5rem;
     border: 0.15rem solid var(--customprimary);
     border-radius: 0.3rem;
   }
