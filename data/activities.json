@@ -265,21 +265,8 @@
     "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
     "url": "http://tennisclubdunois.fr/",
     "tags": [
-      "Sport",
-      "Outdoor",
-      "Walks"
-    ],
-    "price": 1
-  },
-  {
-    "name": "Tennis au centre sportif Dunois",
-    "location": "70 Rue Dunois 75013 PARIS",
-    "image": "/images/activities/tennis-dunois.jpeg",
-    "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
-    "url": "http://tennisclubdunois.fr/",
-    "tags": [
-      "Sport",
-      "Outdoor",
+      "Sports",
+      "Outdoors",
       "Walks"
     ],
     "price": 1
@@ -291,12 +278,10 @@
     "description": "Butte Bergeyre is one of those areas in Paris that the decades have passed by. Secret, secluded, and off the beaten path, even many Parisians themselves don’t know about its’ existence. Here’s your insider’s guide on how to visit this secret micro-arrondissement in the 19th-arrondissement of Paris",
     "url": "https://www.habitants-butte-bergeyre.fr/",
     "tags": [
-      "Outdoor",
+      "Outdoors",
       "Free",
       "Original",
-      "Secret Place",
-      "Free",
-      "Walks"
+      "Secret Place"
     ],
     "price": 0
   },
@@ -327,7 +312,7 @@
       "Original",
       "Landscape",
       "Chill",
-      "Cozy"
+      "Cosy"
     ],
     "price": 2
   },
@@ -344,7 +329,8 @@
     ],
     "price": 2
 
-
+  },
+  {
     "name": "Musée Carnavalet",
     "location": "23 Rue de Sévigné, 75003 Paris",
     "image": "/images/activities/carnavalet.jpg",
