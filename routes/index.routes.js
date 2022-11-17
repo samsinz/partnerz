@@ -33,7 +33,7 @@ router.post('/interests', async (req, res) => {
   //   console.log(temporaryUser)
   //   res.redirect('/activities')
   // }).catch(e => console.log(e))
-  res.redirect('/activities')
+  res.redirect('/auth/signup')
   } else {
     console.log('hello')
   }

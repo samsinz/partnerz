@@ -4,9 +4,9 @@ const User = require("../models/User.model");
 const bcrypt = require("bcryptjs");
 const salt = 11;
 
-const { exposeUserToView, hasTemporaryTags } = require("../middlewares/middlewares");
+const { exposeUserToView, isLoggedInFunctionSignUp, hasTemporaryTags } = require("../middlewares/middlewares");
 
-router.get("/signup", hasTemporaryTags, (req, res) => res.render("auth/signup", {styleName: 'signup', scriptName: 'signup'}));
+router.get("/signup", isLoggedInFunctionSignUp, hasTemporaryTags, (req, res) => res.render("auth/signup", {styleName: 'signup', scriptName: 'signup'}));
 
 router.post("/signup", fileUploader.single("profilePicture"), async (req, res) => {
   const { name, birthday, email, password } = req.body;
