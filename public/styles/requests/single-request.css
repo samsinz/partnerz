@@ -89,3 +89,7 @@ h3 {
     border-radius:100%;
     border:none;
 }
+
+#hidden-id {
+    display: none;
+}

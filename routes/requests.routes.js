@@ -36,9 +36,22 @@ router.get("/requests-received/:id", async (req, res) => {
   if (month < 0 || (month === 0 && today.getDate() < date.getMonth())) {
     age--;
   }
-
   res.render("requests/single-request", { singleRequest , age, scriptName: 'requests/single-request', styleName: 'requests/single-request', titleName: 'Hang out requests'});
 });
+
+
+router.get("/requests-received/:id/decline", async (req, res) => {
+  await Match.findByIdAndRemove(req.params.id)
+  res.redirect('/requests/requests-received')
+})
+
+router.get("/requests-received/:id/approve", async (req, res) => {
+  const currentMatch = await Match.findByIdAndUpdate(req.params.id, {status: 'Approved'})
+  res.redirect(`/discussions/${currentMatch.discussion}`)
+})
+
+
+
 
 
 module.exports = router;
