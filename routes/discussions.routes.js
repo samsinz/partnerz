@@ -26,14 +26,6 @@ router.get("/", isLoggedInFunction, async (req, res) => {
  
     res.render("discussions/discussions", { allMatches, scriptName: 'discussions/discussions', styleName:'discussions/discussions'});
   
-
-
-
-    
-
-
-
-  
 });
 
 router.get("/:id", async (req, res) => {
@@ -68,11 +60,12 @@ router.post("/:id", async (req, res) => {
   });
   // console.log(newMessage._id);
   // console.log(req.params.id);
-  // console.log(
-  //   await Discussion.findByIdAndUpdate(req.params.id, {
-  //     $push: { messages: newMessage._id },
-  //   })
-  // );
+
+    await Discussion.findByIdAndUpdate(req.params.id, {
+      $push: { messages: newMessage._id },
+    })
+  
+
   res.redirect(req.params.id);
 });
 
