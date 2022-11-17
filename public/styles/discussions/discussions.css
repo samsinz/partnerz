@@ -17,9 +17,9 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
     margin-top:1rem;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+    width:100%;
 }
 
 img {
@@ -41,4 +41,8 @@ img {
 .separator{
     width: 80%;
  
+}
+
+#id{
+    display: none;
 }
