@@ -160,5 +160,176 @@
     "url": "https://museedemontmartre.fr/evenements/visite-des-vignes-du-clos-montmartre-et-du-musee-de-montmartre/",
     "tags": ["Drink", "Original", "Walks"],
     "price": 1
+  },
+  {
+    "name": "Musée Carnavalet",
+    "location": "23 Rue de Sévigné, 75003 Paris",
+    "image": "/images/activities/carnavalet.jpg",
+    "description": "Museum in neighboring mansions with Paris art & history exhibits focused on 16th & 17th centuries.",
+    "url": "https://www.carnavalet.paris.fr/",
+    "tags": ["Museum", "Culture", "Indoors", "Art"],
+    "price": 1
+  },
+  {
+    "name": "Centre Pompidou",
+    "location": "Place Georges-Pompidou, 75004 Paris",
+    "image": "/images/activities/pompidou.jpg",
+    "description": "Architecturally avant-garde complex housing National Museum of Modern Art, library and music center.",
+    "url": "https://www.centrepompidou.fr/fr/",
+    "tags": ["Museum", "Creative", "Culture", "Indoors", "Original"],
+    "price": 2
+  },
+  {
+    "name": "Musée Grévin",
+    "location": "10 Bd Montmartre, 75009 Paris",
+    "image": "/images/activities/grevin.jpg",
+    "description": "Family-friendly wax museum with lifelike models of French historic and contemporary figures.",
+    "url": "https://www.grevin-paris.com/",
+    "tags": ["Museum", "Creative", "Culture", "Indoors", "Touristic"],
+    "price": 4
+  },
+  {
+    "name": "Maison de Victor Hugo",
+    "location": "6 Pl. des Vosges, 75004 Paris",
+    "image": "/images/activities/hugo.jpg",
+    "description": "Victor Hugo's evocative apartment, decorated with original furniture, plus artifacts and sketches.",
+    "url": "https://www.maisonsvictorhugo.paris.fr/",
+    "tags": ["Museum", "Art", "Culture", "Indoors", "Touristic"],
+    "price": 3
+  },
+  {
+    "name": "The Game - Escape Game",
+    "location": "51 Rue du Cardinal Lemoine, 75005 Paris",
+    "image": "/images/activities/thegame.jpg",
+    "description": "The principle of an Escape Game is simple: you are dived into a story in a movie set-like, and you only have 60 minutes to achieve the mission! Therefore, you need to cooperate, use logic and your sense of observation.",
+    "url": "https://www.thegame-france.com/",
+    "tags": ["Creative", "Adventure", "Craft", "Ambiance"],
+    "price": 3
+  },
+  {
+    "name": "La Villette",
+    "location": "211 Av. Jean Jaurès, 75019 Paris",
+    "image": "/images/activities/lavillette.jpg",
+    "description": "Wide lawns with sculptures and fountains in urban park with a museum, a cinema and a music complex.",
+    "url": "https://lavillette.com/",
+    "tags": ["Outdoors", "Chill", "Walks", "Ambiance", "Free"],
+    "price": 0
+  },
+  {
+    "name": "Buttes-Chaumont",
+    "location": "1 Rue Botzaris, 75019 Paris",
+    "image": "/images/activities/chaumont.jpg",
+    "description": "19th-century park in former quarry, with tall trees, lake, waterfalls and old, iron railway bridge.",
+    "url": "https://www.paris.fr/equipements/parc-des-buttes-chaumont-1757",
+    "tags": ["Outdoors", "Chill", "Walks", "Free"],
+    "price": 0
+  },
+  {
+    "name": "Street Workout Park",
+    "location": "17 Rue Louis Lumière, 75020 Paris",
+    "image": "/images/activities/streetworkout.jpg",
+    "description": "Green space offering an array of street-style workout equipment, including traction bars & benches.",
+    "url": "https://calisthenics-parks.com/fr",
+    "tags": ["Sports", "Outdoors", "Adventure", "Free"],
+    "price": 0
+  },
+  {
+    "name": "Crossfit R2 Vendôme",
+    "location": "6 Rue Daunou, 75002 Paris",
+    "image": "/images/activities/r2vendome.jpg",
+    "description": "R2 training has 3 sites in Paris and one site in London. Unique sporting experience in a premium setting.",
+    "url": "http://www.r2training.fr/",
+    "tags": ["Sports", "Indoors", "Adventure", "Original"],
+    "price": 4
+  },
+  {
+    "name": "Palais Galliera",
+    "location": "10 Av. Pierre 1er de Serbie, 75116 Paris",
+    "image": "/images/activities/galliera.jpg",
+    "description": "Chic Beaux-Arts fashion museum displaying 3 centuries of clothing, accessories & photography.",
+    "url": "http://www.palaisgalliera.paris.fr/",
+    "tags": ["Museum", "Creative", "Original", "Art"],
+    "price": 3
+  },
+  {
+    "name": "UGC Ciné Cité les Halles",
+    "location": "101 Rue Berger, 75001 Paris",
+    "image": "/images/activities/ugcleshalles.jpg",
+    "description": "In the heart of Paris, discover the world's biggest movie theater.",
+    "url": "https://www.ugc.fr/cinema.html?id=10",
+    "tags": ["Chill", "Indoors", "Show"],
+    "price": 2
+  },
+  {
+    "name": "Air Battle Games",
+    "location": "77 Quai Charles Pasqua, 92300 Levallois",
+    "image": "/images/activities/airbattle.jpg",
+    "description": "Laserball is played inside the arena. players are equipped with a blaster with laser and a flexible and reusable rubber ball magazine.",
+    "url": "http://www.airbattlegames.fr/tarifs",
+    "tags": ["Adventure", "Original", "Sports"],
+    "price": 3
+  },
+  {
+    "name": "Paintball 94",
+    "location": "Av. des Myosotis, 94380 Bonneuil",
+    "image": "/images/activities/paintball94.jpg",
+    "description": "Paintball is a team shooting sport in which players eliminate opponents from play by hitting them paintballs that break upon impact.",
+    "url": "https://paintball94.fr/",
+    "tags": ["Adventure", "Original", "Sports"],
+    "price": 4
+  },
+  {
+    "name": "Mermaids and Divers",
+    "location": "23 Rue de Lappe, 75011 Paris",
+    "image": "/images/activities/mermaids.jpg",
+    "description": "Nautical-themed hangout with island decor for comfort foods, coffee, craft cocktails & dancing.",
+    "url": "http://www.mermaidsanddivers.fr/",
+    "tags": ["Drinks", "Cocktails", "Exotic", "Bar"],
+    "price": 2
+  },
+  {
+    "name": "La Tour d'Argent",
+    "location": "19 Quai de la Tournelle, 75005 Paris",
+    "image": "/images/activities/tourdargent.jpg",
+    "description": "Centuries-old quayside emblem of upscale French cuisine famed for its house special, pressed duck.",
+    "url": "https://tourdargent.com/la-rotisserie-dargent/",
+    "tags": ["Fancy", "Food", "Touristic", "Original"],
+    "price": 4
+  },
+  {
+    "name": "Angelina Paris",
+    "location": "226 Rue de Rivoli, 75001 Paris",
+    "image": "/images/activities/angelina.jpg",
+    "description": "Legendary 1903 tea room offering refined pastries & hot chocolate in a belle epoque-style setting.",
+    "url": "http://www.angelina-paris.fr/",
+    "tags": ["Fancy", "Original", "Touristic", "Food"],
+    "price": 4
+  },
+  {
+    "name": "Santa Carne",
+    "location": "3 Bd Richard-Lenoir, 75011 Paris",
+    "image": "/images/activities/santacarne.jpg",
+    "description": "Argentinian steaks with a French touch, plus Latin American wines, at a vibrant, retro-chic bistro.",
+    "url": "https://santacarne.com/menu/",
+    "tags": ["Food", "Original", "Exotic"],
+    "price": 3
+  },
+  {
+    "name": "Bouillon Pigalle",
+    "location": "22 Bd de Clichy, 75018 Paris",
+    "image": "/images/activities/bouillonpigalle.jpg",
+    "description": "Popular casual bistro serving traditional French mains & desserts with house wines by the glass.",
+    "url": "https://bouillonlesite.com/bouillon-pigalle",
+    "tags": ["Food", "Cheap", "Cosy"],
+    "price": 1
+  },
+  {
+    "name": "Little Red Door",
+    "location": "60 Rue Charlot, 75003 Paris",
+    "image": "/images/activities/littlereddoor.jpg",
+    "description": "An array of creative, inventively presented cocktails at an intimate, acclaimed bar",
+    "url": "http://www.lrdparis.com/",
+    "tags": ["Secret Place", "Drinks", "Original", "Cocktails"],
+    "price": 3
   }
 ]
