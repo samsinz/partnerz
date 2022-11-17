@@ -6,9 +6,9 @@ const salt = 11;
 
 const { exposeUserToView, isLoggedInFunctionSignUp, hasTemporaryTags } = require("../middlewares/middlewares");
 
-router.get("/signup", isLoggedInFunctionSignUp, hasTemporaryTags, (req, res) => res.render("auth/signup", {styleName: 'signup', scriptName: 'signup'}));
+router.get("/signup", isLoggedInFunctionSignUp, hasTemporaryTags, (req, res, next) => res.render("auth/signup", {styleName: 'signup', scriptName: 'signup'}));
 
-router.post("/signup", fileUploader.single("profilePicture"), async (req, res) => {
+router.post("/signup", fileUploader.single("profilePicture"), async (req, res, next) => {
   const { name, birthday, email, password } = req.body;
 
   const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
@@ -52,9 +52,9 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res) =
   }
 });
 
-router.get("/login", (req, res) => res.render("auth/login", {scriptName: 'login', styleName: 'login'}));
+router.get("/login", (req, res, next) => res.render("auth/login", {scriptName: 'login', styleName: 'login'}));
 
-router.post("/login", async (req, res) => {
+router.post("/login", async (req, res, next) => {
   const { email, password } = req.body;
   try {
     // check if all log in fields are filled
@@ -84,13 +84,13 @@ router.post("/login", async (req, res) => {
   }
 });
 
-router.get("/logout", async (req, res) => {
+router.get("/logout", async (req, res, next) => {
   await req.session.destroy();
   res.locals.isLoggedIn = false;
   res.redirect("/");
 });
 
-router.get("/getuser", (req, res) => {
+router.get("/getuser", (req, res, next) => {
   console.log(req.session.currentUser);
 });
 

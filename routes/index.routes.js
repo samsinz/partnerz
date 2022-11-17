@@ -6,18 +6,18 @@ const Uploader = require("./../config/cloudinary.config");
 
 //HOME
 
-router.get("/", isExperiencedUser, (req, res) =>
+router.get("/", isExperiencedUser, (req, res, next) =>
   res.render("home", { styleName: "home", scriptName: "home" })
 );
 
 
 // INTERESTS
-router.get("/interests", (req, res) =>
+router.get("/interests", (req, res, next) =>
   
   res.render("interests", { styleName: "interests", scriptName: "interests" })
 );
 
-router.post('/interests', async (req, res) => {
+router.post('/interests', async (req, res, next) => {
   const {tags} = req.body
 
   
@@ -41,7 +41,7 @@ router.post('/interests', async (req, res) => {
 })
 
 // PROFILE
-router.get("/profile", (req, res) => {
+router.get("/profile", (req, res, next) => {
   const bio = req.session.currentUser.bio;
   const tags = req.session.currentUser.tags;
   console.log(tags)
@@ -69,7 +69,7 @@ router.get("/profile", (req, res) => {
   });
 });
 
-router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
+router.post("/profile", Uploader.single("profilePicture"), async (req, res, next) => {
   const { bio } = req.body;
   
   let profilePicture;
@@ -92,7 +92,7 @@ router.post("/profile", Uploader.single("profilePicture"), async (req, res) => {
 });
 
 
-router.get('/profile/delete/:id', async (req, res) => {
+router.get('/profile/delete/:id', async (req, res, next) => {
   console.log(req.params.id)
  await User.findByIdAndRemove(req.params.id)
  req.session.destroy();
