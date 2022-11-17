@@ -20,7 +20,7 @@ router.get("/", isLoggedInFunction, async (req, res) => {
     .populate('sender')
 
     
-    console.log(currentUserConvo);
+    console.log(allMatches);
     
   // const lastMessage = allMatches.discussion.messages[0]
  

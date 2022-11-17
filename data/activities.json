@@ -163,6 +163,66 @@
   },
   {
 
+    "name": "Tennis au centre sportif Dunois",
+    "location": "70 Rue Dunois 75013 PARIS",
+    "image": "/images/activities/montmartrevineyards.jpg",
+    "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
+    "url": "http://tennisclubdunois.fr/",
+    "tags": ["Sport", "Outdoor", "Walks"],
+    "price": 1
+
+  },
+
+  {
+    "name": "Tennis au centre sportif Dunois",
+    "location": "70 Rue Dunois 75013 PARIS",
+    "image": "/images/activities/tennis-dunois.jpeg",
+    "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
+    "url": "http://tennisclubdunois.fr/",
+    "tags": ["Sport", "Outdoor", "Walks"],
+    "price": 1
+
+  },
+  {
+    "name": "la Butte Bergeyre",
+    "location": "78 Rue Georges Lardennois, 75019 Paris",
+    "image": "/images/activities/la-Butte-Bergeyre.jpeg",
+    "description": "Butte Bergeyre is one of those areas in Paris that the decades have passed by. Secret, secluded, and off the beaten path, even many Parisians themselves don’t know about its’ existence. Here’s your insider’s guide on how to visit this secret micro-arrondissement in the 19th-arrondissement of Paris",
+    "url": "https://www.habitants-butte-bergeyre.fr/",
+    "tags": ["Outdoor", "Free", "Original","Secret Place","Free", "Walks"],
+    "price": 0
+
+  },
+  {
+    "name": "Halte au théâtre de la Huchette",
+    "location": "23 Rue de la Huchette, 75005 Paris",
+    "image": "/images/activities/theatre.jpeg",
+    "description": "This small theatre in Paris' Left Bank, located at 23 rue de la Huchette in the 5th arrondissement, is known for playing Eugène Ionesco's absurdist double-bill of The Lesson and The Bald Soprano in permanent repertory since 1957, as 'Spectacle Ionesco'.",
+    "url": "http://www.theatre-huchette.com/en/home-store/",
+    "tags": ["Original", "Culture", "Art","Show"],
+    "price": 2
+
+  },
+  {
+    "name": "Balade en barque sur le Lac des Minimes",
+    "location": "28 Avenue de Paris 94300 Vincennes",
+    "image": "/images/activities/minime-vincenne.jpeg",
+    "description": "Relive the beginning of canoeing on Lac des Minimes thanks to the boats for hire on site. Take advantage of the natural setting of Lac des Minimes, go around the islands, go under the bridge, walk along the waterfall and enjoy the surrounding calm. You will be able to observe many birds and even herons!",
+    "url": "https://www.vincennes-tourisme.fr/fiche/location-de-barques-sur-le-lac-des-minimes/",
+    "tags": ["Original", "Outdoors", "Walks","Original", "Landscape", "Chill","Cozy"],
+    "price": 2
+
+  },
+  {
+    "name": "CLINT",
+    "location": "174 Rue de la Roquette, 75011 Paris",
+    "image": "/images/activities/clint.jpg",
+    "description": "Are you looking for an original brunch with quality products that allows you to consume according to your wallet? This is the place! One of the best brunch in Paris",
+    "url": "https://www.instagram.com/clint_paris/?hl=fr",
+    "tags": ["Food", "Fancy", "Original"],
+    "price": 2
+
+
     "name": "Musée Carnavalet",
     "location": "23 Rue de Sévigné, 75003 Paris",
     "image": "/images/activities/carnavalet.jpg",
@@ -435,5 +495,8 @@
     "tags": ["Craft", "Creative", "Original"],
     "price": 4
 
+
   }
+
+  
 ]
