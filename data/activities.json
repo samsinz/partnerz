@@ -5,7 +5,13 @@
     "image": "/images/activities/59-rivoli.jpg",
     "description": "Art gallery in Paris, France. Formerly an artist squat that had occupied the space since 1999, it was legalized by the city from 2006 onwards.[1] The venue became known for its parties, exhibitions, and performances. exhibitions, and performances.",
     "url": "http://www.59rivoli.org/accueil/",
-    "tags": ["Open Minded", "Art", "Free", "Original", "Indoors"],
+    "tags": [
+      "Open Minded",
+      "Art",
+      "Free",
+      "Original",
+      "Indoors"
+    ],
     "price": 0
   },
   {
@@ -14,7 +20,12 @@
     "image": "/images/activities/bar_mazcaleria.jpg",
     "description": "Meet at the Mezcaleria, the clandestine bar of the famous 1K hotel, hidden behind the kitchens. On the program: Latin music and old school R'n'B, tailor-made creations with Mexican eau-de-vie and multicolored decoration that will warm your heart.",
     "url": "https://www.instagram.com/lamezcaleriaparis/",
-    "tags": ["Bar", "Secret Place", "Cocktails", "Ambiance"],
+    "tags": [
+      "Bar",
+      "Secret Place",
+      "Cocktails",
+      "Ambiance"
+    ],
     "price": 4
   },
   {
@@ -23,7 +34,13 @@
     "image": "/images/activities/bar_mobster.jpg",
     "description": "In a breathtaking decor and a jazzy atmosphere, Mobster bar takes you back to the era of prohibition. On the program for your evening? Cocktails inspired by the great classics of the 20th century.",
     "url": "https://mobsterbar.com",
-    "tags": ["Bar", "Secret Place", "Cocktails", "Music", "Ambiance"],
+    "tags": [
+      "Bar",
+      "Secret Place",
+      "Cocktails",
+      "Music",
+      "Ambiance"
+    ],
     "price": 4
   },
   {
@@ -32,7 +49,13 @@
     "image": "/images/activities/brunch-geneve.jpg",
     "description": "On Sunday we get out of the duvet to have enjoy the highlight of the week! The Atelier Geneviève awaits you at the Ceramicafé. Come and personalize a ceramic object with the advice of your team.",
     "url": "https://lateliergenevieve.fr/products/ceramic-brunch-ceramicafe-11",
-    "tags": ["Fancy", "Art", "Chill", "Food", "Craft"],
+    "tags": [
+      "Fancy",
+      "Art",
+      "Chill",
+      "Food",
+      "Craft"
+    ],
     "price": 4
   },
   {
@@ -41,7 +64,11 @@
     "image": "/images/activities/verticalart.jpg",
     "description": "For urban sports enthusiasts looking for a new landmark: Vertical'Art sets up its 9th climbing gym in Paris in the 13th arrondissement!",
     "url": "https://lateliergenevieve.fr/products/ceramic-brunch-ceramicafe-11",
-    "tags": ["Indoors", "Adventure", "Sports"],
+    "tags": [
+      "Indoors",
+      "Adventure",
+      "Sports"
+    ],
     "price": 4
   },
   {
@@ -50,7 +77,12 @@
     "image": "/images/activities/museeysl.jpg",
     "description": "The Yves Saint Laurent Museum in Paris exhibits the designer's work through a retrospective and thematic temporary exhibitions.",
     "url": "https://museeyslparis.com/",
-    "tags": ["Museum", "Indoors", "Fancy", "Culture"],
+    "tags": [
+      "Museum",
+      "Indoors",
+      "Fancy",
+      "Culture"
+    ],
     "price": 1
   },
   {
@@ -59,7 +91,13 @@
     "image": "/images/activities/fondationlouisvuitton.jpg",
     "description": "The Louis-Vuitton Corporate Foundation, formerly the Louis-Vuitton Corporate Foundation for Creation, launched in October 2005, was created by the LVMH group and its companies. Its objective is to perpetuate the philanthropic actions undertaken by the group since 1990.",
     "url": "https://www.fondationlouisvuitton.fr/",
-    "tags": ["Museum", "Indoors", "Fancy", "Culture", "Cheap"],
+    "tags": [
+      "Museum",
+      "Indoors",
+      "Fancy",
+      "Culture",
+      "Cheap"
+    ],
     "price": 1
   },
   {
@@ -68,7 +106,12 @@
     "image": "/images/activities/grandegaleriedelevolution.jpg",
     "description": "The Great Gallery of Evolution is one of the galleries of the National Museum of Natural History. The galleries of the Museum are buildings that are museums in themselves and each one specializes in a specific field of natural history.",
     "url": "https://www.jardindesplantesdeparis.fr/fr/programme/galeries-jardins-zoo-bibliotheques/grande-galerie-levolution-2763",
-    "tags": ["Museum", "Indoors", "Exotic", "Culture"],
+    "tags": [
+      "Museum",
+      "Indoors",
+      "Exotic",
+      "Culture"
+    ],
     "price": 1
   },
   {
@@ -77,7 +120,13 @@
     "image": "/images/activities/louvre.jpg",
     "description": "The Louvre covers an extensive chronology and geographical area, from antiquity to 1848 and from Western Europe to Iran, via Greece, Egypt, and the Near East. It comprises eight departments which, including deposits in other museums (28,530 works), comprised 554,731 works at the end of 2016.",
     "url": "https://www.louvre.fr/",
-    "tags": ["Museum", "Culture", "Art", "Touristic", "Cheap"],
+    "tags": [
+      "Museum",
+      "Culture",
+      "Art",
+      "Touristic",
+      "Cheap"
+    ],
     "price": 1
   },
   {
@@ -86,7 +135,11 @@
     "image": "/images/activities/atelierdeslumieres.jpg",
     "description": "The Atelier des Lumières offers so-called immersive exhibitions: visitors are invited to wander through the space where they can discover thousands of digitized images of works of art to the sound of a musical composition. This gives the impression of being immersed in the paintings.",
     "url": "https://www.atelier-lumieres.com",
-    "tags": ["Museum", "Culture", "Indoors"],
+    "tags": [
+      "Museum",
+      "Culture",
+      "Indoors"
+    ],
     "price": 2
   },
   {
@@ -95,7 +148,13 @@
     "image": "/images/activities/tuileries.jpg",
     "description": "The Tuileries Garden is a public garden located between the Louvre and the Place de la Concorde in the 1st arrondissement of Paris, France. Created by Catherine de' Medici as the garden of the Tuileries Palace in 1564, it became a public park after the French Revolution.",
     "url": "https://en.parisinfo.com/paris-museum-monument/71304/Jardin-des-Tuileries",
-    "tags": [ "Outdoors", "Walks", "Free", "Touristic", "Landscape"],
+    "tags": [
+      "Outdoors",
+      "Walks",
+      "Free",
+      "Touristic",
+      "Landscape"
+    ],
     "price": 0
   },
   {
@@ -104,7 +163,13 @@
     "image": "/images/activities/coulee-verte.jpg",
     "description": "The Coulée verte René-Dumont or Promenade plantée René-Dumont is a 4.7 km elevated linear park built on top of obsolete railway infrastructure in the 12th arrondissement of Paris, France. It was inaugurated in 1993.",
     "url": "https://www.paris.fr/pages/de-bastille-a-vincennes-par-la-coulee-verte-4932",
-    "tags": ["Outdoors", "Walks", "Chill", "Romantic", "Free"],
+    "tags": [
+      "Outdoors",
+      "Walks",
+      "Chill",
+      "Romantic",
+      "Free"
+    ],
     "price": 0
   },
   {
@@ -113,7 +178,12 @@
     "image": "/images/activities/lagarelegore.jpg",
     "description": "Offbeat gathering place with graffiti decor & live bands, plus drinks, pub eats & outdoor tables.",
     "url": "https://www.instagram.com/la_gare_le_gore/?hl=en",
-    "tags": [ "Open Minded", "Drinks", "Ambiance", "Bar"],
+    "tags": [
+      "Open Minded",
+      "Drinks",
+      "Ambiance",
+      "Bar"
+    ],
     "price": 2
   },
   {
@@ -122,7 +192,12 @@
     "image": "/images/activities/badaboum.jpg",
     "description": "Upbeat destination with a club & concert hall for parties, DJ sets & live music.",
     "url": "https://www.instagram.com/badaboum.paris/?hl=en",
-    "tags": ["Clubbing", "Open Minded", "Drinks", "Music"],
+    "tags": [
+      "Clubbing",
+      "Open Minded",
+      "Drinks",
+      "Music"
+    ],
     "price": 3
   },
   {
@@ -131,7 +206,13 @@
     "image": "/images/activities/garnier.jpg",
     "description": "The Palais Garnier, also known as Opéra Garnier, is a 1,979-seat opera house at the Place de l'Opéra in the 9th arrondissement of Paris, France. It was built for the Paris Opera from 1861 to 1875 at the behest of Emperor Napoleon III.",
     "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
-    "tags": ["Touristic", "Music", "Show", "Culture", "Art"],
+    "tags": [
+      "Touristic",
+      "Music",
+      "Show",
+      "Culture",
+      "Art"
+    ],
     "price": 3
   },
   {
@@ -140,7 +221,13 @@
     "image": "/images/activities/toureiffel.jpg",
     "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel. Locally nicknamed La dame de fer, it was constructed  as the centerpiece of the World's Fair.",
     "url": "https://www.toureiffel.paris/en",
-    "tags": ["Touristic", "Fancy", "Culture", "Romantic", "Outdoors"],
+    "tags": [
+      "Touristic",
+      "Fancy",
+      "Culture",
+      "Romantic",
+      "Outdoors"
+    ],
     "price": 4
   },
   {
@@ -149,7 +236,13 @@
     "image": "/images/activities/sacrecoeur.jpg",
     "description": "The Sacré Coeur is the highest point of Paris. With nearly eleven million pilgrims and visitors per year, it is the second most visited religious monument in Paris after the Notre-Dame de Paris cathedral. It is also from the Sacré Coeur hill that the most beautiful view of Paris can be found, which makes it an ideal place for a date.",
     "url": "https://www.sacre-coeur-montmartre.com/",
-    "tags": ["Touristic" , "Landscape", "Culture", "Romantic", "Free"],
+    "tags": [
+      "Touristic",
+      "Landscape",
+      "Culture",
+      "Romantic",
+      "Free"
+    ],
     "price": 0
   },
   {
@@ -158,30 +251,25 @@
     "image": "/images/activities/montmartrevineyards.jpg",
     "description": "Made from grape varieties from the greatest wine regions, Montmartre wine is harvested at Clos Montmartre, where more than 1700 grape varieties are grown. Every year in October, the Montmartre Wine Harvest Festival celebrates the wine produced at Clos Montmartre.",
     "url": "https://museedemontmartre.fr/evenements/visite-des-vignes-du-clos-montmartre-et-du-musee-de-montmartre/",
-    "tags": ["Drinks", "Original", "Walks"],
+    "tags": [
+      "Drinks",
+      "Original",
+      "Walks"
+    ],
     "price": 1
   },
   {
-
     "name": "Tennis au centre sportif Dunois",
     "location": "70 Rue Dunois 75013 PARIS",
     "image": "/images/activities/montmartrevineyards.jpg",
     "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
     "url": "http://tennisclubdunois.fr/",
-    "tags": ["Sport", "Outdoor", "Walks"],
+    "tags": [
+      "Sports",
+      "Outdoors",
+      "Walks"
+    ],
     "price": 1
-
-  },
-
-  {
-    "name": "Tennis au centre sportif Dunois",
-    "location": "70 Rue Dunois 75013 PARIS",
-    "image": "/images/activities/tennis-dunois.jpeg",
-    "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
-    "url": "http://tennisclubdunois.fr/",
-    "tags": ["Sport", "Outdoor", "Walks"],
-    "price": 1
-
   },
   {
     "name": "la Butte Bergeyre",
@@ -189,9 +277,13 @@
     "image": "/images/activities/la-Butte-Bergeyre.jpeg",
     "description": "Butte Bergeyre is one of those areas in Paris that the decades have passed by. Secret, secluded, and off the beaten path, even many Parisians themselves don’t know about its’ existence. Here’s your insider’s guide on how to visit this secret micro-arrondissement in the 19th-arrondissement of Paris",
     "url": "https://www.habitants-butte-bergeyre.fr/",
-    "tags": ["Outdoor", "Free", "Original","Secret Place","Free", "Walks"],
+    "tags": [
+      "Outdoors",
+      "Free",
+      "Original",
+      "Secret Place"
+    ],
     "price": 0
-
   },
   {
     "name": "Halte au théâtre de la Huchette",
@@ -199,9 +291,13 @@
     "image": "/images/activities/theatre.jpeg",
     "description": "This small theatre in Paris' Left Bank, located at 23 rue de la Huchette in the 5th arrondissement, is known for playing Eugène Ionesco's absurdist double-bill of The Lesson and The Bald Soprano in permanent repertory since 1957, as 'Spectacle Ionesco'.",
     "url": "http://www.theatre-huchette.com/en/home-store/",
-    "tags": ["Original", "Culture", "Art","Show"],
+    "tags": [
+      "Original",
+      "Culture",
+      "Art",
+      "Show"
+    ],
     "price": 2
-
   },
   {
     "name": "Balade en barque sur le Lac des Minimes",
@@ -209,9 +305,16 @@
     "image": "/images/activities/minime-vincenne.jpeg",
     "description": "Relive the beginning of canoeing on Lac des Minimes thanks to the boats for hire on site. Take advantage of the natural setting of Lac des Minimes, go around the islands, go under the bridge, walk along the waterfall and enjoy the surrounding calm. You will be able to observe many birds and even herons!",
     "url": "https://www.vincennes-tourisme.fr/fiche/location-de-barques-sur-le-lac-des-minimes/",
-    "tags": ["Original", "Outdoors", "Walks","Original", "Landscape", "Chill","Cozy"],
+    "tags": [
+      "Original",
+      "Outdoors",
+      "Walks",
+      "Original",
+      "Landscape",
+      "Chill",
+      "Cosy"
+    ],
     "price": 2
-
   },
   {
     "name": "CLINT",
@@ -219,16 +322,26 @@
     "image": "/images/activities/clint.jpg",
     "description": "Are you looking for an original brunch with quality products that allows you to consume according to your wallet? This is the place! One of the best brunch in Paris",
     "url": "https://www.instagram.com/clint_paris/?hl=fr",
-    "tags": ["Food", "Fancy", "Original"],
+    "tags": [
+      "Food",
+      "Fancy",
+      "Original"
+    ],
     "price": 2
 
-
+  },
+  {
     "name": "Musée Carnavalet",
     "location": "23 Rue de Sévigné, 75003 Paris",
     "image": "/images/activities/carnavalet.jpg",
     "description": "Museum in neighboring mansions with Paris art & history exhibits focused on 16th & 17th centuries.",
     "url": "https://www.carnavalet.paris.fr/",
-    "tags": ["Museum", "Culture", "Indoors", "Art"],
+    "tags": [
+      "Museum",
+      "Culture",
+      "Indoors",
+      "Art"
+    ],
     "price": 1
   },
   {
@@ -237,7 +350,13 @@
     "image": "/images/activities/pompidou.jpg",
     "description": "Architecturally avant-garde complex housing National Museum of Modern Art, library and music center.",
     "url": "https://www.centrepompidou.fr/fr/",
-    "tags": ["Museum", "Creative", "Culture", "Indoors", "Original"],
+    "tags": [
+      "Museum",
+      "Creative",
+      "Culture",
+      "Indoors",
+      "Original"
+    ],
     "price": 2
   },
   {
@@ -246,7 +365,13 @@
     "image": "/images/activities/grevin.jpg",
     "description": "Family-friendly wax museum with lifelike models of French historic and contemporary figures.",
     "url": "https://www.grevin-paris.com/",
-    "tags": ["Museum", "Creative", "Culture", "Indoors", "Touristic"],
+    "tags": [
+      "Museum",
+      "Creative",
+      "Culture",
+      "Indoors",
+      "Touristic"
+    ],
     "price": 4
   },
   {
@@ -255,7 +380,13 @@
     "image": "/images/activities/hugo.jpg",
     "description": "Victor Hugo's evocative apartment, decorated with original furniture, plus artifacts and sketches.",
     "url": "https://www.maisonsvictorhugo.paris.fr/",
-    "tags": ["Museum", "Art", "Culture", "Indoors", "Touristic"],
+    "tags": [
+      "Museum",
+      "Art",
+      "Culture",
+      "Indoors",
+      "Touristic"
+    ],
     "price": 3
   },
   {
@@ -264,7 +395,12 @@
     "image": "/images/activities/thegame.jpg",
     "description": "The principle of an Escape Game is simple: you are dived into a story in a movie set-like, and you only have 60 minutes to achieve the mission! Therefore, you need to cooperate, use logic and your sense of observation.",
     "url": "https://www.thegame-france.com/",
-    "tags": ["Creative", "Adventure", "Craft", "Ambiance"],
+    "tags": [
+      "Creative",
+      "Adventure",
+      "Craft",
+      "Ambiance"
+    ],
     "price": 3
   },
   {
@@ -273,7 +409,13 @@
     "image": "/images/activities/lavillette.jpg",
     "description": "Wide lawns with sculptures and fountains in urban park with a museum, a cinema and a music complex.",
     "url": "https://lavillette.com/",
-    "tags": ["Outdoors", "Chill", "Walks", "Ambiance", "Free"],
+    "tags": [
+      "Outdoors",
+      "Chill",
+      "Walks",
+      "Ambiance",
+      "Free"
+    ],
     "price": 0
   },
   {
@@ -282,7 +424,12 @@
     "image": "/images/activities/chaumont.jpg",
     "description": "19th-century park in former quarry, with tall trees, lake, waterfalls and old, iron railway bridge.",
     "url": "https://www.paris.fr/equipements/parc-des-buttes-chaumont-1757",
-    "tags": ["Outdoors", "Chill", "Walks", "Free"],
+    "tags": [
+      "Outdoors",
+      "Chill",
+      "Walks",
+      "Free"
+    ],
     "price": 0
   },
   {
@@ -291,7 +438,12 @@
     "image": "/images/activities/streetworkout.jpg",
     "description": "Green space offering an array of street-style workout equipment, including traction bars & benches.",
     "url": "https://calisthenics-parks.com/fr",
-    "tags": ["Sports", "Outdoors", "Adventure", "Free"],
+    "tags": [
+      "Sports",
+      "Outdoors",
+      "Adventure",
+      "Free"
+    ],
     "price": 0
   },
   {
@@ -300,7 +452,12 @@
     "image": "/images/activities/r2vendome.jpg",
     "description": "R2 training has 3 sites in Paris and one site in London. Unique sporting experience in a premium setting.",
     "url": "http://www.r2training.fr/",
-    "tags": ["Sports", "Indoors", "Adventure", "Original"],
+    "tags": [
+      "Sports",
+      "Indoors",
+      "Adventure",
+      "Original"
+    ],
     "price": 4
   },
   {
@@ -309,7 +466,12 @@
     "image": "/images/activities/galliera.jpg",
     "description": "Chic Beaux-Arts fashion museum displaying 3 centuries of clothing, accessories & photography.",
     "url": "http://www.palaisgalliera.paris.fr/",
-    "tags": ["Museum", "Creative", "Original", "Art"],
+    "tags": [
+      "Museum",
+      "Creative",
+      "Original",
+      "Art"
+    ],
     "price": 3
   },
   {
@@ -318,7 +480,11 @@
     "image": "/images/activities/ugcleshalles.jpg",
     "description": "In the heart of Paris, discover the world's biggest movie theater.",
     "url": "https://www.ugc.fr/cinema.html?id=10",
-    "tags": ["Chill", "Indoors", "Show"],
+    "tags": [
+      "Chill",
+      "Indoors",
+      "Show"
+    ],
     "price": 2
   },
   {
@@ -327,7 +493,11 @@
     "image": "/images/activities/airbattle.jpg",
     "description": "Laserball is played inside the arena. players are equipped with a blaster with laser and a flexible and reusable rubber ball magazine.",
     "url": "http://www.airbattlegames.fr/tarifs",
-    "tags": ["Adventure", "Original", "Sports"],
+    "tags": [
+      "Adventure",
+      "Original",
+      "Sports"
+    ],
     "price": 3
   },
   {
@@ -336,7 +506,11 @@
     "image": "/images/activities/paintball94.jpg",
     "description": "Paintball is a team shooting sport in which players eliminate opponents from play by hitting them paintballs that break upon impact.",
     "url": "https://paintball94.fr/",
-    "tags": ["Adventure", "Original", "Sports"],
+    "tags": [
+      "Adventure",
+      "Original",
+      "Sports"
+    ],
     "price": 4
   },
   {
@@ -345,7 +519,12 @@
     "image": "/images/activities/mermaids.jpg",
     "description": "Nautical-themed hangout with island decor for comfort foods, coffee, craft cocktails & dancing.",
     "url": "http://www.mermaidsanddivers.fr/",
-    "tags": ["Drinks", "Cocktails", "Exotic", "Bar"],
+    "tags": [
+      "Drinks",
+      "Cocktails",
+      "Exotic",
+      "Bar"
+    ],
     "price": 2
   },
   {
@@ -354,7 +533,12 @@
     "image": "/images/activities/tourdargent.jpg",
     "description": "Centuries-old quayside emblem of upscale French cuisine famed for its house special, pressed duck.",
     "url": "https://tourdargent.com/la-rotisserie-dargent/",
-    "tags": ["Fancy", "Food", "Touristic", "Original"],
+    "tags": [
+      "Fancy",
+      "Food",
+      "Touristic",
+      "Original"
+    ],
     "price": 4
   },
   {
@@ -363,7 +547,12 @@
     "image": "/images/activities/angelina.jpg",
     "description": "Legendary 1903 tea room offering refined pastries & hot chocolate in a belle epoque-style setting.",
     "url": "http://www.angelina-paris.fr/",
-    "tags": ["Fancy", "Original", "Touristic", "Food"],
+    "tags": [
+      "Fancy",
+      "Original",
+      "Touristic",
+      "Food"
+    ],
     "price": 4
   },
   {
@@ -372,7 +561,11 @@
     "image": "/images/activities/santacarne.jpg",
     "description": "Argentinian steaks with a French touch, plus Latin American wines, at a vibrant, retro-chic bistro.",
     "url": "https://santacarne.com/menu/",
-    "tags": ["Food", "Original", "Exotic"],
+    "tags": [
+      "Food",
+      "Original",
+      "Exotic"
+    ],
     "price": 3
   },
   {
@@ -381,7 +574,11 @@
     "image": "/images/activities/bouillonpigalle.jpg",
     "description": "Popular casual bistro serving traditional French mains & desserts with house wines by the glass.",
     "url": "https://bouillonlesite.com/bouillon-pigalle",
-    "tags": ["Food", "Cheap", "Cosy"],
+    "tags": [
+      "Food",
+      "Cheap",
+      "Cosy"
+    ],
     "price": 1
   },
   {
@@ -390,113 +587,165 @@
     "image": "/images/activities/littlereddoor.jpg",
     "description": "An array of creative, inventively presented cocktails at an intimate, acclaimed bar",
     "url": "http://www.lrdparis.com/",
-    "tags": ["Secret Place", "Drinks", "Original", "Cocktails"],
+    "tags": [
+      "Secret Place",
+      "Drinks",
+      "Original",
+      "Cocktails"
+    ],
     "price": 3
-),
-{
+  },
+  {
     "name": "Jardin du Luxembourg",
     "location": "75006, Paris",
     "image": "/images/activities/luxembourg.jpg",
     "description": "A true Parisian institution, the Luxembourg garden is designated as the most beautiful garden in Europe and third most beautiful garden in the world.",
-    "url": "https://www.senat.fr/visite/jardin/index.html", 
-    "tags": [ "Outdoors", "Landscape", "Free", "Touristic", "Walks"],
+    "url": "https://www.senat.fr/visite/jardin/index.html",
+    "tags": [
+      "Outdoors",
+      "Landscape",
+      "Free",
+      "Touristic",
+      "Walks"
+    ],
     "price": 0
   },
-{
+  {
     "name": "Buddha Bar",
     "location": "8-12 Rue Boissy d'Anglas, 75008 Paris",
     "image": "/images/activities/buddhabar.jpg",
     "description": "The Buddha-Bar is a bar-restaurant with a lounge atmosphere serving Asian cuisine, also known for the quality of its playlists.",
     "url": "https://www.buddhabar.com/",
-    "tags": ["Exotic" , "Cocktails" , "Ambiance", "Fancy" , "Music"],
+    "tags": [
+      "Exotic",
+      "Cocktails",
+      "Ambiance",
+      "Fancy",
+      "Music"
+    ],
     "price": 4
   },
-
-
-{
-    "name":  "Coya",
+  {
+    "name": "Coya",
     "location": "83-85 Rue du Bac, 75007 Paris",
     "image": "/images/activities/coya.jpg",
     "description": "More than just a restaurant, Coya Paris is an immersive experience inspired by the vibrant Latin American culture. Peruvian cuisine in a former church, dj sets on weekends: Coya is a very trendy address in Paris!",
     "url": "https://coyarestaurant.com/restaurants/paris-fr/",
-    "tags": ["Exotic" , "Food" , "Ambiance", "Fancy" ],
+    "tags": [
+      "Exotic",
+      "Food",
+      "Ambiance",
+      "Fancy"
+    ],
     "price": 4
   },
-
-{
-    "name":  "Medellin",
+  {
+    "name": "Medellin",
     "location": "6 av. Marceau, 75008 Paris",
     "image": "/images/activities/medellin.jpg",
     "description": "Hidden behind a refrigerator door, this unique private club in Paris with a speakeasy atmosphere is dedicated to South American culture.",
     "url": "https://www.medellinparis.fr/public/fr",
-    "tags": ["Clubbing", "Drinks", "Fancy", "Exotic"],
+    "tags": [
+      "Clubbing",
+      "Drinks",
+      "Fancy",
+      "Exotic"
+    ],
     "price": 4
-  }, 
+  },
   {
-    "name":  "Roof",
+    "name": "Roof",
     "location": "43 Rue Étienne Marcel, 75001 Paris",
     "image": "/images/activities/roof.jpg",
     "description": "Roof is the name of the new rooftop terrace located on the roof of the Poste du Louvre in the 1st arrondissement, in the Halles district. With its sublime view on all Paris and its beautiful green space, this new spot belonging to Madame Rêve and open to all, is likely to seduce you.",
     "url": "https://madamereve.com/restaurants/roof/",
-    "tags": ["Romantic", "Fancy", "Chill", "Drinks"],
+    "tags": [
+      "Romantic",
+      "Fancy",
+      "Chill",
+      "Drinks"
+    ],
     "price": 4
-  }, 
+  },
   {
-    "name":  "The Cali Sisters",
+    "name": "The Cali Sisters",
     "location": "17 rue Notre-Dame-des-Victoires, 75002 Paris",
     "image": "/images/activities/calisisters.jpg",
     "description": "Cali Sisters is a feel good place, between a giant palm tree and a XXL glass roof, in a bohemian gipsy decor as in Venice, a Californian cuisine as healthy as it is delicious, perfect for a Sunday brunch!",
     "url": "https://calisisters.thecalisisters.com/",
-    "tags": ["Chill", "Food", "Fancy"],
+    "tags": [
+      "Chill",
+      "Food",
+      "Fancy"
+    ],
     "price": 2
-  }, 
+  },
   {
-    "name":  "Beer brewing workshop",
+    "name": "Beer brewing workshop",
     "location": "32 rue Lemercier 75017 Paris",
     "image": "/images/activities/brasseurs.jpg",
     "description": "During your brewing course, you will choose your recipe, carry out all the steps of the making of your beer, from the mashing of the grain to the bottling, and you will leave with 20 liters of your own beer.",
     "url": "https://www.leshoublonneurs.com/",
-    "tags": ["Craft", "Drinks", "Original"],
+    "tags": [
+      "Craft",
+      "Drinks",
+      "Original"
+    ],
     "price": 4
-  }, 
+  },
   {
-    "name":  "Madame Arthur",
+    "name": "Madame Arthur",
     "location": "75 rue des Martyrs, 75018 Paris",
     "image": "/images/activities/madamearthur.jpg",
     "description": "Madame Arthur is a transvestite cabaret located in the heart of Pigalle, in the 18ᵉ arrondissement of Paris. After the show, the evening continues at the same address, at the Divan du Monde, for a night of clubbing.",
     "url": "https://madamearthur.fr/",
-    "tags": ["Open Minded", "Show", "Ambiance", "Clubbing"],
+    "tags": [
+      "Open Minded",
+      "Show",
+      "Ambiance",
+      "Clubbing"
+    ],
     "price": 2
-  }, 
+  },
   {
-    "name":  "L'Aquarium, le Club",
+    "name": "L'Aquarium, le Club",
     "location": "5 Av. Albert de Mun, 75016 Paris",
     "image": "/images/activities/aquarium.jpg",
     "description": "In this club the space is dressed with a giant aquarium of 8 meters and 600,000 liters of water where leopard rays, sharks, angel fish and other exotic creatures swim. Every Friday and Saturday, parties are organized with a program evolving around the deep house.",
     "url": "https://aquariumleclub.com/",
-    "tags": ["Clubbing", "Original", "Fancy", "Exotic"],
+    "tags": [
+      "Clubbing",
+      "Original",
+      "Fancy",
+      "Exotic"
+    ],
     "price": 4
-  }, 
+  },
   {
-    "name":  "Graffiti workshop",
+    "name": "Graffiti workshop",
     "location": "33 rue Bezout, 75014 Paris",
     "image": "/images/activities/graffiti.jpg",
     "description": "Paris welcomes on its walls the works of world famous street art artists such as Obey, Cost, C215, Seth.... Do you want to leave your mark on the walls of Paris? Take a street art initiation workshop.",
     "url": "https://graffitiparis.com/notre-offre/atelier-initiation-au-street-art/",
-    "tags": ["Craft", "Creative", "Outdoors", "Original"],
+    "tags": [
+      "Craft",
+      "Creative",
+      "Outdoors",
+      "Original"
+    ],
     "price": 3
-  }, 
+  },
   {
-    "name":  "Workshop to create your fragrance",
+    "name": "Workshop to create your fragrance",
     "location": "9 rue de Picardie, 75003 Paris",
     "image": "/images/activities/fragrance.jpg",
     "description": "Maison Laugier opens its laboratory and shares its know-how with passion. Imagine an exclusive custom-made perfume, drawing on your roots, your olfactory memory, your dreams to express your authenticity and uniqueness.",
     "url": "https://maisonlaugier.com/",
-    "tags": ["Craft", "Creative", "Original"],
+    "tags": [
+      "Craft",
+      "Creative",
+      "Original"
+    ],
     "price": 4
-
-
   }
-
-  
 ]
