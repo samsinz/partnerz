@@ -34,8 +34,8 @@ header {
 
 #logo-nav {
   height: 2rem;
-  width: 2rem;
-  background: center / contain no-repeat url("/images/home/logo-nav.png");
+  width: 2.5rem;
+  background: center / contain no-repeat url("/images/logos/logo.svg");
   margin: 3rem;
   cursor: pointer;
 }
