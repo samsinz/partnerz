@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-    const allUsers = document.querySelectorAll(".user-card");
   
     const cards = document.querySelectorAll(".user-card");
     const cardId = document.querySelectorAll("#card-id")
