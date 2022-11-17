@@ -217,7 +217,7 @@
   },
   {
     "name": "Tour Eiffel",
-    "location": "Champ de Mars, 5 Av. Anatole France, 75007 Paris",
+    "location": "5 Av. Anatole France, 75007 Paris",
     "image": "/images/activities/toureiffel.jpg",
     "description": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel. Locally nicknamed La dame de fer, it was constructed  as the centerpiece of the World's Fair.",
     "url": "https://www.toureiffel.paris/en",
@@ -261,7 +261,7 @@
   {
     "name": "Tennis au centre sportif Dunois",
     "location": "70 Rue Dunois 75013 PARIS",
-    "image": "/images/activities/montmartrevineyards.jpg",
+    "image": "/images/activities/tennis-dunois.jpeg",
     "description": "A great tennis game in the center of Paris! Reserve your court with you future partnez to meet and do some sport together!",
     "url": "http://tennisclubdunois.fr/",
     "tags": [
@@ -307,9 +307,7 @@
     "url": "https://www.vincennes-tourisme.fr/fiche/location-de-barques-sur-le-lac-des-minimes/",
     "tags": [
       "Original",
-      "Outdoors",
       "Walks",
-      "Original",
       "Landscape",
       "Chill",
       "Cosy"
