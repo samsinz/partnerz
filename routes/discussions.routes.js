@@ -8,9 +8,7 @@ const { isLoggedInFunction } = require("../middlewares/middlewares");
 
 router.get("/", isLoggedInFunction, async (req, res, next) => {
   const allMatchesId = req.session.currentUser.matches;
-  const currentUserConvo = await User.find({
-    username: req.session.currentUser.username,
-  });
+  
 
 
   
@@ -19,8 +17,35 @@ router.get("/", isLoggedInFunction, async (req, res, next) => {
     .populate('receiver')
     .populate('sender')
 
+
+ 
+
     
-    console.log(allMatches);
+  
+
+ for (let i = 0; i < allMatches.length; i++){
+
+  const lastMessage = allMatches[i].discussion.messages.slice(-1)[0].content;
+  allMatches[i].lastMessage = lastMessage; 
+
+  const receiver = allMatches[i].receiver;
+  const sender = allMatches[i].sender;
+
+
+console.log(String(sender._id))
+console.log(req.session.currentUser._id)
+  if(String(sender._id) === req.session.currentUser._id){
+    allMatches[i].partner = receiver;
+
+    console.log(allMatches[i].partner.name)
+
+  }else {
+    allMatches[i].partner = sender;
+    console.log(allMatches[i].partner.name)
+  }
+
+
+ }
     
   // const lastMessage = allMatches.discussion.messages[0]
  
