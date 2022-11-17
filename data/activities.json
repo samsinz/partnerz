@@ -5,7 +5,7 @@
     "image": "/images/activities/59-rivoli.jpg",
     "description": "Art gallery in Paris, France. Formerly an artist squat that had occupied the space since 1999, it was legalized by the city from 2006 onwards.[1] The venue became known for its parties, exhibitions, and performances. exhibitions, and performances.",
     "url": "http://www.59rivoli.org/accueil/",
-    "tags": ["Museum", "Culture", "Art", "Free", "Original", "Walks", "Indoors"],
+    "tags": ["Open Minded", "Art", "Free", "Original", "Indoors"],
     "price": 0
   },
   {
@@ -14,7 +14,7 @@
     "image": "/images/activities/bar_mazcaleria.jpg",
     "description": "Meet at the Mezcaleria, the clandestine bar of the famous 1K hotel, hidden behind the kitchens. On the program: Latin music and old school R'n'B, tailor-made creations with Mexican eau-de-vie and multicolored decoration that will warm your heart.",
     "url": "https://www.instagram.com/lamezcaleriaparis/",
-    "tags": ["Exotic", "Bar", "Secret Place", "Cocktails", "Music", "Ambiance", "Drinks"],
+    "tags": ["Bar", "Secret Place", "Cocktails", "Ambiance"],
     "price": 4
   },
   {
@@ -23,7 +23,7 @@
     "image": "/images/activities/bar_mobster.jpg",
     "description": "In a breathtaking decor and a jazzy atmosphere, Mobster bar takes you back to the era of prohibition. On the program for your evening? Cocktails inspired by the great classics of the 20th century.",
     "url": "https://mobsterbar.com",
-    "tags": ["Romantic", "Bar", "Secret Place", "Cocktails", "Music", "Ambiance", "Drinks"],
+    "tags": ["Bar", "Secret Place", "Cocktails", "Music", "Ambiance"],
     "price": 4
   },
   {
@@ -32,7 +32,7 @@
     "image": "/images/activities/brunch-geneve.jpg",
     "description": "On Sunday we get out of the duvet to have enjoy the highlight of the week! The Atelier Geneviève awaits you at the Ceramicafé. Come and personalize a ceramic object with the advice of your team.",
     "url": "https://lateliergenevieve.fr/products/ceramic-brunch-ceramicafe-11",
-    "tags": ["Fancy", "Art", "Cosy", "Chill", "Food", "Craft"],
+    "tags": ["Fancy", "Art", "Chill", "Food", "Craft"],
     "price": 4
   },
   {
@@ -50,7 +50,7 @@
     "image": "/images/activities/museeysl.jpg",
     "description": "The Yves Saint Laurent Museum in Paris exhibits the designer's work through a retrospective and thematic temporary exhibitions.",
     "url": "https://museeyslparis.com/",
-    "tags": ["Museum", "Indoors", "Fancy", "Culture", "Cheap"],
+    "tags": ["Museum", "Indoors", "Fancy", "Culture"],
     "price": 1
   },
   {
@@ -68,7 +68,7 @@
     "image": "/images/activities/grandegaleriedelevolution.jpg",
     "description": "The Great Gallery of Evolution is one of the galleries of the National Museum of Natural History. The galleries of the Museum are buildings that are museums in themselves and each one specializes in a specific field of natural history.",
     "url": "https://www.jardindesplantesdeparis.fr/fr/programme/galeries-jardins-zoo-bibliotheques/grande-galerie-levolution-2763",
-    "tags": ["Museum", "Indoors", "Exotic", "Culture", "Cheap", "Touristic"],
+    "tags": ["Museum", "Indoors", "Exotic", "Culture"],
     "price": 1
   },
   {
@@ -95,7 +95,7 @@
     "image": "/images/activities/tuileries.jpg",
     "description": "The Tuileries Garden is a public garden located between the Louvre and the Place de la Concorde in the 1st arrondissement of Paris, France. Created by Catherine de' Medici as the garden of the Tuileries Palace in 1564, it became a public park after the French Revolution.",
     "url": "https://en.parisinfo.com/paris-museum-monument/71304/Jardin-des-Tuileries",
-    "tags": ["Culture", "Outdoors", "Walks", "Chill", "Romantic", "Free", "Touristic", "Landscape"],
+    "tags": [ "Outdoors", "Walks", "Free", "Touristic", "Landscape"],
     "price": 0
   },
   {
@@ -113,7 +113,7 @@
     "image": "/images/activities/lagarelegore.jpg",
     "description": "Offbeat gathering place with graffiti decor & live bands, plus drinks, pub eats & outdoor tables.",
     "url": "https://www.instagram.com/la_gare_le_gore/?hl=en",
-    "tags": ["Clubbing", "Open Minded", "Drinks", "Ambiance", "Music", "Secret Place"],
+    "tags": [ "Open Minded", "Drinks", "Ambiance", "Bar"],
     "price": 2
   },
   {
@@ -122,7 +122,7 @@
     "image": "/images/activities/badaboum.jpg",
     "description": "Upbeat destination with a club & concert hall for parties, DJ sets & live music.",
     "url": "https://www.instagram.com/badaboum.paris/?hl=en",
-    "tags": ["Clubbing", "Open Minded", "Drinks", "Ambiance", "Music", "Secret Place"],
+    "tags": ["Clubbing", "Open Minded", "Drinks", "Music"],
     "price": 3
   },
   {
@@ -131,7 +131,7 @@
     "image": "/images/activities/garnier.jpg",
     "description": "The Palais Garnier, also known as Opéra Garnier, is a 1,979-seat opera house at the Place de l'Opéra in the 9th arrondissement of Paris, France. It was built for the Paris Opera from 1861 to 1875 at the behest of Emperor Napoleon III.",
     "url": "https://www.operadeparis.fr/en/visits/palais-garnier",
-    "tags": ["Touristic", "Music", "Show", "Culture", "Art", "Indoors"],
+    "tags": ["Touristic", "Music", "Show", "Culture", "Art"],
     "price": 3
   },
   {
@@ -158,13 +158,13 @@
     "image": "/images/activities/montmartrevineyards.jpg",
     "description": "Made from grape varieties from the greatest wine regions, Montmartre wine is harvested at Clos Montmartre, where more than 1700 grape varieties are grown. Every year in October, the Montmartre Wine Harvest Festival celebrates the wine produced at Clos Montmartre.",
     "url": "https://museedemontmartre.fr/evenements/visite-des-vignes-du-clos-montmartre-et-du-musee-de-montmartre/",
-    "tags": ["Drink", "Original", "Walks"],
+    "tags": ["Drinks", "Original", "Walks"],
     "price": 1
   },
   {
     "name": "Jardin du Luxembourg",
-    "location": "/images/activities/75006, Paris",
-    "image": "luxembourg.jpg",
+    "location": "75006, Paris",
+    "image": "/images/activities/luxembourg.jpg",
     "description": "A true Parisian institution, the Luxembourg garden is designated as the most beautiful garden in Europe and third most beautiful garden in the world.",
     "url": "https://www.senat.fr/visite/jardin/index.html", 
     "tags": [ "Outdoors", "Landscape", "Free", "Touristic", "Walks"],
@@ -197,8 +197,70 @@
     "image": "/images/activities/medellin.jpg",
     "description": "Hidden behind a refrigerator door, this unique private club in Paris with a speakeasy atmosphere is dedicated to South American culture.",
     "url": "https://www.medellinparis.fr/public/fr",
-    "tags": ["Clubbing", "Drink", "Fancy", "Speakeasy", "Exotic"],
+    "tags": ["Clubbing", "Drinks", "Fancy", "Exotic"],
+    "price": 4
+  }, 
+  {
+    "name":  "Roof",
+    "location": "43 Rue Étienne Marcel, 75001 Paris",
+    "image": "/images/activities/roof.jpg",
+    "description": "Roof is the name of the new rooftop terrace located on the roof of the Poste du Louvre in the 1st arrondissement, in the Halles district. With its sublime view on all Paris and its beautiful green space, this new spot belonging to Madame Rêve and open to all, is likely to seduce you.",
+    "url": "https://madamereve.com/restaurants/roof/",
+    "tags": ["Romantic", "Fancy", "Chill", "Drinks"],
+    "price": 4
+  }, 
+  {
+    "name":  "The Cali Sisters",
+    "location": "17 rue Notre-Dame-des-Victoires, 75002 Paris",
+    "image": "/images/activities/calisisters.jpg",
+    "description": "Cali Sisters is a feel good place, between a giant palm tree and a XXL glass roof, in a bohemian gipsy decor as in Venice, a Californian cuisine as healthy as it is delicious, perfect for a Sunday brunch!",
+    "url": "https://calisisters.thecalisisters.com/",
+    "tags": ["Chill", "Food", "Fancy"],
+    "price": 2
+  }, 
+  {
+    "name":  "Beer brewing workshop",
+    "location": "32 rue Lemercier 75017 Paris",
+    "image": "/images/activities/brasseurs.jpg",
+    "description": "During your brewing course, you will choose your recipe, carry out all the steps of the making of your beer, from the mashing of the grain to the bottling, and you will leave with 20 liters of your own beer.",
+    "url": "https://www.leshoublonneurs.com/",
+    "tags": ["Craft", "Drinks", "Original"],
+    "price": 4
+  }, 
+  {
+    "name":  "Madame Arthur",
+    "location": "75 rue des Martyrs, 75018 Paris",
+    "image": "/images/activities/madamearthur.jpg",
+    "description": "Madame Arthur is a transvestite cabaret located in the heart of Pigalle, in the 18ᵉ arrondissement of Paris. After the show, the evening continues at the same address, at the Divan du Monde, for a night of clubbing.",
+    "url": "https://madamearthur.fr/",
+    "tags": ["Open Minded", "Show", "Ambiance", "Clubbing"],
+    "price": 2
+  }, 
+  {
+    "name":  "L'Aquarium, le Club",
+    "location": "5 Av. Albert de Mun, 75016 Paris",
+    "image": "/images/activities/aquarium.jpg",
+    "description": "In this club the space is dressed with a giant aquarium of 8 meters and 600,000 liters of water where leopard rays, sharks, angel fish and other exotic creatures swim. Every Friday and Saturday, parties are organized with a program evolving around the deep house.",
+    "url": "https://aquariumleclub.com/",
+    "tags": ["Clubbing", "Original", "Fancy", "Exotic"],
+    "price": 4
+  }, 
+  {
+    "name":  "Graffiti workshop",
+    "location": "33 rue Bezout, 75014 Paris",
+    "image": "/images/activities/graffiti.jpg",
+    "description": "Paris welcomes on its walls the works of world famous street art artists such as Obey, Cost, C215, Seth.... Do you want to leave your mark on the walls of Paris? Take a street art initiation workshop.",
+    "url": "https://graffitiparis.com/notre-offre/atelier-initiation-au-street-art/",
+    "tags": ["Craft", "Creative", "Outdoors", "Original"],
+    "price": 3
+  }, 
+  {
+    "name":  "Workshop to create your fragrance",
+    "location": "9 rue de Picardie, 75003 Paris",
+    "image": "/images/activities/fragrance.jpg",
+    "description": "Maison Laugier opens its laboratory and shares its know-how with passion. Imagine an exclusive custom-made perfume, drawing on your roots, your olfactory memory, your dreams to express your authenticity and uniqueness.",
+    "url": "https://maisonlaugier.com/",
+    "tags": ["Craft", "Creative", "Original"],
     "price": 4
   }
-
 ]
