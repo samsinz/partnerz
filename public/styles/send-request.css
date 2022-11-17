@@ -68,7 +68,7 @@ height:12rem;
   background-color: #f4f4f4;
   border-radius: 1rem;
   resize: none;
-  padding-top: 4%;
+  padding: 4%;
 }
 
 #message-area textarea:focus {
