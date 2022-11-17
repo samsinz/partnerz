@@ -244,6 +244,23 @@
     "url": "https://aquariumleclub.com/",
     "tags": ["Clubbing", "Original", "Fancy", "Exotic"],
     "price": 4
+  }, 
+  {
+    "name":  "Graffiti workshop",
+    "location": "33 rue Bezout, 75014 Paris",
+    "image": "/images/activities/graffiti.jpg",
+    "description": "Paris welcomes on its walls the works of world famous street art artists such as Obey, Cost, C215, Seth.... Do you want to leave your mark on the walls of Paris? Take a street art initiation workshop.",
+    "url": "https://graffitiparis.com/notre-offre/atelier-initiation-au-street-art/",
+    "tags": ["Craft", "Creative", "Outdoors", "Original"],
+    "price": 3
+  }, 
+  {
+    "name":  "Workshop to create your fragrance",
+    "location": "9 rue de Picardie, 75003 Paris",
+    "image": "/images/activities/fragrance.jpg",
+    "description": "Maison Laugier opens its laboratory and shares its know-how with passion. Imagine an exclusive custom-made perfume, drawing on your roots, your olfactory memory, your dreams to express your authenticity and uniqueness.",
+    "url": "https://maisonlaugier.com/",
+    "tags": ["Craft", "Creative", "Original"],
+    "price": 4
   }
-
 ]
