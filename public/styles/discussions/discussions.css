@@ -10,13 +10,15 @@
 #top{
     width: 80%;
     margin-top: 3rem;
-   
+    background-color: lightgrey;
+    height: 0.8px;
+    border: 0;
 }
 
 .conversation{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
 
     width:100%;
 
@@ -29,11 +31,12 @@ img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    object-fit: cover;
 }
 
 .details {
     margin-left:0.7rem;
-    margin-top: 1rem;
+    width: 70%;
     
 }
 .name{
@@ -43,6 +46,9 @@ img {
 
 .separator{
     width: 80%;
+    background-color: lightgrey;
+    height: 0.8px;
+    border: 0;
  
 }
 
