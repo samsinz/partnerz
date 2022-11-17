@@ -16,7 +16,7 @@ function isLoggedInFunction(req, res, next) {
 
 function isLoggedInFunctionSignUp(req, res, next) {
   if (req.session.currentUser) {
-    res.redirect('/activities')
+    return res.redirect('/activities')
   }
   return next();
 }
@@ -24,7 +24,7 @@ function isLoggedInFunctionSignUp(req, res, next) {
 function isExperiencedUser(req, res, next) {
   if (req.session.currentUser) {
     if (req.session.currentUser.tags.length != 0) {
-      res.redirect("/activities");
+      return res.redirect("/activities");
     }
   }
   return next();
