@@ -1,0 +1,49 @@
+
+<div class = "image">
+<img src = "{{singleRequest.sender.profilePicture}}">
+</div>
+
+<div class = "content">
+<h2>{{singleRequest.sender.name}} wants to hang out with you !</h2>
+<p id="message">{{singleRequest.discussion.messages.[0].content}}</p>
+
+<div class = "activity-card">
+    <img src = "{{singleRequest.activity.image}}">
+    <div class = "activity-info">
+    <h3>{{singleRequest.activity.name}}</h3>
+    <p class = "description">{{singleRequest.activity.description}}</p>
+    
+    <div class = tags>
+        <span>{{singleRequest.activity.tags.[0]}}</span> 
+        <span>{{singleRequest.activity.tags.[1]}}</span> 
+    </div>
+</div>
+
+
+</div>
+
+<div class = "sender-infos">
+
+    <h3>{{singleRequest.sender.name}}, {{age}}</h3>
+    <p class="description">{{singleRequest.sender.bio}}</p>
+
+    <div class="tags">
+        {{#each singleRequest.sender.tags}}
+        <span>{{this}}</span>
+         {{/each}}
+</div>
+
+</div>
+
+<div class = "buttons">
+    <button id="decline"><svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="18.8377" y1="19.4763" x2="7.52396" y2="8.16261" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="7.52393" y1="18.8374" x2="18.8376" y2="7.52371" stroke="white" stroke-width="3" stroke-linecap="round"/>
+</svg>
+</button>
+    <button id="approve"><svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.69238 9.80762C0.863956 9.80762 0.192383 10.4792 0.192383 11.3076C0.192383 12.136 0.863956 12.8076 1.69238 12.8076V9.80762ZM19.3798 12.3683C19.9656 11.7825 19.9656 10.8327 19.3798 10.247L9.83388 0.701015C9.24809 0.115229 8.29834 0.115229 7.71256 0.701015C7.12677 1.2868 7.12677 2.23655 7.71256 2.82234L16.1978 11.3076L7.71256 19.7929C7.12677 20.3787 7.12677 21.3284 7.71256 21.9142C8.29834 22.5 9.24809 22.5 9.83388 21.9142L19.3798 12.3683ZM1.69238 12.8076H18.3192V9.80762H1.69238V12.8076Z" fill="white"/>
+</svg></button>
+</div>
+
+</div>
