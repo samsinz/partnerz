@@ -9,6 +9,8 @@
     width: 10vh;
     height: 10vh;
     border-radius: 8rem;;
+    object-fit: cover;
+
   }
 
   h2{

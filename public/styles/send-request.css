@@ -13,6 +13,7 @@
     width:5.5rem;
     border-radius:50%;
     border:solid 4px white;
+    object-fit: cover;
 }
 
 #current-profile-pic {
