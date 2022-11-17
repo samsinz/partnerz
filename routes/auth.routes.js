@@ -91,7 +91,6 @@ router.get("/logout", async (req, res, next) => {
 });
 
 router.get("/getuser", (req, res, next) => {
-  console.log(req.session.currentUser);
 });
 
 module.exports = router;

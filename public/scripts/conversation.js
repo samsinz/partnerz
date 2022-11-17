@@ -7,7 +7,5 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       allMessages[i].parentNode.className = "talkee";
     }
-    console.log(allMessages[i]);
   }
-  console.log(currentUser);
 });

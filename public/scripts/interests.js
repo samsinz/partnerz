@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
         userInterestsArr.length < 5
       ) {
         userInterestsArr.push(tagUnique.textContent);
-        console.log(userInterestsArr);
 
         
       } else {
@@ -63,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
         userInterestsArr = userInterestsArr.filter(
           (x) => x != tagUnique.textContent
         );
-        console.log(userInterestsArr);
       }
       document.querySelector("#input-tags").value = userInterestsArr;
 
