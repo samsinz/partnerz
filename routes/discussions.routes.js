@@ -14,22 +14,31 @@ router.get("/", isLoggedInFunction, async (req, res) => {
 });
 
 router.get("/:id", async (req, res) => {
-  const currentConversation = await Discussion.findById(req.params.id).populate(
-    "messages"
-  );
-  const { messages } = currentConversation;
-  console.log(`sending ${messages}`);
+  const currentConversation = await Discussion.findById(req.params.id)
+      .populate({path: 'messages', populate: {path: 'sender', model: 'User'}})
+      .populate('users');
+  // const { messages } = currentConversation;
+
+  let partner;
+  for(let i=0; i < currentConversation.users.length; i++){
+    if(currentConversation.users[i]._id != req.session.currentUser._id){
+      partner = currentConversation.users[i]
+    }
+  }
+
   res.render("discussions/single-discussion", {
-    messages,
+    currentConversation,
+    partner,
     id: currentConversation._id,
-    scriptName: "conversation",
+    scriptName: "discussions/single-discussion",
+    styleName: "discussions/single-discussion"
   });
 });
 
 router.post("/:id", async (req, res) => {
   console.log(req.body["new-message-value"]);
   const newMessage = await Message.create({
-    sender: req.session.currentUser.username,
+    sender: req.session.currentUser,
     content: req.body["new-message-value"],
   });
   console.log(newMessage._id);

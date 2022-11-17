@@ -166,25 +166,4 @@ header li > a {
   box-shadow: 0px 0px 8px rgba(105, 104, 104, 0.25);
 }
 
-/* MESSAGES */
 
-.talker {
-  align-self: flex-end;
-  margin: 0.5vw 30vw 0.5vw 0vw;
-  width: 30vw;
-  padding: 1vw;
-  color: rgb(255, 236, 246);
-  background-color: rgb(237, 41, 90);
-  border-radius: 2vw;
-}
-
-.talkee {
-  align-self: flex-start;
-  margin: 0.5vw 0vw 0.5vw 30vw;
-  min-width: 30vw;
-  width: 30vw;
-  padding: 1vw;
-  color: #222;
-  background-color: rgb(224, 224, 224);
-  border-radius: 2vw;
-}
