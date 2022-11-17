@@ -22,20 +22,14 @@ router.post('/interests', async (req, res, next) => {
 
   
   let arrayTags = tags.split(",")
-  // const email = Math.floor(Math.random() * 2000) + '@' + Math.floor(Math.random() * 2000) + '.' + Math.floor(Math.random() * 2000)
   if(arrayTags.length >= 2){
   
   req.session.temporaryTags = arrayTags
 
  
-  // User.create({tags: arrayTags, email}).then(temporaryUser => {
-  //   req.session.temporaryUser = temporaryUser;
-  //   console.log(temporaryUser)
-  //   res.redirect('/activities')
-  // }).catch(e => console.log(e))
+
   res.redirect('/auth/signup')
   } else {
-    console.log('hello')
   }
 
 })
@@ -44,7 +38,6 @@ router.post('/interests', async (req, res, next) => {
 router.get("/profile", (req, res, next) => {
   const bio = req.session.currentUser.bio;
   const tags = req.session.currentUser.tags;
-  console.log(tags)
 
   
   // POUR AVOIR AGE DES USERS
@@ -73,7 +66,6 @@ router.post("/profile", Uploader.single("profilePicture"), async (req, res, next
   const { bio } = req.body;
   
   let profilePicture;
-  console.log(req.file);
   if (req.file) {
     profilePicture = req.file.path;
   }
@@ -83,7 +75,6 @@ router.post("/profile", Uploader.single("profilePicture"), async (req, res, next
     { profilePicture, bio },
     { new: true }
   );
-  console.log(updatedUser);
   //const updatedUser = await User.findByIdAndUpdate(id, { bio }, { new: true });
 
   req.session.currentUser = updatedUser;
@@ -93,7 +84,6 @@ router.post("/profile", Uploader.single("profilePicture"), async (req, res, next
 
 
 router.get('/profile/delete/:id', async (req, res, next) => {
-  console.log(req.params.id)
  await User.findByIdAndRemove(req.params.id)
  req.session.destroy();
  res.redirect('/')

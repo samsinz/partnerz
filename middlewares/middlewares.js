@@ -32,7 +32,6 @@ function isExperiencedUser(req, res, next) {
 
 function hasTemporaryTags(req, res, next){
   if (req.session.temporaryTags){
-    console.log('temporary tags: '+req.session.temporaryTags)
     return next()
   }
   res.redirect('/interests')

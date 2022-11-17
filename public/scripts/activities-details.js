@@ -5,7 +5,6 @@ const price = document.querySelector("#price").textContent
     const light = document.querySelector("#light-span") 
     const bold = document.querySelector("#bold-span") 
 
-    console.log(price)
     if (price === "0") {
         light.textContent = "Free"
     } else if (price === "1") {

@@ -8,7 +8,6 @@ const MongoStore = require("connect-mongo");
 
 require("./db");
 
-console.log(process.env.MONGO_URI);
 
 app.use(
   session({

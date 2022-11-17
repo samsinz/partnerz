@@ -32,16 +32,13 @@ router.get("/", isLoggedInFunction, async (req, res, next) => {
   const sender = allMatches[i].sender;
 
 
-console.log(String(sender._id))
-console.log(req.session.currentUser._id)
+
   if(String(sender._id) === req.session.currentUser._id){
     allMatches[i].partner = receiver;
 
-    console.log(allMatches[i].partner.name)
 
   }else {
     allMatches[i].partner = sender;
-    console.log(allMatches[i].partner.name)
   }
 
 
@@ -78,13 +75,11 @@ router.get("/:id", async (req, res, next) => {
 });
 
 router.post("/:id", async (req, res, next) => {
-  // console.log(req.body["new-message-value"]);
   const newMessage = await Message.create({
     sender: req.session.currentUser,
     content: req.body["new-message-value"],
   });
-  // console.log(newMessage._id);
-  // console.log(req.params.id);
+
 
     await Discussion.findByIdAndUpdate(req.params.id, {
       $push: { messages: newMessage._id },

@@ -20,11 +20,9 @@ edit.addEventListener('click',()=>{
 
 const deleteButton = document.querySelector('.delete')
 const id = document.querySelector('#id').textContent;
-console.log(id)
 
 
 deleteButton.addEventListener('click', ()=> {
-  console.log(id)
   window.location =`/profile/delete/${id}`
 })
 
