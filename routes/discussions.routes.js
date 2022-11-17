@@ -14,7 +14,7 @@ router.get("/", isLoggedInFunction, async (req, res) => {
 
 
   
-  const allMatches = await Match.find({_id: allMatchesId, status:'Pending'})
+  const allMatches = await Match.find({_id: allMatchesId, status:'Approved'})
     .populate({path: 'discussion', populate: {path: 'messages', model: 'Message'}})
     .populate('receiver')
     .populate('sender')

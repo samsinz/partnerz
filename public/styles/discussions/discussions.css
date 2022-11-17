@@ -2,13 +2,13 @@
     margin: 2rem;
     display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin-top: 14vh;
   
 }
 
 #top{
-    width: 19rem;
+    width: 80%;
     margin-top: 3rem;
    
 }
@@ -16,7 +16,7 @@
 .conversation{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 
     margin-top:1rem;
     margin-bottom: 1rem
@@ -29,7 +29,9 @@ img {
 }
 
 .details {
-    margin-left:0.5rem;
+    margin-left:0.7rem;
+    margin-top: 1rem;
+    
 }
 .name{
     font-weight: 700;
@@ -37,6 +39,6 @@ img {
 }
 
 .separator{
-    width: 19rem;
+    width: 80%;
  
 }
