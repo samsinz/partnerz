@@ -1,0 +1,42 @@
+.discussions {
+    margin: 2rem;
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 14vh;
+  
+}
+
+#top{
+    width: 19rem;
+    margin-top: 3rem;
+   
+}
+
+.conversation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-top:1rem;
+    margin-bottom: 1rem
+}
+
+img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.details {
+    margin-left:0.5rem;
+}
+.name{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.separator{
+    width: 19rem;
+ 
+}
