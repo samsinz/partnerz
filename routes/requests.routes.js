@@ -22,7 +22,23 @@ router.get("/requests-received", async (req, res) => {
 // REQUESTS
 
 router.get("/requests-received/:id", async (req, res) => {
-  res.render("requests/single-request", {scriptName: 'requests/single-request', styleName: 'requests/single-request', titleName: 'Hang out requests'});
+  const singleRequest = await Match.findById(req.params.id)
+    .populate({path: 'discussion', populate: {path: 'messages', model: 'Message'}})
+    .populate('activity')
+    .populate('receiver')
+    .populate('sender')
+
+  let birthday = singleRequest.sender.birthday;
+  let date = new Date(birthday);
+  let today = new Date();
+  let age = today.getFullYear() - date.getFullYear();
+  let month = today.getMonth() - date.getMonth();
+  if (month < 0 || (month === 0 && today.getDate() < date.getMonth())) {
+    age--;
+  }
+
+  res.render("requests/single-request", { singleRequest , age, scriptName: 'requests/single-request', styleName: 'requests/single-request', titleName: 'Hang out requests'});
 });
+
 
 module.exports = router;
