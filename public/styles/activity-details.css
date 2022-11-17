@@ -53,12 +53,19 @@
   color: var(--customblack);
 }
 
-.name a {
-  color: var(--customprimary);
-}
+
 
 .description {
   color: #717171;
+}
+
+.link {
+  margin:1rem 0;
+}
+.link a {
+  color: var(--customprimary);
+  text-decoration:none;
+  font-weight:500;
 }
 
 .tags {
