@@ -1,8 +1,33 @@
-<h2>Welcome to your discussions!</h2>
+<div class="discussions">
 
-{{#each currentUserConvo.discussions}}
+<h2>Your conversations</h2>
 
-  <p><a href="/discussions/{{this.discussion._id}}">Conversation with
-      {{this.partner}}</a></p>
+<hr id="top">
 
+{{#each allMatches}}
+
+
+
+  {{!-- <p><a href="/discussions/{{this.discussion._id}}">Conversation with
+      {{this.partner}}</a></p> --}}
+      <div class="conversation"> 
+              <img src="{{this.sender.profilePicture}}">
+          <div class="details"> 
+              <p class="name">{{this.sender.name}}</p>
+              <p class="#conv">{{this.discussion.messages.[0].content}}</p>
+
+
+ 
+          </div>
+
+       
+
+      </div>  
+     
+      <hr class="separator">
+ 
+      
+  
 {{/each}}
+
+</div>
