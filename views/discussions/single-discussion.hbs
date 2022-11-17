@@ -1,18 +1,28 @@
-<h2>Welcome to your conversation {{id}}!</h2>
-<div id="current-user" style="display:none">{{currentUser.username}}</div>
+<div id="banner">
+<img src="{{partner.profilePicture}}" alt="{{partner.name}} profile pic">
+<h2>{{partner.name}}</h2>
+</div>
+
+
+<div id="single-discussion">
+
+<div id="current-user" style="display:none">{{currentUser._id}}</div>
 
 <div id="convo">
-  {{#each messages}}
+  {{#each currentConversation.messages}}
 
-    <p><span>{{this.sender}}</span>: {{this.content}}</p>
+    <p><span id="sender-id">{{this.sender._id}}</span>{{this.content}}</p>
 
   {{/each}}
 
+</div>
+
   <form action="/discussions/{{id}}" id="new-message" method="post">
 
-    <label for="new-message-value"></label>
-    <input type="text" name="new-message-value" />
-    <button>Send</button>
+    <input type="text" name="new-message-value" placeholder="Write a message"/>
+    <button></button>
 
   </form>
+
+
 </div>
