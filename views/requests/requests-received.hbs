@@ -1,23 +1,49 @@
 <div id="requests-received">
 
-    <h2>Your requests</h2>
+    <h2>Hang out requests</h2>
 
-    <p id="description">You'll find requests from other Partnerz users here. They want to hang out with you! Choose whether you want to keep the conversation going or discard the invite.</p>
+    <p id="description">Other users want to hang out with you! Choose
+        whether you want to keep the conversation going or discard their request.</p>
+
+
+
+    <div id='empty-message'>
+        <p>You don't have any requests yet.</p>
+        <div id='find-activities'>
+            <a href="/activities">Find activities</a>
+        </div>
+    </div>
+
 
     {{#each allMatches}}
 
-    <hr>
+    <div class="request-card">
 
-    <a href="requests-received/{{this._id}}">{{this.activity.name}} with {{this.sender.name}} <svg width="12"
-                height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M5.96591 11.6364L4.64773 10.3295L8.10795 6.86932H0V4.94886H8.10795L4.64773 1.49432L5.96591 0.181818L11.6932 5.90909L5.96591 11.6364Z"
-                    fill="#1a1a1a" />
-            </svg>
-        </a>
+        <div id="image">
+            <img src="{{this.activity.image}}" alt="{{this.activity.name}} image" />
+        </div>
+
+        <div id="card-bottom-container">
+            <img src="{{this.sender.profilePicture}}" alt="{{this.sender.name}} image" />
+
+        <div id="card-info">
+
+            <p id="title">{{this.activity.name}}</p>
+            <p id="card-id">{{this._id}}</p>
+            <p id="bio">With {{this.sender.name}}</p>
+
+            <div id="tags">
+                <span>{{this.activity.tags.[0]}}</span>
+                <span>{{this.activity.tags.[1]}}</span>
+            </div>
+
+        </div>
+        </div>
+
+    </div>
 
     {{/each}}
 
-    <hr>
+
 
 </div>

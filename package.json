@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "node": "node app.js",
     "dev": "nodemon -e hbs,js app.js",
     "seed": "node seeds/activities.seed.js"
   },
