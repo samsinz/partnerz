@@ -142,5 +142,23 @@
     "url": "https://www.toureiffel.paris/en",
     "tags": ["Touristic", "Fancy", "Culture", "Romantic", "Outdoors"],
     "price": 4
+  },
+  {
+    "name": "Sacré Coeur",
+    "location": "35 rue du Chevalier de la Barre, 75018 Paris",
+    "image": "/images/activities/sacrecoeur.jpg",
+    "description": "The Sacré Coeur is the highest point of Paris. With nearly eleven million pilgrims and visitors per year, it is the second most visited religious monument in Paris after the Notre-Dame de Paris cathedral. It is also from the Sacré Coeur hill that the most beautiful view of Paris can be found, which makes it an ideal place for a date.",
+    "url": "https://www.sacre-coeur-montmartre.com/",
+    "tags": ["Touristic" , "Landscape", "Culture", "Romantic", "Free"],
+    "price": 0
+  },
+  {
+    "name": "Montmartre Vineyards",
+    "location": "12 rue de Cortot, 75018 Montmartre",
+    "image": "/images/activities/montmartrevineyards.jpg",
+    "description": "Made from grape varieties from the greatest wine regions, Montmartre wine is harvested at Clos Montmartre, where more than 1700 grape varieties are grown. Every year in October, the Montmartre Wine Harvest Festival celebrates the wine produced at Clos Montmartre.",
+    "url": "https://museedemontmartre.fr/evenements/visite-des-vignes-du-clos-montmartre-et-du-musee-de-montmartre/",
+    "tags": ["Drink", "Original", "Walks"],
+    "price": 1
   }
 ]

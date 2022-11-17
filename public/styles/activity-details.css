@@ -20,8 +20,21 @@
   margin-right: auto;
 }
 
-#activity-id{
+#activity-id , #price {
   display: none;
+}
+
+.price-range {
+  margin:0.5rem 0;
+}
+
+#bold-span {
+  font-weight:bold;
+  color:var(--customblack)
+}
+
+#light-span {
+  color:grey;
 }
 
 
