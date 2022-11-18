@@ -16,6 +16,19 @@
   color: var(--customblack);
 }
 
+h3 {
+  margin-top: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--customprimary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
 #home p {
   /* text-align: justify; */
   font-size: 1rem;
@@ -34,6 +47,6 @@
   border-radius: 2rem;
   color: white;
   font-size: 1.1rem;
-  margin: 4vh 0 0 0;
+  margin: 3.5vh 0 0 0;
   cursor: pointer;
 }

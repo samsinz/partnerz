@@ -1,7 +1,7 @@
 const express = require("express");
 const User = require("../models/User.model");
 const router = express.Router();
-const { isExperiencedUser } = require("../middlewares/middlewares");
+const { isExperiencedUser, isLoggedInFunction } = require("../middlewares/middlewares");
 const Uploader = require("./../config/cloudinary.config");
 
 //HOME
@@ -35,7 +35,7 @@ router.post('/interests', async (req, res, next) => {
 })
 
 // PROFILE
-router.get("/profile", (req, res, next) => {
+router.get("/profile", isLoggedInFunction, (req, res, next) => {
   const bio = req.session.currentUser.bio;
   const tags = req.session.currentUser.tags;
 
@@ -62,7 +62,7 @@ router.get("/profile", (req, res, next) => {
   });
 });
 
-router.post("/profile", Uploader.single("profilePicture"), async (req, res, next) => {
+router.post("/profile",  Uploader.single("profilePicture"), async (req, res, next) => {
   const { bio } = req.body;
   
   let profilePicture;

@@ -1,183 +1,98 @@
 <div class="profile">
-  
+
   <form action="/profile" method="post" enctype="multipart/form-data">
 
-    <div class = "profile-pic-area">
+    <div class="profile-pic-area">
 
       <img id='image' src="{{picture}}" />
-   
-    <input type="file" name="profilePicture" id="profilePicture" accept="image/" />
-    
-    <svg
-    class="updateImage"
-      width="31"
-      height="31"
-      viewBox="0 0 31 31"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        cx="15.5"
-        cy="15.5"
-        r="14"
-        fill="#FF005C"
-        stroke="white"
-        stroke-width="3"
-      ></circle>
-      <path
-        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-  </svg>
+
+      <input type="file" name="profilePicture" id="profilePicture" accept="image/" />
+
+      <svg class="updateImage" width="31" height="31" viewBox="0 0 31 31" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15.5" cy="15.5" r="14" fill="#FF005C" stroke="white" stroke-width="3"></circle>
+        <path
+          d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
+          stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
 
 
-  </div>
-
-
-<h2>{{currentUser.name}}, {{age}}</h2>
-   
-<textarea
-      type="text"
-      id="bio"
-      name="bio"
-      placeholder="You can write more about you to find your partnerz!"
-      minlength="4"
-      maxlength="250"
-      size="11"
-      cols="3"
-      rows="5"
-      value="{{currentUser.bio}}"
-    >{{currentUser.bio}}</textarea>
-
-    
-  <div class = "tags-area">
-    <div class="tags">
-      {{#each currentUser.tags}}
-      <span>{{this}}</span>
-      {{/each}}  
     </div>
 
 
-<label id="edit">
-    <svg
-      width="31"
-      height="31"
-      viewBox="0 0 31 31"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <circle
-        cx="15.5"
-        cy="15.5"
-        r="14"
-        fill="#FF005C"
-        stroke="white"
-        stroke-width="3"
-      ></circle>
-      <path
-        d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
-        stroke="white"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      ></path>
-  </svg>
-  </label>
+    <h2>{{currentUser.name}}, {{age}}</h2>
 
-  </div>
-  <div class="button">
+    <textarea type="text" id="bio" name="bio" placeholder="You can write more about you to find your partnerz!"
+      minlength="4" maxlength="250" size="11" cols="3" rows="5"
+      value="{{currentUser.bio}}">{{currentUser.bio}}</textarea>
+
+
+    <div class="tags-area">
+      <div class="tags">
+        {{#each currentUser.tags}}
+        <span>{{this}}</span>
+        {{/each}}
+      </div>
+
+
+      <label id="edit">
+        <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15.5" cy="15.5" r="14" fill="#FF005C" stroke="white" stroke-width="3"></circle>
+          <path
+            d="M16.0848 12.7089L10 17.9958V19.9785H12.2818L18.3666 14.6915M16.0848 12.7089L17.8288 11.1936C18.1258 10.9355 18.6074 10.9355 18.9044 11.1936L20.1106 12.2416C20.4076 12.4997 20.4076 12.9181 20.1106 13.1762L18.3666 14.6915M16.0848 12.7089L18.3666 14.6915"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </label>
+
+    </div>
+    <div class="button">
       <button>Update profile &nbsp; &nbsp;
         <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M7.25923 11.2102L6.23651 10.1989L9.78764 6.64773H0.867188V5.17045H9.78764L6.23651 1.625L7.25923 0.607954L12.5604 5.90909L7.25923 11.2102Z" fill="white"/>
-</svg></button>
+          <path
+            d="M7.25923 11.2102L6.23651 10.1989L9.78764 6.64773H0.867188V5.17045H9.78764L6.23651 1.625L7.25923 0.607954L12.5604 5.90909L7.25923 11.2102Z"
+            fill="white" />
+        </svg></button>
     </div>
 
   </form>
-  
-   <p id='id'>{{currentUser._id}}</p>
 
-<div class="footer">
-  <hr/>
-  <div class="delete-area">
-      
-    <svg
-      class="delete"
-      width="60"
-      height="60"
-      viewBox="0 0 60 60"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g filter="url(#filter0_d_70_1152)">
-        <circle cx="30" cy="30" r="20" fill="#FF005C"></circle>
-      </g>
-      <line
-        x1="35.8377"
-        y1="35.4763"
-        x2="24.524"
-        y2="24.1626"
-        stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-      ></line>
-      <line
-        x1="24.5239"
-        y1="34.8374"
-        x2="35.8376"
-        y2="23.5237"
-        stroke="white"
-        stroke-width="3"
-        stroke-linecap="round"
-      ></line>
-      <defs>
-        <filter
-          id="filter0_d_70_1152"
-          x="0"
-          y="0"
-          width="60"
-          height="60"
-          filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
-        >
-          <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-          <feColorMatrix
-            in="SourceAlpha"
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-            result="hardAlpha"
-          ></feColorMatrix>
-          <feOffset></feOffset>
-          <feGaussianBlur stdDeviation="5"></feGaussianBlur>
-          <feComposite in2="hardAlpha" operator="out"></feComposite>
-          <feColorMatrix
-            type="matrix"
-            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
-          ></feColorMatrix>
-          <feBlend
-            mode="normal"
-            in2="BackgroundImageFix"
-            result="effect1_dropShadow_70_1152"
-          ></feBlend>
-          <feBlend
-            mode="normal"
-            in="SourceGraphic"
-            in2="effect1_dropShadow_70_1152"
-            result="shape"
-          ></feBlend>
-        </filter>
-      </defs>
-    </svg>
-  
+  <p id='id'>{{currentUser._id}}</p>
 
-    <div class="delete-text">
-      <p id="delete">Delete my account</p>
-      <p id="warning">Be careful, this action is irreversible</p>
+  <div class="footer">
+    <hr />
+    <div class="delete-area">
+
+      <svg class="delete" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_d_70_1152)">
+          <circle cx="30" cy="30" r="20" fill="#FF005C"></circle>
+        </g>
+        <line x1="35.8377" y1="35.4763" x2="24.524" y2="24.1626" stroke="white" stroke-width="3" stroke-linecap="round">
+        </line>
+        <line x1="24.5239" y1="34.8374" x2="35.8376" y2="23.5237" stroke="white" stroke-width="3"
+          stroke-linecap="round"></line>
+        <defs>
+          <filter id="filter0_d_70_1152" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse"
+            color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+              result="hardAlpha"></feColorMatrix>
+            <feOffset></feOffset>
+            <feGaussianBlur stdDeviation="5"></feGaussianBlur>
+            <feComposite in2="hardAlpha" operator="out"></feComposite>
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_70_1152"></feBlend>
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_70_1152" result="shape"></feBlend>
+          </filter>
+        </defs>
+      </svg>
+
+
+      <div class="delete-text">
+        <p id="delete">Delete my account</p>
+        <p id="warning">Be careful, this action is irreversible</p>
+      </div>
+
     </div>
-
-  </div>
   </div>
 
 </div>
