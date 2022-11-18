@@ -50,7 +50,7 @@ router.get("/", isLoggedInFunction, async (req, res, next) => {
   
 });
 
-router.get("/:id", async (req, res, next) => {
+router.get("/:id", isLoggedInFunction, async (req, res, next) => {
 
   const currentConversation = await Discussion.findById(req.params.id)
       .populate({path: 'messages', populate: {path: 'sender', model: 'User'}})

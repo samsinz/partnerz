@@ -1,11 +1,12 @@
 const router = require("express").Router();
 const Match = require("../models/Match.model");
 const Message = require("../models/Message.model");
+const { isLoggedInFunction } = require("../middlewares/middlewares");
 
 
 // REQUESTS
 
-router.get("/requests-received", async (req, res, next) => {
+router.get("/requests-received", isLoggedInFunction, async (req, res, next) => {
   const allMatchesId = req.session.currentUser.matches;
   // const allMatches = await Match.find({_id: allMatchesId, receiver: req.session.currentUser._id, status: 'Pending'}).populate('sender activity discussion', )
   const allMatches = await Match.find({_id: allMatchesId, receiver: req.session.currentUser._id, status: 'Pending'})
@@ -21,7 +22,7 @@ router.get("/requests-received", async (req, res, next) => {
 
 // REQUESTS
 
-router.get("/requests-received/:id", async (req, res, next) => {
+router.get("/requests-received/:id",  isLoggedInFunction, async (req, res, next) => {
   const singleRequest = await Match.findById(req.params.id)
     .populate({path: 'discussion', populate: {path: 'messages', model: 'Message'}})
     .populate('activity')
