@@ -27,9 +27,8 @@ header {
   z-index: 100;
   width: 100%;
 }
-.list-unstyled #rose{
-
-  color: var(--customprimary)
+.list-unstyled #rose {
+  color: var(--customprimary);
 }
 
 #logo-nav {
@@ -165,5 +164,3 @@ header li > a {
   border-radius: 12px;
   box-shadow: 0px 0px 8px rgba(105, 104, 104, 0.25);
 }
-
-

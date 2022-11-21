@@ -1,35 +1,35 @@
 <div class="discussions">
 
-<h2>Your conversations</h2>
+    <h2>Your conversations</h2>
 
-<hr id="top">
+    <hr id="top">
 
-{{#each allMatches}}
-
-
-
-  {{!-- <p><a href="/discussions/{{this.discussion._id}}">Conversation with
-      {{this.partner}}</a></p> --}}
-      <div class="conversation"> 
-              <img src="{{this.partner.profilePicture}}">
-          <div class="details"> 
-              <p class="name">{{this.partner.name}}</p>
-              <p id="conv">{{this.lastMessage}}</p>
-
-              <p id="id">{{this.discussion._id}}</p>
+    {{#each allMatches}}
 
 
- 
-          </div>
 
-       
+    {{!-- <p><a href="/discussions/{{this.discussion._id}}">Conversation with
+            {{this.partner}}</a></p> --}}
+    <div class="conversation">
+        <img src="{{this.partner.profilePicture}}">
+        <div class="details">
+            <p class="name">{{this.partner.name}}</p>
+            <p id="conv">{{this.lastMessage}}</p>
 
-      </div>  
-     
-      <hr class="separator">
- 
-      
-  
-{{/each}}
+            <p id="id">{{this.discussion._id}}</p>
+
+
+
+        </div>
+
+
+
+    </div>
+
+    <hr class="separator">
+
+
+
+    {{/each}}
 
 </div>

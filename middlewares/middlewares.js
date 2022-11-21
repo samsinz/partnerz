@@ -30,8 +30,8 @@ function isExperiencedUser(req, res, next) {
   return next();
 }
 
-function hasTemporaryTags(req, res, next){
-  if (req.session.temporaryTags){
+function hasTemporaryTags(req, res, next) {
+  if (req.session.temporaryTags) {
     return next()
   }
   res.redirect('/interests')

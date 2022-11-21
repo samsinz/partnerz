@@ -1,34 +1,37 @@
 <div id="send-request">
 
     <div id="profile-pictures">
-    <img src="{{currentUser.profilePicture}}" alt="current user profile" id="current-profile-pic">
-    <img src="{{partner.profilePicture}}" alt="partner profile" id="partner-profile-pic">
+        <img src="{{currentUser.profilePicture}}" alt="current user profile" id="current-profile-pic">
+        <img src="{{partner.profilePicture}}" alt="partner profile" id="partner-profile-pic">
     </div>
 
-<h2>Ask {{partner.name}} out</h2>
+    <h2>Ask {{partner.name}} out</h2>
 
-<div id="activity-card">
-    <img src="{{activity.image}}" alt="activity image">
-    <div id="activity-infos">
-        <h3>{{activity.name}}</h3>
-        <p id="description">{{activity.description}}</p>
+    <div id="activity-card">
+        <img src="{{activity.image}}" alt="activity image">
+        <div id="activity-infos">
+            <h3>{{activity.name}}</h3>
+            <p id="description">{{activity.description}}</p>
+        </div>
     </div>
-</div>
 
-<div id="message-area">
-<h3>Your message:</h3>
+    <div id="message-area">
+        <h3>Your message:</h3>
 
-<form action="request" method="post">
+        <form action="request" method="post">
 
-    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
 
-    <button id="button"><svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1.69238 9.80768C0.863956 9.80768 0.192383 10.4793 0.192383 11.3077C0.192383 12.1361 0.863956 12.8077 1.69238 12.8077V9.80768ZM19.3798 12.3683C19.9656 11.7826 19.9656 10.8328 19.3798 10.247L9.83388 0.701077C9.24809 0.11529 8.29834 0.11529 7.71256 0.701077C7.12677 1.28686 7.12677 2.23661 7.71256 2.8224L16.1978 11.3077L7.71256 19.793C7.12677 20.3787 7.12677 21.3285 7.71256 21.9143C8.29834 22.5001 9.24809 22.5001 9.83388 21.9143L19.3798 12.3683ZM1.69238 12.8077H18.3192V9.80768H1.69238V12.8077Z" fill="white"/>
-</svg>
-</button>
+            <button id="button"><svg width="20" height="23" viewBox="0 0 20 23" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.69238 9.80768C0.863956 9.80768 0.192383 10.4793 0.192383 11.3077C0.192383 12.1361 0.863956 12.8077 1.69238 12.8077V9.80768ZM19.3798 12.3683C19.9656 11.7826 19.9656 10.8328 19.3798 10.247L9.83388 0.701077C9.24809 0.11529 8.29834 0.11529 7.71256 0.701077C7.12677 1.28686 7.12677 2.23661 7.71256 2.8224L16.1978 11.3077L7.71256 19.793C7.12677 20.3787 7.12677 21.3285 7.71256 21.9143C8.29834 22.5001 9.24809 22.5001 9.83388 21.9143L19.3798 12.3683ZM1.69238 12.8077H18.3192V9.80768H1.69238V12.8077Z"
+                        fill="white" />
+                </svg>
+            </button>
 
-</form>
-</div>
+        </form>
+    </div>
 
 </div>
