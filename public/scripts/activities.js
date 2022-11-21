@@ -25,19 +25,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const matchPercentage = document.querySelectorAll("#match-percentage span");
   for (let i = 0; i < matchPercentage.length; i++) {
-    matchPercentage[i].textContent =
-      78 + Number(matchPercentage[i].textContent) * 4;
+    matchPercentage[i].textContent = 78 + Number(matchPercentage[i].textContent) * 4;
   }
 
   const cards = document.querySelectorAll(".activity-card");
-  const cardId = document.querySelectorAll("#card-id")
+  const cardId = document.querySelectorAll("#card-id");
   for (let i = 0; i < cards.length; i++) {
     cards[i].addEventListener("click", () => {
-      window.location = `/activities/${cardId[i].textContent}`
+      window.location = `/activities/${cardId[i].textContent}`;
     });
   }
-
-
 });
-
-

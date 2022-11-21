@@ -50,29 +50,20 @@ document.addEventListener("DOMContentLoaded", function () {
     tagUnique.addEventListener("click", () => {
       tagUnique.classList.toggle("tag-selected");
 
-      if (
-        tagUnique.classList.contains("tag-selected") &&
-        userInterestsArr.length < 5
-      ) {
+      if (tagUnique.classList.contains("tag-selected") && userInterestsArr.length < 5) {
         userInterestsArr.push(tagUnique.textContent);
-
-        
       } else {
         tagUnique.classList.remove("tag-selected");
-        userInterestsArr = userInterestsArr.filter(
-          (x) => x != tagUnique.textContent
-        );
+        userInterestsArr = userInterestsArr.filter((x) => x != tagUnique.textContent);
       }
       document.querySelector("#input-tags").value = userInterestsArr;
 
       let button = document.querySelector("button");
-      if (userInterestsArr.length >= 2){
-
-        button.style.backgroundColor = "var(--customprimary)"
+      if (userInterestsArr.length >= 2) {
+        button.style.backgroundColor = "var(--customprimary)";
       } else {
-        button.style.backgroundColor = "#bbbbbb"
+        button.style.backgroundColor = "#bbbbbb";
       }
-
     });
   });
 });

@@ -1,25 +1,25 @@
 <div id="banner">
-<img src="{{partner.profilePicture}}" alt="{{partner.name}} profile pic">
-<h2>{{partner.name}}</h2>
+  <img src="{{partner.profilePicture}}" alt="{{partner.name}} profile pic">
+  <h2>{{partner.name}}</h2>
 </div>
 
 
 <div id="single-discussion">
 
-<div id="current-user" style="display:none">{{currentUser._id}}</div>
+  <div id="current-user" style="display:none">{{currentUser._id}}</div>
 
-<div id="convo">
-  {{#each currentConversation.messages}}
+  <div id="convo">
+    {{#each currentConversation.messages}}
 
     <p><span id="sender-id">{{this.sender._id}}</span>{{this.content}}</p>
 
-  {{/each}}
+    {{/each}}
 
-</div>
+  </div>
 
   <form action="/discussions/{{id}}" id="new-message" method="post">
 
-    <input type="text" name="new-message-value" placeholder="Write a message"/>
+    <input type="text" name="new-message-value" placeholder="Write a message" />
     <button></button>
 
   </form>

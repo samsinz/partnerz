@@ -8,13 +8,13 @@
 
 .image img {
   flex-shrink: 0;
-  width:100%;
+  width: 100%;
   height: 30vh;
-  object-fit:cover;
+  object-fit: cover;
 }
 
 h3 {
-    text-transform:capitalize;
+  text-transform: capitalize;
 }
 
 .content {
@@ -25,35 +25,35 @@ h3 {
 }
 
 #message {
-    margin : 1rem 0;
-    padding : 0.8rem ;
-    border-radius:0.5rem;
-    background-color:rgba(128, 128, 128, 0.12);
-    color:rgb(104, 104, 104);
+  margin: 1rem 0;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.12);
+  color: rgb(104, 104, 104);
 }
 
 .activity-card {
-    margin:2rem 0 2rem;
-    display:flex;
-    flex-direction:row;
-    align-items:center;
+  margin: 2rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .activity-card img {
-    height : 7rem;
-    width:7rem;
-    object-fit: cover;
-    border-radius:1rem;
-    margin-right:1rem;
+  height: 7rem;
+  width: 7rem;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-right: 1rem;
 }
 
 .activity-info {
-    display:flex;
-    flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 
 .description {
-    color:grey;
+  color: grey;
 }
 
 .tags {
@@ -75,21 +75,22 @@ h3 {
 }
 
 .buttons {
-    margin:3rem 0 2rem;
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-    gap:1rem;
+  margin: 3rem 0 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
 }
 
-#decline , #approve {
-    width : 3rem;
-    height : 3rem;
-    background-color:var(--customprimary);
-    border-radius:100%;
-    border:none;
+#decline,
+#approve {
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--customprimary);
+  border-radius: 100%;
+  border: none;
 }
 
 #hidden-id {
-    display: none;
+  display: none;
 }

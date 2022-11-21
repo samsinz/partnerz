@@ -1,90 +1,86 @@
-
 #partners {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 14vh;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin: 0 4vh;
-    color: var(--customblack);
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 14vh;
+}
 
-  #title {
-    text-transform:capitalize;
-  }
+h2 {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 0 4vh;
+  color: var(--customblack);
+}
 
-  p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .user-card {
-    margin: 8vw;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #image {
-    position: relative;
-  }
+#title {
+  text-transform: capitalize;
+}
 
-  #bio {
-    color: #5C5C5C;
-    font-weight: 300;
-    font-size: 0.8rem;
-  }
-  
-  
-  #image > img:first-of-type {
-    min-width:80vw;
-    width: 100%;
-    height: 80vw;
-    object-fit: cover;
-    border-radius: 8vw;
-    align-self: center;
-  }
-  
-  #image > img:last-of-type {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    width: 7vw;
-    height: 7vw;
-  }
-  
-  
-  
-  .user-card p {
-    margin: 0 3vw 0 3vw;
-    font-size: 0.8rem;
-  }
-  
-  .user-card > p:first-of-type {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-top: 3vw;
-  }
-  
-  #tags {
-    margin: 1.5vh 0 0 3vw;
-    display: flex;
-  }
-  
-  #tags span {
-    font-size: 0.8rem;
-    margin: 0 0.3rem 0 0;
-    color: var(--customprimary);
-    font-weight: 500;
-    padding: 0.3rem 1rem;
-    border: 0.15rem solid var(--customprimary);
-    border-radius: 0.3rem;
-  }
-  
-  #card-id {
-    display:none;
-  }
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.user-card {
+  margin: 8vw;
+  display: flex;
+  flex-direction: column;
+}
+
+#image {
+  position: relative;
+}
+
+#bio {
+  color: #5c5c5c;
+  font-weight: 300;
+  font-size: 0.8rem;
+}
+
+#image > img:first-of-type {
+  min-width: 80vw;
+  width: 100%;
+  height: 80vw;
+  object-fit: cover;
+  border-radius: 8vw;
+  align-self: center;
+}
+
+#image > img:last-of-type {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  width: 7vw;
+  height: 7vw;
+}
+
+.user-card p {
+  margin: 0 3vw 0 3vw;
+  font-size: 0.8rem;
+}
+
+.user-card > p:first-of-type {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 3vw;
+}
+
+#tags {
+  margin: 1.5vh 0 0 3vw;
+  display: flex;
+}
+
+#tags span {
+  font-size: 0.8rem;
+  margin: 0 0.3rem 0 0;
+  color: var(--customprimary);
+  font-weight: 500;
+  padding: 0.3rem 1rem;
+  border: 0.15rem solid var(--customprimary);
+  border-radius: 0.3rem;
+}
+
+#card-id {
+  display: none;
+}

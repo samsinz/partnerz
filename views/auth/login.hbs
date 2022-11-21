@@ -1,20 +1,20 @@
 <div id="login">
 
-   <h2>Log in</h2>
+  <h2>Log in</h2>
   <h3>Don't have an account? <a href="/auth/signup">Sign up</a></h3>
 
 
-<form action="/auth/login" method="post">
+  <form action="/auth/login" method="post">
 
-  <p><label for="email">EMAIL</label></p>
-  <input type="email" name="email"/>
+    <p><label for="email">EMAIL</label></p>
+    <input type="email" name="email" />
 
-  <p><label for="password">PASSWORD</label></p>
-  <input type="password" name="password" />
-  
-  <button id="validate-log-in">Log in</button>
+    <p><label for="password">PASSWORD</label></p>
+    <input type="password" name="password" />
 
-</form>
+    <button id="validate-log-in">Log in</button>
+
+  </form>
 
 
   <p id="any-error">{{errorMessage}}</p>

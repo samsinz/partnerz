@@ -8,7 +8,6 @@ const MongoStore = require("connect-mongo");
 
 require("./db");
 
-
 app.use(
   session({
     saveUninitialized: false,
