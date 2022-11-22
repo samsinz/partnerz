@@ -1,5 +1,5 @@
 .profile {
-  width: 85vw;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -13,10 +13,11 @@ input {
 }
 
 .profile-pic-area {
-  margin-top: 6rem;
+  margin-top: 1rem;
   height: 11rem;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 .profile-pic-area img {
@@ -57,7 +58,7 @@ textarea:focus {
   margin: 0.5rem 0 2rem;
 }
 .tags-area .tags {
-  margin: 1.5vh 0 0 0;
+  margin: 4% 0 0 0;
   display: flex;
   flex-wrap: wrap;
   flex-shrink: inherit;

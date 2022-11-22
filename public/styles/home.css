@@ -2,17 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 16vh;
+  margin-top: 12%;
 }
 
 #home img {
-  width: 65vw;
+  width: 65%;
 }
 
 #home h1 {
   text-align: center;
   font-size: 2rem;
-  margin: 3vh;
+  margin: 5%;
   color: var(--customblack);
 }
 
@@ -32,7 +32,7 @@ a {
 #home p {
   /* text-align: justify; */
   font-size: 1rem;
-  margin: 2.2vh 2rem;
+  margin: 2.8% 2rem;
   color: var(--customblack);
 }
 
@@ -47,6 +47,6 @@ a {
   border-radius: 2rem;
   color: white;
   font-size: 1.1rem;
-  margin: 3.5vh 0 0 0;
+  margin: 8% 0 0 0;
   cursor: pointer;
 }

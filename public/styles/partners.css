@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 14vh;
+  margin-top: 12%;
 }
 
 h2 {
   text-align: center;
   font-size: 1rem;
   line-height: 1.5rem;
-  margin: 0 4vh;
+  margin: 0 4%;
   color: var(--customblack);
 }
 
@@ -23,7 +23,7 @@ p {
 }
 
 .user-card {
-  margin: 8vw;
+  margin: 8%;
   display: flex;
   flex-direction: column;
 }
@@ -39,11 +39,10 @@ p {
 }
 
 #image > img:first-of-type {
-  min-width: 80vw;
   width: 100%;
-  height: 80vw;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 8vw;
+  border-radius: 8%;
   align-self: center;
 }
 
@@ -51,23 +50,24 @@ p {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
-  width: 7vw;
-  height: 7vw;
+  width: 8%;
+  height: 8%;
 }
 
 .user-card p {
-  margin: 0 3vw 0 3vw;
+  margin: 1% 3% 0 3%;
   font-size: 0.8rem;
+  line-height: 1.1rem;
 }
 
 .user-card > p:first-of-type {
   font-weight: 600;
   font-size: 1rem;
-  margin-top: 3vw;
+  margin-top: 3%;
 }
 
 #tags {
-  margin: 1.5vh 0 0 3vw;
+  margin: 2% 0 0 3%;
   display: flex;
 }
 

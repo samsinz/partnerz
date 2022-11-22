@@ -38,49 +38,67 @@
 
 </head>
 
+
+
 <body>
 
-  <header>
+  <div id="overwrapper">
 
-    <div id="logo-nav">
+
+    <div id="wrapper">
+
+      <div id="phone-wrapper">
+        
+      </div>
+
+
+      <div id="screen">
+
+        <header>
+
+          <div id="logo-nav">
+          </div>
+
+
+          {{! isLoggedIn variable initiated in middleware function explorUserToView}}
+          {{#if isLoggedIn}}
+
+          <div class="right">
+            <ul class="list-unstyled">
+              <li><a id='rose' href="/activities">Activities</a></li>
+
+              <li><a href="/requests/requests-received">Hang out requests</a></li>
+              <li> <a href="/discussions">Messages</a></li>
+              <hr />
+              <li><a href="/profile">My account</a></li>
+              <hr />
+              <li><a href="/auth/logout"><b>Log out</b></a></li>
+            </ul>
+          </div>
+          {{else}}
+          <div class="right">
+            <ul class="list-unstyled">
+              <li> <a href="/auth/signup">Sign up</a></li>
+              <li><a href="/auth/login">Log in</a></li>
+            </ul>
+          </div>
+          {{/if}}
+
+          <div id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </header>
+
+        {{{body}}}
+
+        {{! currentUser variable initiated in middleware function explorUserToView}}
+      </div>
+
     </div>
-
-
-    {{! isLoggedIn variable initiated in middleware function explorUserToView}}
-    {{#if isLoggedIn}}
-
-    <div class="right">
-      <ul class="list-unstyled">
-        <li><a id='rose' href="/activities">Activities</a></li>
-
-        <li><a href="/requests/requests-received">Hang out requests</a></li>
-        <li> <a href="/discussions">Messages</a></li>
-        <hr />
-        <li><a href="/profile">My account</a></li>
-        <hr />
-        <li><a href="/auth/logout"><b>Log out</b></a></li>
-      </ul>
-    </div>
-    {{else}}
-    <div class="right">
-      <ul class="list-unstyled">
-        <li> <a href="/auth/signup">Sign up</a></li>
-        <li><a href="/auth/login">Log in</a></li>
-      </ul>
-    </div>
-    {{/if}}
-
-    <div id="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-
-  </header>
-
-  {{{body}}}
-
-  {{! currentUser variable initiated in middleware function explorUserToView}}
+  </div>
 
 </body>
 

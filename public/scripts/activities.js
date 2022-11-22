@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     startIndex = (startIndex + 3) % allActivities.length;
     refreshCards();
     window.scrollTo(0, 0);
+    document.querySelector('#screen').scrollTo(0,0);
   });
 
   const matchPercentage = document.querySelectorAll("#match-percentage span");
