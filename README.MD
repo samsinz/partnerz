@@ -1,15 +1,14 @@
-# PARTNERZ - project 2 at Iron Hack
+# PARTNERZ - Social app
 
-We worked on our second project for 4 days in a group of 3: Sam Sinz, Olympe Lespagnon and Justine Sarzi. We succeeded to deliver even if we wished to have more time to implement more features. We are really proud of this project because what started as a school project turned into a potential business idea.
+This project was completed in 4 days by our group of 3: Sam Sinz, Olympe Lespagnon and Justine Sarzi. We succeeded to deploy the platform even if we wished to have more time to implement more features. We are really proud of this project because what started as a school project turned into a potential business idea.
 
-Partnerz is made for Mobile - we hope to turn it into an app, as there is no desktop version yet.
+Partnerz is currently a web app but we hope to turn it into a native app in the future.
 
-Partnerz is not a dating/meeting app! it is more than that. Users have to choose 2 to 5 tags (ex: 'Drinks', 'Original'..) and are shown different choices of activities depending on their tastes. Then, they select the activity they would like to do and find an partner. They have the possibility to send them a request to go to the place together. The other user will receive an invitation and have the possibility to decline or accept the request. 
-To finish they can both discuss to decide when and where to meet to fully live the Partnerz experience!
+Partnerz is not a dating/meeting app! It is more than that. Users choose 2 to 5 tags (ex: 'Drinks', 'Original'..) and are shown different choices of activities depending on their interests. They can select the activity they would like to do and find a partner to do it with. The other user receives a hang out request and has the possibility to accept or decline their invitation. Finally, they can both discuss to decide when and where to meet and fully live the Partnerz experience!
 
-## DEMO MOBILE VERSION
 
-## [Link to the APP](https://partnerz.onrender.com)
+## DEMO
+## [Link to the App](https://partnerz.onrender.com)
 
 
 ![Main Page](mainPage.png)
@@ -18,27 +17,27 @@ To finish they can both discuss to decide when and where to meet to fully live t
 
 ## About the implementation
 
-We used the following:
+We did the following:
 
-- 5 connected models: User / Activity / Match / Message / Discussion
-- Creation of an account 
-- The user can edit their profile and save it on our database (profile picture, bio and tags)
-- Matching between a user and an activity (depending on the number of tags they have in common) 
+- 5 relational data models: User / Activity / Match / Message / Discussion
+- Handle account creation
+- Handle profile changes and update database (profile picture, bio, and tags)
+- Matching a user with an activity (depending on the number of tags they have in common) 
 - Sending a request
 - Accepting or declining an invitation
 - Starting a conversation
-- Having access to all of their requests
+- Having access to all hang out requests
 - A database on Mongoose Atlas 
 - Deployment on Render 
 
 
 ## Possible improvements
 
-- Deploying not only on a mobile version but also as an App.
-- Receiving a notification every time the user gets a request and message.
-- Adding real-time messages with timestamps.
-- Increasing our database.
-- Make Partnerz a real bussiness.
+- Deploy as an actual App
+- Implement notifications when the user gets a request or message
+- Add real-time messages with timestamps
+- Increase our database
+- Turn Partnerz into a real bussiness
 
 
 

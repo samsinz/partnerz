@@ -166,7 +166,6 @@ header li > a {
 }
 
 @media (min-width: 438px) {
-
   body {
     background-color: #3a3b3e;
   }
@@ -179,15 +178,14 @@ header li > a {
   }
 
   #wrapper {
-    height: 800px;
-    min-height: 800px;
+    height: 850px;
+    min-height: 850px;
     aspect-ratio: 438/886;
     position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-        filter: drop-shadow(0 0 0.5rem black);
-
+    filter: drop-shadow(0 0 0.5rem black);
   }
 
   #phone-wrapper {
@@ -195,7 +193,7 @@ header li > a {
     height: 100%;
     aspect-ratio: 438/886;
     position: absolute;
-    background : no-repeat center / contain url('/images/home/device.png');
+    background: no-repeat center / contain url("/images/home/device.png");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -212,5 +210,4 @@ header li > a {
 
     /* background-color: red; */
   }
-
 }
