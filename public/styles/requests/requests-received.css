@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 14vh 10vw 0 10vw;
+  margin: 8% 10% 0 10%;
 }
 
 h2 {
@@ -16,15 +16,16 @@ h2 {
   color: #5c5c5c;
   font-weight: 300;
   font-size: 0.9rem;
-  margin: 2vh 0;
+  margin: 4% 0;
   margin-bottom: 2rem;
 }
 
 .request-card {
-  margin: 8vw;
+  margin: 8%;
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  width: 100%;
 }
 
 #image {
@@ -38,10 +39,10 @@ h2 {
 }
 
 #image > img:first-of-type {
-  width: 80vw;
-  height: 40vw;
+  width: 100%;
+  aspect-ratio: 2/1;
   object-fit: cover;
-  border-radius: 8vw;
+  border-radius: 2rem;
   align-self: center;
 }
 
@@ -51,25 +52,25 @@ h2 {
 }
 
 #card-bottom-container > img {
-  width: 20vw;
-  height: 20vw;
+  width: 25%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   border-radius: 3rem;
 }
 
 #card-info p {
-  margin: 0 0 0 3vw;
+  margin: 0 0 0 8%;
   font-size: 0.8rem;
 }
 
 #card-info > p:first-of-type {
   font-weight: 600;
   font-size: 1rem;
-  margin-top: 3vw;
+  margin-top: 8%;
 }
 
 #tags {
-  margin: 1.5vh 0 3vw 3vw;
+  margin: 4% 0 8% 8%;
   display: flex;
 }
 
@@ -84,7 +85,7 @@ h2 {
 }
 
 #empty-message {
-  margin: 2vh 0;
+  margin: 6% 0;
   color: var(--customblack);
   text-align: center;
   font-size: 1rem;
@@ -103,4 +104,8 @@ h2 {
 
 #card-id {
   display: none;
+}
+
+#card-info {
+  width: 100%;
 }

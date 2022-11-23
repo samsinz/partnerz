@@ -1,6 +1,6 @@
 #send-request {
-  width: 85vw;
-  margin: 7rem auto 0;
+  width: 85%;
+  margin: 1rem auto 0;
 }
 
 #profile-pictures {
@@ -17,12 +17,12 @@
 }
 
 #current-profile-pic {
-  position: absolute;
+  position: relative;
 }
 
 #partner-profile-pic {
   position: relative;
-  left: 5rem;
+  left: -1.3rem;
 }
 
 #activity-card {
@@ -84,4 +84,5 @@ p {
   background-color: var(--customprimary);
   border: none;
   float: right;
+  margin-bottom: 3rem;
 }
