@@ -10,4 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector("#logo-nav").addEventListener("click", (event) => {
     window.location = "/";
   });
+
+  document.querySelector("#repo-link").addEventListener("click", () => {
+    window.location = "https://github.com/samsinz/partnerz";
+  });
 });

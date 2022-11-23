@@ -81,4 +81,5 @@
   background-color: var(--customprimary);
   padding: 1rem 2rem;
   margin-bottom: 1rem;
+  cursor: pointer;
 }

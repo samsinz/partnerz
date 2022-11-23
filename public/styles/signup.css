@@ -76,6 +76,7 @@ a {
   width: 5rem;
   height: 5rem;
   align-self: flex-end;
+  cursor: pointer;
 }
 
 #image-handler {

@@ -84,6 +84,7 @@ button {
   height: 4rem;
   background: center / contain no-repeat url("/images/signup/next.svg");
   margin: 0 3% 3% 3%;
+  cursor: pointer;
 }
 
 input {

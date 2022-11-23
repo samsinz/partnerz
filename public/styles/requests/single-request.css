@@ -89,6 +89,8 @@ h3 {
   background-color: var(--customprimary);
   border-radius: 100%;
   border: none;
+  cursor: pointer;
+
 }
 
 #hidden-id {

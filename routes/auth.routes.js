@@ -11,7 +11,7 @@ router.get("/signup", isLoggedInFunctionSignUp, hasTemporaryTags, (req, res, nex
 router.post("/signup", fileUploader.single("profilePicture"), async (req, res, next) => {
   const { name, birthday, email, password } = req.body;
 
-  const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
+  // const regex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
   try {
     if (!name || !birthday || !email || !password || !req.file) {
       return res.render("auth/signup", {
@@ -20,13 +20,13 @@ router.post("/signup", fileUploader.single("profilePicture"), async (req, res, n
         scriptName: "signup",
       });
     }
-    if (!regex.test(password)) {
-      return res.status(500).render("auth/signup", {
-        errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
-        styleName: "signup",
-        scriptName: "signup",
-      });
-    }
+    // if (!regex.test(password)) {
+    //   return res.status(500).render("auth/signup", {
+    //     errorMessage: "Password needs to have at least 6 chars and must contain at least one number, one lowercase and one uppercase letter.",
+    //     styleName: "signup",
+    //     scriptName: "signup",
+    //   });
+    // }
 
     if (await User.findOne({ email })) {
       return res.render("auth/signup", {
