@@ -15,6 +15,7 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .tag {
@@ -45,6 +46,7 @@ button {
   height: 2.8rem;
   border: none;
   background-color: #bbbbbb;
+  cursor: pointer;
 }
 
 #button {
