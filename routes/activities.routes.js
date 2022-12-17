@@ -60,7 +60,7 @@ router.get("/", async (req, res, next) => {
       listOfActivities[i].matchPercentage = listOfActivitiesObject[i].num;
     }
 
-    // await User.findByIdAndUpdate(req.session.temporaryUser._id, {matchedActivities: listOfActivities})
+    await User.findByIdAndUpdate(req.session.currentUser._id, {matchedActivities: listOfActivities})
     req.session.temporaryMatchedActivities = listOfActivities;
 
     res.render("activities/activities", {
