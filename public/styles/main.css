@@ -237,6 +237,15 @@ header li > a {
     text-decoration: underline;
     text-underline-offset: 2px;
   }
+
+  #left-description p:nth-child(3){
+    margin-top: 2.5rem;
+    font-weight: 600;
+  }
+
+  #left-description p:nth-child(4){
+    margin-top: 1rem;
+  }
   
   #right-description {
     width: 22rem;

@@ -8,6 +8,9 @@ Partnerz is not a dating/meeting app! It is more than that. Users choose 2 to 5 
 
 
 ## DEMO
+Sign up or log in using this account:
+- Email: test@test.com
+- Password: test
 ## [Link to the App](https://partnerz.onrender.com)
 
 

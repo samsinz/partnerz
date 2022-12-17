@@ -28,6 +28,12 @@
 
 }
 
+#conv {
+  color: #5c5c5c;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
 img {
   width: 5rem;
   height: 5rem;
@@ -53,4 +59,22 @@ img {
 
 #id {
   display: none;
+}
+
+#empty-message {
+  margin: 6% 0;
+  color: var(--customblack);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  display: none;
+}
+
+#find-activities {
+  margin-top: 1rem;
+}
+
+#find-activities a {
+  color: var(--customprimary);
+  text-decoration: none;
 }
